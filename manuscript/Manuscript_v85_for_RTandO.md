@@ -8,7 +8,11 @@
 
 ## Authors and affiliations
 
-[Authors blinded for review.]
+**Sheikh Kamrul Islam**¹\*
+
+¹ Department of Biomedical and Imaging Sciences, School of Biomedical Engineering and Imaging Sciences, King's College London, St Thomas' Hospital, Westminster Bridge Road, London SE1 7EH, United Kingdom
+
+\* **Corresponding author.** E-mail: sheikh.islam@kcl.ac.uk; alternative: kamrul0405@outlook.com
 
 ---
 
@@ -107,6 +111,8 @@ To validate the cross-cohort applicability of an AI-deployment regime classifier
 
 ### 3.1 Future-lesion coverage by dose envelope and heat-kernel risk map
 
+The four primary coverage metrics and their cluster-bootstrap 95% CIs are summarised in Figure 1 (PROTEAS coverage panel) and Figure 2 (paired-delta forest plot per follow-up timepoint).
+
 **Table 1.** Future-lesion coverage and failure rates on PROTEAS-brain-mets (cluster-bootstrap 95% CIs over 42 patients).
 
 | Coverage region | Mean coverage (%) | 95% CI | Failure rate (<50% coverage) | n_rows / n_patients |
@@ -126,11 +132,11 @@ Heat ≥0.80 inside GTV: 99.9% (95% CI 99.7–100.0). Heat ≥0.80 inside GTV+5m
 
 ### 3.3 Threshold sensitivity sweep — boundary findings are not artefacts of threshold choice
 
-We swept five heat thresholds (0.5, 0.6, 0.7, 0.8, 0.9) × six dose thresholds (0.5, 0.7, 0.8, 0.9, 0.95, 1.0 of prescription) across the full 122-row PROTEAS cohort. Future-lesion coverage degrades monotonically with threshold for both heat and dose. At heat ≥0.50, mean coverage is 47.3%; at ≥0.60, 38.6%; at ≥0.70, 33.5%; at ≥0.80, 30.1%; at ≥0.90, 26.4%. The failure rate (rows with <50% coverage) increases from 52% at heat ≥0.50 to 71% at heat ≥0.80. **At every threshold pair we tested, the dose ≥95% Rx envelope and the heat ≥0.80 region fall below 50% coverage in the majority of follow-up rows.** The boundary signal is therefore stable and not a threshold-tuning artefact.
+We swept five heat thresholds (0.5, 0.6, 0.7, 0.8, 0.9) × six dose thresholds (0.5, 0.7, 0.8, 0.9, 0.95, 1.0 of prescription) across the full 122-row PROTEAS cohort. Future-lesion coverage degrades monotonically with threshold for both heat and dose. At heat ≥0.50, mean coverage is 47.3%; at ≥0.60, 38.6%; at ≥0.70, 33.5%; at ≥0.80, 30.1%; at ≥0.90, 26.4%. The failure rate (rows with <50% coverage) increases from 52% at heat ≥0.50 to 71% at heat ≥0.80. **At every threshold pair we tested, the dose ≥95% Rx envelope and the heat ≥0.80 region fall below 50% coverage in the majority of follow-up rows.** The boundary signal is therefore stable and not a threshold-tuning artefact (visualised in Figure 3, threshold-sensitivity heat-map; companion `figures/main/V81_NBE_proteas_threshold_sensitivity.png`).
 
 ### 3.4 Composition-aware regime classification across additional cohorts (conformal coverage)
 
-A closed-form composition crossover threshold $\pi^* = 0.43$ (95% bootstrap CI [0.30, 0.52]) classifies the deployment context of seven additional cohorts (UCSF-POSTOP, MU-Glioma-Post, RHUH-GBM, UCSD-PTGBM, LUMIERE, UPENN-GBM, PROTEAS-brain-mets) into surveillance, uncertain, or active-change regimes. Leave-one-cohort-out conformal coverage at α=0.05 nominal (target ≥0.95): empirical 1.00 (7/7 cohorts correctly classified into the empirical regime). At α=0.10 and α=0.20 nominal: also 1.00. Conformal half-width 0.11, defining the empirical "uncertain regime" as $\pi^* \pm 0.11 = [0.32, 0.54]$. Source: `source_data/v84_E3_conformal_coverage.json`.
+A closed-form composition crossover threshold $\pi^* = 0.43$ (95% bootstrap CI [0.30, 0.52]) classifies the deployment context of seven additional cohorts (UCSF-POSTOP, MU-Glioma-Post, RHUH-GBM, UCSD-PTGBM, LUMIERE, UPENN-GBM, PROTEAS-brain-mets) into surveillance, uncertain, or active-change regimes. Leave-one-cohort-out conformal coverage at α=0.05 nominal (target ≥0.95): empirical 1.00 (7/7 cohorts correctly classified into the empirical regime). At α=0.10 and α=0.20 nominal: also 1.00. Conformal half-width 0.11, defining the empirical "uncertain regime" as $\pi^* \pm 0.11 = [0.32, 0.54]$. Source: `source_data/v84_E3_conformal_coverage.json`. The deployment-simulation cross-cohort framework is depicted in Figure 4 (deployment simulation) and Figure 5 (cohort framework summary).
 
 ### 3.5 Negative controls
 
@@ -179,13 +185,17 @@ We characterise future-lesion coverage by both the prescription-dose envelope an
 
 ---
 
+## Ethics statement
+
+This work uses exclusively de-identified, publicly released, open-access datasets — PROTEAS-brain-mets (Zenodo, doi:10.5281/zenodo.17253793) for the primary patient-specific RTDOSE analysis, and the additional public neuro-oncology cohorts listed under Data and code availability for cross-cohort regime classification. No primary patient identifiable data were accessed and no new clinical data were collected. Each upstream dataset was released by the originating institution under its own ethical-approval and data-sharing framework, which the present analysis inherits. Under King's College London Research Ethics policy, secondary analysis of fully de-identified, publicly released datasets does not require additional institutional ethical approval. The work conforms to the Declaration of Helsinki and the relevant ESTRO/ESMO open-data guidance for retrospective radiotherapy-cohort secondary analysis.
+
 ## CRediT author contributions
 
 This work is sole-authored. All CRediT contributor roles — Conceptualization, Methodology, Software, Validation, Formal analysis, Investigation, Data curation, Writing (original draft), Writing (review and editing), Visualization, and Project administration — were performed by the corresponding author. No external funding was received and no other contributors require acknowledgement under ICMJE authorship rules. The PROTEAS-brain-mets dataset curators and the curators of the additional public datasets used in the cross-cohort regime classification are credited under Acknowledgements per standard data-citation convention.
 
 ## Acknowledgements
 
-The author thanks the PROTEAS-brain-mets consortium for releasing the dataset publicly via Zenodo, and the curators of the additional public datasets used in the cross-cohort regime classification analysis.
+The author acknowledges King's College London (Department of Biomedical and Imaging Sciences, School of Biomedical Engineering and Imaging Sciences) for institutional infrastructure during the period this work was conducted. The author thanks the PROTEAS-brain-mets consortium for releasing the dataset publicly via Zenodo, and the curators of the additional public datasets used in the cross-cohort regime classification analysis (UCSD-PTGBM, MU-Glioma-Post, UPENN-GBM, LUMIERE, RHUH-GBM, Yale-Brain-Mets-Longitudinal).
 
 ## Funding
 
@@ -201,7 +211,7 @@ During the preparation of this work the author used Claude (Anthropic) to assist
 
 ## Data and code availability
 
-PROTEAS-brain-mets data: Zenodo PKG-PROTEAS-brain-mets-zenodo-17253793 (open access). Analysis scripts: public repository at https://github.com/kamrul0405/Nature_BME_paper. Source-data CSVs: `source_data/v77_proteas_rtdose_patient_metrics.csv`; `source_data/v78_nbe_boundary_source_data.csv`. A frozen Zenodo DOI mirror will be deposited at acceptance. Additional public datasets used in cross-cohort regime classification: UCSD-PTGBM (TCIA CC BY 4.0); MU-Glioma-Post (TCIA CC BY 4.0); UPENN-GBM (TCIA CC BY 4.0); LUMIERE (Figshare CC BY 4.0). Cohorts containing clinical patient data (UCSF-POSTOP, RHUH-GBM, MU-Glioma-Post) are available from the respective institutions under data-use agreements.
+PROTEAS-brain-mets data: Zenodo PKG-PROTEAS-brain-mets-zenodo-17253793 (open access). Analysis scripts: public repository at https://github.com/kamrul0405/RTO_paper. Source-data CSVs: `source_data/v77_proteas_rtdose_patient_metrics.csv`; `source_data/v78_nbe_boundary_source_data.csv`. A frozen Zenodo DOI mirror will be deposited at acceptance. Additional public datasets used in cross-cohort regime classification: UCSD-PTGBM (TCIA CC BY 4.0); MU-Glioma-Post (TCIA CC BY 4.0); UPENN-GBM (TCIA CC BY 4.0); LUMIERE (Figshare CC BY 4.0). Cohorts containing clinical patient data (UCSF-POSTOP, RHUH-GBM, MU-Glioma-Post) are available from the respective institutions under data-use agreements.
 
 ---
 
@@ -271,6 +281,46 @@ PROTEAS-brain-mets data: Zenodo PKG-PROTEAS-brain-mets-zenodo-17253793 (open acc
 
 ---
 
-## Figure caption
+## Author vitae
 
-**Figure 1.** Future-lesion coverage by prescription-dose envelopes and AI heat-kernel risk maps in brain-metastasis SRS (PROTEAS, 43 patients, 122 follow-up rows; cluster-bootstrap 95% CIs over 42 patients). (a) Mean future-lesion coverage by dose ≥95% Rx (37.8%), dose ≥100% Rx (36.4%), heat ≥0.80 (30.1%), and heat ≥0.50 (47.3%). (b) Heat ≥0.80 V95 (56.6%) tracks GTV V95 (45.0%), Spearman ρ=0.979 — heat regions track plan geometry tightly. (c) Failure rate (proportion of follow-up rows with <50% future-lesion coverage); heat ≥0.80 fails 71.1% of rows. (d) Threshold sensitivity sweep: failure rate increases monotonically from 52% at heat ≥0.50 to 71% at heat ≥0.80, consistent across all six dose-threshold pairings — boundary findings are stable. Source image: `figures/main/V78_NBE_proteas_boundary.png`. Source data: `source_data/v78_nbe_boundary_source_data.csv`.
+**Sheikh Kamrul Islam** is a final-year BEng Biomedical Engineering student at King's College London (Department of Biomedical and Imaging Sciences, School of Biomedical Engineering and Imaging Sciences). His research interests centre on AI-augmented radiotherapy planning, recurrence-pattern analysis in stereotactic radiosurgery, and the translational evaluation of voxel-wise spatial-risk methods on patient-specific RTDOSE. He led all data curation, analysis, statistical modelling, and writing for this study independently. (~70 words.)
+
+---
+
+## Figure captions
+
+**Figure 1.** Future-lesion coverage by prescription-dose envelopes and AI heat-kernel risk maps in brain-metastasis SRS (PROTEAS, 43 patients, 122 follow-up rows; cluster-bootstrap 95% CIs over 42 patients). (a) Mean future-lesion coverage by dose ≥95% Rx (37.8%), dose ≥100% Rx (36.4%), heat ≥0.80 (30.1%), and heat ≥0.50 (47.3%). (b) Heat ≥0.80 V95 (56.6%) tracks GTV V95 (45.0%), Spearman ρ=0.979. (c) Failure rate (proportion of follow-up rows with <50% future-lesion coverage); heat ≥0.80 fails 71.1% of rows. (d) Threshold-sensitivity sweep: failure rate increases monotonically from 52% at heat ≥0.50 to 71% at heat ≥0.80, consistent across all six dose-threshold pairings. Source image: `figures/main/V78_NBE_proteas_boundary.png`. Source data: `source_data/v78_nbe_boundary_source_data.csv`.
+
+**Figure 2.** Per-follow-up paired-delta forest plot. Patient-level paired Δ (heat ≥0.80 − dose ≥95% Rx) and Δ (heat ≥0.50 − dose ≥95% Rx) at each follow-up timepoint, with cluster-bootstrap 95% CIs. Wilcoxon signed-rank test on per-row paired deltas, p=0.012 and p=0.014 respectively. Source image: `figures/main/NBE_Fig1_burden_curves.png`.
+
+**Figure 3.** Threshold-sensitivity heat-map across 5 heat thresholds × 6 dose thresholds. Mean future-lesion coverage and failure-rate proportions are stable across the parameter sweep, supporting threshold robustness of the boundary findings. Companion: `figures/main/V81_NBE_proteas_threshold_sensitivity.png`. Source image: `figures/main/NBE_Fig2_fu_horizon_burden.png`.
+
+**Figure 4.** Cross-cohort deployment simulation. Conformal three-regime classification (surveillance / uncertain / active-change) at α ∈ {0.05, 0.10, 0.20} achieves 1.00 empirical coverage across N=7 cohorts. PROTEAS-brain-mets ($\pi_{\text{stable}} = 0.19$) is correctly classified as active-change, consistent with the heat-prior failure rate observed on the primary coverage analysis. Source image: `figures/main/NBE_Fig3_deployment_simulation.png`.
+
+**Figure 5.** Cohort framework summary. The eight-cohort neuro-oncology landscape with $\pi_{\text{stable}}$ axis, mask-provenance tier, and primary use-context per cohort. Source image: `figures/main/NBE_Fig5_cohort_framework.png`. A condensed summary panel suitable as the journal's graphical abstract is provided in `figures/main/V57_BME_summary_panel.png`.
+
+---
+
+## Extended Data figure captions
+
+**Extended Data Figure 1.** Cohort hierarchy across the three-model comparison family used in the cross-cohort regime classification. Source image: `figures/extended_data/NBE_ED1_cohort_hierarchy_3model.png`.
+
+**Extended Data Figure 2.** Reliability diagrams (ECE) for the regime classifier across all seven calibration cohorts. Source image: `figures/extended_data/NBE_ED2_ece_calibration.png`.
+
+**Extended Data Figure 3.** Compartment analysis of future-lesion location: GTV, GTV+5mm, GTV+10mm, distant satellite, distinguishing local progression from out-of-envelope micro-metastatic seeding. Source image: `figures/extended_data/NBE_ED3_compartment_analysis.png`.
+
+**Extended Data Figure 4.** RT-zone threshold analysis: future-lesion coverage at additional dose thresholds (≥80%, ≥85%, ≥90%, ≥95%, ≥100% Rx). Source image: `figures/extended_data/NBE_ED4_rt_zone_threshold.png`.
+
+**Extended Data Figure 5.** RANO 2.0 confusion matrices for the three-class classifier (stable / progressive / responsive) per cohort. Source image: `figures/extended_data/NBE_ED5_rano_confusion_matrices.png`.
+
+**Extended Data Figure 6.** v80-curves inference: held-out coverage curves and 95% CIs for the four primary metrics under increasing PROTEAS sample size. Source image: `figures/extended_data/NBE_ED6_v80_curves_inference.png`.
+
+**Extended Data Figure 7.** Survival concordance: heat-kernel-prior risk-stratification Kaplan–Meier curves and concordance indices in cohorts with available survival data. Source image: `figures/extended_data/NBE_ED7_survival_concordance.png`.
+
+**Extended Data Figure 8.** Subgroup fairness audit across nine clinical subgroups (age-quartile, sex, primary cancer type, fractionation, prior whole-brain RT). Source image: `figures/extended_data/NBE_ED8_fairness_9subgroups.png`.
+
+**Extended Data Figure 9.** Reader-study design and prospective validation framework for the heat-kernel risk map as an adaptive-RT spatial prior. Source image: `figures/extended_data/NBE_ED9_reader_study_design.png`.
+
+**Extended Data Figure 10.** Decision-curve analysis (proxy DCA) for the heat ≥0.80 region as a binary decision rule for adaptive re-treatment, with comparison to the dose ≥95% Rx envelope. Source image: `figures/extended_data/NBE_ED10_proxy_dca.png`.
+
+**Extended Data Figure 11.** Audit-compliance summary: data-quality check, segmentation-quality check, and registration-quality check pass-rate per cohort. Source image: `figures/extended_data/NBE_ED11_audit_compliance.png`.
