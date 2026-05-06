@@ -1,0 +1,293 @@
+{
+  "version": "v81_proteas_threshold_sensitivity",
+  "status": "REAL_PROTEAS_RTDose_HEAT_AND_DOSE_THRESHOLD_SWEEP",
+  "date": "2026-05-05",
+  "dataset": "C:\\Users\\kamru\\Downloads\\Datasets\\PKG - PROTEAS-brain-mets-zenodo-17253793.zip",
+  "n_patients": 42,
+  "n_followup_pairs": 121,
+  "heat_thresholds": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "dose_thresholds_as_fraction_of_rx": [
+    0.5,
+    0.7,
+    0.8,
+    0.9,
+    0.95,
+    1.0
+  ],
+  "summary": {
+    "heat": {
+      "heat_ge_0.50": {
+        "coverage_pct": {
+          "mean": 47.304548561111524,
+          "ci95_lo": 37.732922725106896,
+          "ci95_hi": 57.39495902721515,
+          "n": 121,
+          "n_patients": 42
+        },
+        "failure_coverage_lt50": {
+          "mean": 0.5206611570247934,
+          "ci95_lo": 0.38461538461538464,
+          "ci95_hi": 0.6532258064516129,
+          "n": 121,
+          "n_patients": 42
+        },
+        "failure_coverage_lt25": {
+          "mean": 0.38016528925619836,
+          "ci95_lo": 0.24786324786324787,
+          "ci95_hi": 0.5084782291057861,
+          "n": 121,
+          "n_patients": 42
+        }
+      },
+      "heat_ge_0.60": {
+        "coverage_pct": {
+          "mean": 42.28049890790118,
+          "ci95_lo": 33.37676609768979,
+          "ci95_hi": 52.12464700819643,
+          "n": 121,
+          "n_patients": 42
+        },
+        "failure_coverage_lt50": {
+          "mean": 0.5537190082644629,
+          "ci95_lo": 0.41789746917585985,
+          "ci95_hi": 0.6850430154564013,
+          "n": 121,
+          "n_patients": 42
+        },
+        "failure_coverage_lt25": {
+          "mean": 0.4132231404958678,
+          "ci95_lo": 0.28095846757248916,
+          "ci95_hi": 0.5416666666666666,
+          "n": 121,
+          "n_patients": 42
+        }
+      },
+      "heat_ge_0.70": {
+        "coverage_pct": {
+          "mean": 36.653865390723425,
+          "ci95_lo": 28.017776739764695,
+          "ci95_hi": 45.82713674610993,
+          "n": 121,
+          "n_patients": 42
+        },
+        "failure_coverage_lt50": {
+          "mean": 0.6198347107438017,
+          "ci95_lo": 0.4724299212598425,
+          "ci95_hi": 0.7520697725444306,
+          "n": 121,
+          "n_patients": 42
+        },
+        "failure_coverage_lt25": {
+          "mean": 0.47107438016528924,
+          "ci95_lo": 0.3391304347826087,
+          "ci95_hi": 0.5950462416371508,
+          "n": 121,
+          "n_patients": 42
+        }
+      },
+      "heat_ge_0.80": {
+        "coverage_pct": {
+          "mean": 30.092799511157164,
+          "ci95_lo": 22.52422079276452,
+          "ci95_hi": 38.46494196099464,
+          "n": 121,
+          "n_patients": 42
+        },
+        "failure_coverage_lt50": {
+          "mean": 0.7107438016528925,
+          "ci95_lo": 0.5736205073995772,
+          "ci95_hi": 0.8320928753180663,
+          "n": 121,
+          "n_patients": 42
+        },
+        "failure_coverage_lt25": {
+          "mean": 0.5619834710743802,
+          "ci95_lo": 0.4297504519628099,
+          "ci95_hi": 0.6923076923076923,
+          "n": 121,
+          "n_patients": 42
+        }
+      },
+      "heat_ge_0.90": {
+        "coverage_pct": {
+          "mean": 21.810377584546767,
+          "ci95_lo": 15.223088752710748,
+          "ci95_hi": 28.7650930500817,
+          "n": 121,
+          "n_patients": 42
+        },
+        "failure_coverage_lt50": {
+          "mean": 0.8429752066115702,
+          "ci95_lo": 0.7522123893805309,
+          "ci95_hi": 0.9230769230769231,
+          "n": 121,
+          "n_patients": 42
+        },
+        "failure_coverage_lt25": {
+          "mean": 0.6198347107438017,
+          "ci95_lo": 0.4757862903225807,
+          "ci95_hi": 0.7521367521367521,
+          "n": 121,
+          "n_patients": 42
+        }
+      }
+    },
+    "dose": {
+      "dose_ge_0.50x_rx": {
+        "coverage_pct": {
+          "mean": 47.58441847663016,
+          "ci95_lo": 36.54487486500125,
+          "ci95_hi": 59.22983735972517,
+          "n": 121,
+          "n_patients": 42
+        },
+        "failure_coverage_lt50": {
+          "mean": 0.5206611570247934,
+          "ci95_lo": 0.3793103448275862,
+          "ci95_hi": 0.656255963740458,
+          "n": 121,
+          "n_patients": 42
+        },
+        "failure_coverage_lt25": {
+          "mean": 0.371900826446281,
+          "ci95_lo": 0.23683014354066984,
+          "ci95_hi": 0.5082001366120219,
+          "n": 121,
+          "n_patients": 42
+        }
+      },
+      "dose_ge_0.70x_rx": {
+        "coverage_pct": {
+          "mean": 43.08886908261126,
+          "ci95_lo": 32.88191442046711,
+          "ci95_hi": 54.29733101735931,
+          "n": 121,
+          "n_patients": 42
+        },
+        "failure_coverage_lt50": {
+          "mean": 0.5785123966942148,
+          "ci95_lo": 0.44034917747548247,
+          "ci95_hi": 0.7107486441115702,
+          "n": 121,
+          "n_patients": 42
+        },
+        "failure_coverage_lt25": {
+          "mean": 0.4214876033057851,
+          "ci95_lo": 0.2818115622241836,
+          "ci95_hi": 0.5546234900210084,
+          "n": 121,
+          "n_patients": 42
+        }
+      },
+      "dose_ge_0.80x_rx": {
+        "coverage_pct": {
+          "mean": 41.06249303635859,
+          "ci95_lo": 30.94195479187755,
+          "ci95_hi": 52.118113075840014,
+          "n": 121,
+          "n_patients": 42
+        },
+        "failure_coverage_lt50": {
+          "mean": 0.5785123966942148,
+          "ci95_lo": 0.4396551724137931,
+          "ci95_hi": 0.7117189189189189,
+          "n": 121,
+          "n_patients": 42
+        },
+        "failure_coverage_lt25": {
+          "mean": 0.45454545454545453,
+          "ci95_lo": 0.31451612903225806,
+          "ci95_hi": 0.5916750000000001,
+          "n": 121,
+          "n_patients": 42
+        }
+      },
+      "dose_ge_0.90x_rx": {
+        "coverage_pct": {
+          "mean": 38.98904323786892,
+          "ci95_lo": 29.33913799008445,
+          "ci95_hi": 50.038248105307595,
+          "n": 121,
+          "n_patients": 42
+        },
+        "failure_coverage_lt50": {
+          "mean": 0.6033057851239669,
+          "ci95_lo": 0.46153846153846156,
+          "ci95_hi": 0.7293233082706767,
+          "n": 121,
+          "n_patients": 42
+        },
+        "failure_coverage_lt25": {
+          "mean": 0.49586776859504134,
+          "ci95_lo": 0.3548387096774194,
+          "ci95_hi": 0.6268686330253495,
+          "n": 121,
+          "n_patients": 42
+        }
+      },
+      "dose_ge_0.95x_rx": {
+        "coverage_pct": {
+          "mean": 37.81677631007186,
+          "ci95_lo": 27.802760795941893,
+          "ci95_hi": 48.81815513170293,
+          "n": 121,
+          "n_patients": 42
+        },
+        "failure_coverage_lt50": {
+          "mean": 0.6033057851239669,
+          "ci95_lo": 0.4629591368227732,
+          "ci95_hi": 0.7350427350427351,
+          "n": 121,
+          "n_patients": 42
+        },
+        "failure_coverage_lt25": {
+          "mean": 0.5289256198347108,
+          "ci95_lo": 0.3883254613837138,
+          "ci95_hi": 0.6641857506361325,
+          "n": 121,
+          "n_patients": 42
+        }
+      },
+      "dose_ge_1.00x_rx": {
+        "coverage_pct": {
+          "mean": 36.42652212610857,
+          "ci95_lo": 27.142596578742424,
+          "ci95_hi": 46.8495649970207,
+          "n": 121,
+          "n_patients": 42
+        },
+        "failure_coverage_lt50": {
+          "mean": 0.6115702479338843,
+          "ci95_lo": 0.4745762711864407,
+          "ci95_hi": 0.7377146760343483,
+          "n": 121,
+          "n_patients": 42
+        },
+        "failure_coverage_lt25": {
+          "mean": 0.5454545454545454,
+          "ci95_lo": 0.40677277111754173,
+          "ci95_hi": 0.6865785575937109,
+          "n": 121,
+          "n_patients": 42
+        }
+      }
+    }
+  },
+  "source_data_csv": "C:\\Users\\kamru\\Downloads\\Nature_project\\05_results\\v81_nbe_threshold_sensitivity_source_data.csv",
+  "headline_checks": {
+    "heat50_mean_future_coverage_pct": 47.304548561111524,
+    "heat80_mean_future_coverage_pct": 30.092799511157164,
+    "dose95_mean_future_coverage_pct": 37.81677631007186,
+    "dose100_mean_future_coverage_pct": 36.42652212610857,
+    "all_heat_thresholds_mean_coverage_lt50": true,
+    "dose95_and_dose100_mean_coverage_lt50": true
+  },
+  "interpretation": "This threshold sweep tests whether the PROTEAS boundary result depends on a single heat or dose cut point. It remains a retrospective brain-metastasis RT-dose compatibility audit, not evidence of glioma treatment benefit or deployment readiness.",
+  "runtime_s": 167.49
+}

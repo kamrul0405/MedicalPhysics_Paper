@@ -1,0 +1,138 @@
+{
+  "version": "v78_proteas_boundary_stats",
+  "status": "PROTEAS_RT_DOSE_BOUNDARY_STATISTICS",
+  "date": "2026-05-05",
+  "source_csv": "C:\\Users\\kamru\\Downloads\\Nature_project\\05_results\\v77_proteas_rtdose_patient_metrics.csv",
+  "n_followup_rows": 122,
+  "n_patients": 43,
+  "cluster_bootstrap_replicates": 10000,
+  "clustered_means": {
+    "future_inside_dose95_pct": {
+      "mean": 37.81677631007186,
+      "ci95_lo": 27.847322193388518,
+      "ci95_hi": 48.181816723439255,
+      "n_rows": 121,
+      "n_patients": 42
+    },
+    "future_inside_dose100_pct": {
+      "mean": 36.42652212610858,
+      "ci95_lo": 26.69926528841404,
+      "ci95_hi": 46.64900094815627,
+      "n_rows": 121,
+      "n_patients": 42
+    },
+    "future_inside_heat80_pct": {
+      "mean": 30.092799511157164,
+      "ci95_lo": 22.146970095746756,
+      "ci95_hi": 38.45632461111275,
+      "n_rows": 121,
+      "n_patients": 42
+    },
+    "future_inside_heat50_pct": {
+      "mean": 47.304548561111524,
+      "ci95_lo": 37.43589176833971,
+      "ci95_hi": 57.17401295652536,
+      "n_rows": 121,
+      "n_patients": 42
+    },
+    "future_dmean_gy": {
+      "mean": 13.831806083768607,
+      "ci95_lo": 10.253700322892922,
+      "ci95_hi": 17.597914056190792,
+      "n_rows": 120,
+      "n_patients": 41
+    },
+    "gtv_v95_pct": {
+      "mean": 44.99103753043635,
+      "ci95_lo": 35.531325605053425,
+      "ci95_hi": 54.30741009658381,
+      "n_rows": 43,
+      "n_patients": 43
+    },
+    "heat80_v95_pct": {
+      "mean": 56.576543169076906,
+      "ci95_lo": 45.07807618032034,
+      "ci95_hi": 67.88734483658534,
+      "n_rows": 43,
+      "n_patients": 43
+    },
+    "heat50_v95_pct": {
+      "mean": 49.723101715547294,
+      "ci95_lo": 39.1391519593945,
+      "ci95_hi": 60.140347119454425,
+      "n_rows": 43,
+      "n_patients": 43
+    }
+  },
+  "paired_deltas": {
+    "dose95_vs_heat80": {
+      "comparison": "future_inside_dose95_pct_minus_future_inside_heat80_pct",
+      "mean_delta": 7.7239767989146975,
+      "ci95_lo": -3.5935121528531835,
+      "ci95_hi": 18.63405949021937,
+      "p_delta_gt_0": 0.9125,
+      "wilcoxon_p": 0.012378811198055622,
+      "n_rows": 121,
+      "n_patients": 42
+    },
+    "dose95_vs_heat50": {
+      "comparison": "future_inside_dose95_pct_minus_future_inside_heat50_pct",
+      "mean_delta": -9.487772251039658,
+      "ci95_lo": -20.81024360435388,
+      "ci95_hi": 1.0215383256318247,
+      "p_delta_gt_0": 0.0399,
+      "wilcoxon_p": 0.01365015402330798,
+      "n_rows": 121,
+      "n_patients": 42
+    },
+    "heat50_vs_heat80": {
+      "comparison": "future_inside_heat50_pct_minus_future_inside_heat80_pct",
+      "mean_delta": 17.21174904995436,
+      "ci95_lo": 13.954375507115442,
+      "ci95_hi": 20.784970908357963,
+      "p_delta_gt_0": 1.0,
+      "wilcoxon_p": 3.991969959024721e-19,
+      "n_rows": 121,
+      "n_patients": 42
+    },
+    "dose100_vs_heat80": {
+      "comparison": "future_inside_dose100_pct_minus_future_inside_heat80_pct",
+      "mean_delta": 6.333722614951407,
+      "ci95_lo": -4.822817623793218,
+      "ci95_hi": 17.046327168743623,
+      "p_delta_gt_0": 0.8699,
+      "wilcoxon_p": 0.039937295179889004,
+      "n_rows": 121,
+      "n_patients": 42
+    }
+  },
+  "coverage_failure_rates": {
+    "future_inside_dose95_pct": {
+      "pct_rows_below_25": 52.892561983471076,
+      "pct_rows_below_50": 60.33057851239669,
+      "pct_rows_below_75": 79.33884297520662
+    },
+    "future_inside_dose100_pct": {
+      "pct_rows_below_25": 54.54545454545454,
+      "pct_rows_below_50": 61.15702479338842,
+      "pct_rows_below_75": 80.99173553719008
+    },
+    "future_inside_heat80_pct": {
+      "pct_rows_below_25": 56.19834710743802,
+      "pct_rows_below_50": 71.07438016528926,
+      "pct_rows_below_75": 90.08264462809917
+    },
+    "future_inside_heat50_pct": {
+      "pct_rows_below_25": 38.01652892561984,
+      "pct_rows_below_50": 52.066115702479344,
+      "pct_rows_below_75": 69.42148760330579
+    }
+  },
+  "heat80_v95_vs_gtv_v95_spearman": {
+    "spearman_r": 0.9787504402309385,
+    "p": 7.735274887233e-30,
+    "n": 43
+  },
+  "editorial_interpretation": "PROTEAS provides real RT-dose maps, but the coverage statistics do not justify clinical-benefit or deployment-readiness claims. They support a conditional-use boundary: high-risk heat regions are anatomically tied to baseline GTV, while future-lesion coverage is incomplete and disease-context transfer is limited.",
+  "runtime_s": 0.76
+}

@@ -1,0 +1,120 @@
+{
+  "version": "v77_proteas_rtdose_audit",
+  "status": "EMPIRICAL_RTDose_NIFTI_AUDIT",
+  "date": "2026-05-05",
+  "dataset": "C:\\Users\\kamru\\Downloads\\Datasets\\PKG - PROTEAS-brain-mets-zenodo-17253793.zip",
+  "n_patients": 43,
+  "n_followup_pairs": 122,
+  "heat_threshold_primary": 0.8,
+  "bootstrap_replicates": 4000,
+  "summary": {
+    "patient_level": {
+      "baseline_gtv_cm3": {
+        "mean": 18.623186046511627,
+        "ci95_lo": 12.679806395348836,
+        "ci95_hi": 25.12863895348837,
+        "n": 43
+      },
+      "heat80_cm3": {
+        "mean": 9.647348837209304,
+        "ci95_lo": 5.923830232558139,
+        "ci95_hi": 13.76330988372093,
+        "n": 43
+      },
+      "heat80_inside_gtv_pct": {
+        "mean": 99.85913944410835,
+        "ci95_lo": 99.69257858099127,
+        "ci95_hi": 99.9684144224946,
+        "n": 43
+      },
+      "heat80_inside_gtv_plus5mm_pct": {
+        "mean": 100.0,
+        "ci95_lo": 100.0,
+        "ci95_hi": 100.0,
+        "n": 43
+      },
+      "gtv_v95_pct": {
+        "mean": 44.99103753043635,
+        "ci95_lo": 35.76090722953592,
+        "ci95_hi": 55.0220689070295,
+        "n": 43
+      },
+      "gtv_v100_pct": {
+        "mean": 42.57616543400279,
+        "ci95_lo": 33.73368764973542,
+        "ci95_hi": 52.23520590550165,
+        "n": 43
+      },
+      "heat80_d95_gy": {
+        "mean": 12.261277737277885,
+        "ci95_lo": 8.938634095581813,
+        "ci95_hi": 15.971744481055065,
+        "n": 43
+      },
+      "heat80_v95_pct": {
+        "mean": 56.576543169076906,
+        "ci95_lo": 44.88996260883141,
+        "ci95_hi": 68.17999614286163,
+        "n": 43
+      },
+      "heat80_v100_pct": {
+        "mean": 55.074107954630406,
+        "ci95_lo": 43.43909167831755,
+        "ci95_hi": 66.6813835043525,
+        "n": 43
+      },
+      "heat50_v95_pct": {
+        "mean": 49.723101715547294,
+        "ci95_lo": 39.27336289699158,
+        "ci95_hi": 60.668647977311096,
+        "n": 43
+      },
+      "heat50_v100_pct": {
+        "mean": 47.56635103774425,
+        "ci95_lo": 37.44948948187694,
+        "ci95_hi": 58.355438996676696,
+        "n": 43
+      }
+    },
+    "followup_pair_level": {
+      "future_inside_dose95_pct": {
+        "mean": 37.81677631007186,
+        "ci95_lo": 31.589450617729412,
+        "ci95_hi": 44.19741817605408,
+        "n": 121
+      },
+      "future_inside_dose100_pct": {
+        "mean": 36.42652212610857,
+        "ci95_lo": 30.33199565111003,
+        "ci95_hi": 42.687862776424375,
+        "n": 121
+      },
+      "future_inside_heat80_pct": {
+        "mean": 30.092799511157164,
+        "ci95_lo": 25.15737243027015,
+        "ci95_hi": 35.4669911807516,
+        "n": 121
+      },
+      "future_inside_heat50_pct": {
+        "mean": 47.304548561111524,
+        "ci95_lo": 41.200075079155674,
+        "ci95_hi": 53.70982863787645,
+        "n": 121
+      },
+      "future_dmean_gy": {
+        "mean": 13.831806083768607,
+        "ci95_lo": 11.859562544339957,
+        "ci95_hi": 15.926851374830585,
+        "n": 120
+      },
+      "future_lesion_cm3": {
+        "mean": 23.459958677685947,
+        "ci95_lo": 16.75766611570248,
+        "ci95_hi": 31.106747314049592,
+        "n": 121
+      }
+    }
+  },
+  "interpretation": "These are retrospective dose-map compatibility metrics from PROTEAS RT plan NIfTI maps. They replace prior proxy-DVH language but do not constitute prospective clinical utility, reader-study evidence, or glioma-specific radiotherapy validation.",
+  "runtime_s": 94.77
+}
