@@ -1,0 +1,143 @@
+{
+  "version": "v86",
+  "timestamp": "2026-05-06T09:10:13",
+  "strata": {
+    "all": {
+      "n_rows": 121,
+      "n_patients": 42,
+      "rx_distribution": {
+        "18_gy": 7,
+        "20_gy": 86,
+        "35_gy": 28
+      },
+      "dose_ge_95pct_rx": {
+        "mean_pct": 37.91,
+        "ci95": [
+          28.08,
+          48.75
+        ],
+        "failure_rate": 0.603
+      },
+      "dose_ge_100pct_rx": {
+        "mean_pct": 36.64,
+        "ci95": [
+          26.96,
+          47.05
+        ],
+        "failure_rate": 0.612
+      },
+      "heat_ge_0p80": {
+        "mean_pct": 30.14,
+        "ci95": [
+          22.31,
+          38.44
+        ],
+        "failure_rate": 0.711
+      },
+      "heat_ge_0p50": {
+        "mean_pct": 47.39,
+        "ci95": [
+          37.8,
+          57.3
+        ],
+        "failure_rate": 0.521
+      }
+    },
+    "single_fraction": {
+      "n_rows": 93,
+      "n_patients": 33,
+      "rx_distribution": {
+        "18_gy": 7,
+        "20_gy": 86
+      },
+      "dose_ge_95pct_rx": {
+        "mean_pct": 31.48,
+        "ci95": [
+          22.11,
+          41.91
+        ],
+        "failure_rate": 0.667
+      },
+      "dose_ge_100pct_rx": {
+        "mean_pct": 30.07,
+        "ci95": [
+          20.93,
+          40.29
+        ],
+        "failure_rate": 0.677
+      },
+      "heat_ge_0p80": {
+        "mean_pct": 27.09,
+        "ci95": [
+          18.76,
+          36.17
+        ],
+        "failure_rate": 0.742
+      },
+      "heat_ge_0p50": {
+        "mean_pct": 42.81,
+        "ci95": [
+          32.17,
+          54.04
+        ],
+        "failure_rate": 0.591
+      }
+    },
+    "seven_fraction_hypofx": {
+      "n_rows": 28,
+      "n_patients": 9,
+      "rx_distribution": {
+        "35_gy": 28
+      },
+      "dose_ge_95pct_rx": {
+        "mean_pct": 59.94,
+        "ci95": [
+          34.9,
+          84.98
+        ],
+        "failure_rate": 0.393
+      },
+      "dose_ge_100pct_rx": {
+        "mean_pct": 58.37,
+        "ci95": [
+          33.35,
+          83.05
+        ],
+        "failure_rate": 0.393
+      },
+      "heat_ge_0p80": {
+        "mean_pct": 40.53,
+        "ci95": [
+          22.26,
+          59.13
+        ],
+        "failure_rate": 0.607
+      },
+      "heat_ge_0p50": {
+        "mean_pct": 62.78,
+        "ci95": [
+          42.31,
+          79.5
+        ],
+        "failure_rate": 0.286
+      }
+    }
+  },
+  "BED_summary": {
+    "18gy_in_1_fx": {
+      "n_rows": 7,
+      "BED_alpha_beta_10gy_tumour": 50.4,
+      "BED_alpha_beta_2gy_late_brain": 180.0
+    },
+    "20gy_in_1_fx": {
+      "n_rows": 86,
+      "BED_alpha_beta_10gy_tumour": 60.0,
+      "BED_alpha_beta_2gy_late_brain": 220.0
+    },
+    "35gy_in_7_fx": {
+      "n_rows": 28,
+      "BED_alpha_beta_10gy_tumour": 52.5,
+      "BED_alpha_beta_2gy_late_brain": 122.5
+    }
+  }
+}

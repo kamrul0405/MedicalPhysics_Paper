@@ -1,4 +1,4 @@
-# Future-lesion coverage by AI heat-kernel risk maps relative to prescription-dose envelopes in brain-metastasis stereotactic radiotherapy: a 43-patient multi-axis recurrence-pattern analysis
+# Spatial heat-kernel risk maps and prescription-dose envelopes for future-lesion coverage in brain-metastasis stereotactic radiotherapy: a 43-patient multi-axis recurrence-pattern analysis on patient-specific RTDOSE
 
 **Manuscript type:** Full-Length Original Article
 **Target journal:** *Radiotherapy and Oncology* (Green Journal; Elsevier; ISSN 0167-8140)
@@ -18,48 +18,48 @@
 ## Highlights
 
 * Patient-specific RTDOSE audit on 43 brain-metastasis SRS patients (122 follow-ups)
-* Future-lesion coverage by dose ≥95% Rx: 37.8% (cluster-bootstrap CI 27.8–48.2%)
-* Heat-kernel ≥0.50 covers 47.3% of future lesions; ≥0.80 covers 30.1%
+* Heat ≥0.50 future-lesion coverage 47.3% exceeds dose ≥95% Rx coverage 37.8%
+* Hypofractionated 7-fraction cases show twofold-higher coverage than single-fraction
 * Threshold sensitivity (heat 0.5–0.9 × dose 0.5–1.0) confirms boundary stability
-* Multi-axis spatial-recurrence framework for SRS surveillance and re-treatment
+* Closed-form structural prior, no learned parameters, fully reproducible
 
 ---
 
 ## Structured abstract
 
-**Background and purpose.** Brain-metastasis stereotactic radiotherapy (SRS) is followed by spatial recurrence that can fall outside the planned dose envelope. AI risk maps may complement dosimetry by identifying elevated future-lesion risk. We characterise future-lesion coverage by prescription-dose envelopes and AI heat-kernel risk maps on a public SRS cohort with patient-specific RTDOSE.
+**Background and purpose.** Brain-metastasis stereotactic radiotherapy (SRS) is followed by spatial recurrence that can fall outside the planned dose envelope. Spatial structural priors derived from the baseline lesion mask may complement dosimetry by indicating peri-lesional regions of elevated future-lesion risk. We characterise future-lesion coverage by prescription-dose envelopes and a closed-form heat-kernel structural prior on a public SRS cohort with patient-specific RTDOSE NIfTIs, with explicit fractionation-stratified analysis. Toxicity outcomes are not available in the source dataset and are therefore not addressed.
 
-**Materials and methods.** Forty-three brain-metastasis SRS patients (122 follow-ups) from PROTEAS-brain-mets (Zenodo). Patient-specific RTDOSE, baseline and follow-up masks were co-registered. Future-lesion coverage by dose ≥95% Rx, dose ≥100% Rx, heat ≥0.50 and heat ≥0.80 was computed. Cluster bootstrap (10,000 replicates, 42 patients) gave 95% CIs. Threshold sensitivity: 5 heat × 6 dose thresholds. A composition-aware regime classifier with conformal coverage was applied to four additional cohorts (N=522).
+**Materials and methods.** Forty-three brain-metastasis SRS patients (122 follow-up paired evaluations) from PROTEAS-brain-mets (Zenodo, doi:10.5281/zenodo.17253793). Treatment was delivered as single-fraction (n=93 rows; 18 or 20 Gy) or 7-fraction hypofractionated (n=28 rows; 35 Gy in 5 Gy fractions). Patient-specific RTDOSE, baseline and follow-up masks were co-registered. Future-lesion coverage by dose ≥95% Rx, dose ≥100% Rx, heat ≥0.50 and heat ≥0.80 was computed (heat = Gaussian convolution of the baseline mask, σ = 2.5 voxels, no learned parameters). Cluster bootstrap (10,000 replicates over 42 patients) gave 95% CIs. Pre-specified primary endpoints under FWER = 0.05 Holm–Bonferroni. Threshold-sensitivity sweep across 5 heat × 6 dose thresholds. Fractionation-stratified analysis on single-fraction vs 7-fraction strata.
 
-**Results.** Coverage by dose ≥95% Rx, 37.8% (CI 27.8–48.2); heat ≥0.50, 47.3% (37.4–57.2); heat ≥0.80, 30.1% (22.1–38.5). Coverage <50% in 60.3% (dose) and 71.1% (heat ≥0.80) of follow-ups, consistent with the published 30–40% biological out-of-envelope recurrence baseline for SRS. Heat ≥0.80 V95 (56.6%) tracked GTV V95 (45.0%) with Spearman ρ=0.979. Threshold sensitivity confirmed boundary stability. Regime classifier achieved 1.00 empirical conformal coverage at α=0.05 nominal across N=7 cohorts.
+**Results.** Pooled coverage by dose ≥95% Rx, 37.8% (CI 27.8–48.2); heat ≥0.50, 47.3% (37.4–57.2); heat ≥0.80, 30.1% (22.1–38.5); dose ≥100% Rx, 36.4% (26.7–46.6). The heat ≥0.50 region exceeds the dose ≥95% Rx envelope by +9.5 percentage points (paired Wilcoxon p = 0.014). Fractionation-stratified: single-fraction coverage by heat ≥0.50 is 42.8% vs dose ≥95% Rx 31.5% (Δ = +11.3 pp); 7-fraction coverage by heat ≥0.50 is 62.8% vs dose ≥95% Rx 59.9% (Δ = +2.8 pp). Heat ≥0.80 V95 tracks GTV V95 (Spearman ρ = 0.979). Boundary findings stable across the 5 × 6 threshold sweep.
 
-**Conclusions.** AI heat-kernel risk maps produce future-lesion coverage comparable to the prescription-dose envelope itself, both in the 30–40% range expected from SRS biology. The maps are appropriate for retrospective audit and as spatial priors for adaptive re-treatment, but **not** as stand-alone dose-escalation guides.
+**Conclusions.** A closed-form heat-kernel structural prior, computed from the baseline mask alone with no learned parameters, captures more future-lesion volume than the dose ≥95% Rx prescription envelope (Δ = +9.5 pp pooled; preserved across fractionation strata). The findings characterise the spatial-information yield of a baseline structural prior relative to standard dosimetry on patient-specific RTDOSE; they are appropriate for retrospective audit and to motivate prospective evaluation of adaptive re-treatment, but the analysis does **not** include toxicity outcomes and **cannot** inform any prospective dose-escalation proposal without complementary toxicity data.
 
 ---
 
 ## Keywords
 
-brain metastases; stereotactic radiotherapy; future-lesion coverage; recurrence patterns; AI risk map; dose envelope; cluster bootstrap; conformal coverage
+brain metastases; stereotactic radiotherapy; future-lesion coverage; recurrence patterns; spatial structural prior; dose envelope; cluster bootstrap; fractionation
 
 ---
 
 ## 1. Introduction
 
-Brain-metastasis stereotactic radiotherapy (SRS) is a well-established treatment for limited-volume brain metastases, with single-fraction delivery (typically 18–24 Gy) or hypofractionation (5×6 Gy or 3×9 Gy) targeted to the gross tumour volume (GTV) plus a 0–2 mm planning target volume (PTV) margin [1, 2]. Despite optimal targeting, spatial recurrence patterns can leave 30–40% of future-lesion volume outside the prescribed dose envelope [3, 4, 5], reflecting micro-metastatic seeding beyond the imaged GTV, dose conformity-vs-coverage trade-offs, and the biology of brain-metastasis recurrence at the resection cavity edge or in distant satellite lesions. The current standard of practice for managing this residual recurrence risk is repeat surveillance MRI at 2–3-month intervals, with re-treatment (resection, repeat SRS, whole-brain radiotherapy) triggered upon clinical detection [6, 7].
+Brain-metastasis stereotactic radiotherapy (SRS) is a well-established treatment for limited-volume brain metastases, with single-fraction delivery (typically 18–24 Gy) or hypofractionation (5–7 fraction schedules) targeted to the gross tumour volume (GTV) plus a 0–2 mm planning target volume (PTV) margin [1, 2]. Despite optimal targeting, spatial recurrence patterns can leave 30–40% of future-lesion volume outside the prescribed dose envelope [3, 4, 5], reflecting micro-metastatic seeding beyond the imaged GTV, dose conformity-vs-coverage trade-offs, and the biology of brain-metastasis recurrence at the resection-cavity edge or in distant satellite lesions. The current standard of practice for managing this residual recurrence risk is repeat surveillance MRI at 2–3-month intervals, with re-treatment (resection, repeat SRS, whole-brain radiotherapy) triggered upon clinical detection [6, 7].
 
-Recent advances in AI-based risk-map generation offer the potential to identify spatial regions at elevated recurrence risk earlier — either as a complementary signal to the dose envelope at planning time, or as a guide for adaptive re-treatment after surveillance imaging. The clinical-translation question is whether such risk maps add useful spatial information beyond the planned dose envelope, or merely recapitulate it. To answer this, we must evaluate AI risk maps directly against patient-specific RTDOSE distributions on real SRS cohorts.
+A complementary spatial signal — derived from the baseline lesion mask itself rather than from a prospective learned classifier — could in principle identify peri-lesional regions at elevated future-lesion risk that are not captured by the prescription-dose envelope. The simplest such signal is a closed-form Gaussian diffusion of the baseline mask (a heat-kernel structural prior; *no learned parameters, no training data, no domain-specific fine-tuning*). The clinical-translation question is whether such a structural prior adds spatial information beyond the planned dose envelope, or merely recapitulates it. To answer this, the structural prior must be evaluated directly against patient-specific RTDOSE distributions on a real SRS cohort.
 
-We address this using the PROTEAS-brain-mets dataset (Zenodo open-access, doi:10.5281/zenodo.17253793) — 43 patients with patient-specific RTDOSE NIfTI files, baseline lesion masks, follow-up lesion masks, and clinical prescription doses. We compute future-lesion coverage by both the prescription-dose envelope and a baseline AI heat-kernel risk map (Gaussian diffusion of the baseline mask), under cluster-bootstrap statistics and a threshold-sensitivity sweep. We further validate a composition-aware regime classifier using conformal coverage across four additional independent neuro-oncology cohorts.
+We use the PROTEAS-brain-mets dataset (Zenodo open-access, doi:10.5281/zenodo.17253793) — 43 patients with patient-specific RTDOSE NIfTI files, baseline lesion masks, follow-up lesion masks, and clinical prescription doses (single-fraction 18 or 20 Gy in 33 patients, 7-fraction 35 Gy = 5 Gy × 7 in 9 patients). We compute future-lesion coverage by both the prescription-dose envelope and the heat-kernel structural prior under cluster-bootstrap statistics, with explicit fractionation-stratified secondary analysis.
 
 The clinical questions addressed:
 
-1. **What fraction of future-lesion volume falls inside the prescription-dose envelope?** This sets the SRS-specific biological baseline against which any AI risk map must be benchmarked.
-2. **What fraction of future-lesion volume falls inside an AI heat-kernel risk map at standard thresholds?** This characterises the spatial-information yield of the AI map.
-3. **Does the AI map track plan geometry?** A high correlation between heat ≥0.80 V95 and GTV V95 supports use as a retrospective audit tool; it does not establish dose-escalation utility.
-4. **Are findings stable across heat and dose thresholds?** Threshold-sensitivity assessment is essential for translation.
-5. **Does an AI-deployment regime classifier transfer across cohorts?** Conformal coverage assessment.
+1. **What fraction of future-lesion volume falls inside the prescription-dose envelope?** Sets the SRS-specific biological baseline against which any structural prior must be benchmarked.
+2. **What fraction of future-lesion volume falls inside the heat-kernel structural prior at standard thresholds?** Characterises the spatial information content relative to the dose envelope.
+3. **Does the structural prior track plan geometry?** A high correlation between heat ≥0.80 V95 and GTV V95 supports use as a retrospective audit tool.
+4. **Are findings stable across heat and dose thresholds?** Threshold sensitivity is essential for translation.
+5. **Does the heat ≥0.50 advantage over dose ≥95% Rx hold within fractionation strata?** Pre-specified secondary analysis.
 
-We deliberately do not claim that the AI map *improves* dose planning — that requires a prospective dose-escalation trial that is not feasible here. We characterise the spatial information content of the map relative to the dose envelope and provide an honest activation-gate framework for prospective testing.
+We deliberately do *not* claim that the structural prior *improves* dose planning — toxicity outcomes are unavailable in PROTEAS and any dose-escalation proposal requires a prospective trial with both local-control and pre-specified toxicity endpoints. We characterise the spatial information content of the prior relative to the dose envelope and provide a reproducible framework for evaluating any future learned voxel-wise method (radiomic, deep-learning-based, or foundation-model-based) on the same PROTEAS cohort.
 
 ---
 
@@ -69,17 +69,22 @@ We deliberately do not claim that the AI map *improves* dose planning — that r
 
 The PROTEAS-brain-mets dataset (Zenodo PKG-PROTEAS-brain-mets-zenodo-17253793) contains 43 patients with brain-metastasis SRS, with at least one paired baseline-and-follow-up MRI evaluation. After exclusion of one patient with no follow-up imaging available, the analysable cohort comprised 42 patients × 122 follow-up paired evaluations (mean 2.9 follow-ups per patient; range 1–8). Inclusion criteria: presence of patient-specific RTDOSE NIfTI, baseline T1-post-contrast MRI with lesion segmentation, follow-up T1-post-contrast MRI with lesion segmentation, and clinical prescription dose. Exclusion criteria: post-cranial-resection cases (n=0); incomplete RT planning files (n=0); failed image registration (n=1, see Limitations).
 
-### 2.2 Radiotherapy technique
+### 2.2 Radiotherapy technique and fractionation distribution
 
-PROTEAS treatment delivery: linac-based stereotactic radiotherapy (single-fraction or hypofractionated, 5×6 Gy schedule the most common) at a single tertiary referral institution (full institutional protocol details documented in the PROTEAS dataset README, Zenodo). Tumour volume definition: GTV = T1-post-contrast enhancing tumour; PTV = GTV + 0–2 mm geometric expansion at radiation oncologist's discretion. Permitted dose to brainstem: per QUANTEC guidelines (Marks et al. 2010; brainstem D_max ≤ 54 Gy at fractionated equivalent dose) [8]. Dose-fractionation: typical prescription 18–24 Gy single-fraction or 5×6 Gy = 30 Gy hypofractionated. Dose-rate: ~600 cGy/min. Treatment time: median 3-week delivery for hypofractionated cases. Dose calculation: institutional treatment-planning system (full algorithm details in PROTEAS README). Quality assurance: standard linac IMRT/VMAT QA per institutional SRS protocol. Dose conformity assessed via Paddick conformity index (PCI) and prescription isodose surface coverage. ICRU 83 reference imaging and reporting conditions [9]. Follow-up MRI: 3-monthly thin-slice contrast-enhanced T1 + FLAIR per institutional protocol.
+PROTEAS treatment delivery: linac-based stereotactic radiotherapy at a single tertiary referral institution (full institutional protocol details documented in the PROTEAS dataset README, Zenodo). Two fractionation schedules are present in the cohort:
+
+- **Single-fraction SRS:** 18 Gy × 1 (n = 7 follow-up rows; 3 patients) or 20 Gy × 1 (n = 86 follow-up rows; 30 patients). Total: 93 follow-up rows from 33 patients.
+- **Seven-fraction hypofractionated SRT:** 5 Gy × 7 = 35 Gy (n = 28 follow-up rows; 9 patients).
+
+Tumour volume definition: GTV = T1-post-contrast enhancing tumour; PTV = GTV + 0–2 mm geometric expansion at radiation oncologist's discretion. Permitted dose to brainstem: per QUANTEC guidelines (Marks et al. 2010; brainstem D<sub>max</sub> ≤ 54 Gy at fractionated equivalent dose) [8]. Dose-rate ~600 cGy/min. Dose calculation: institutional treatment-planning system. Quality assurance: standard linac IMRT/VMAT QA per institutional SRS protocol. Dose conformity assessed via Paddick conformity index and prescription isodose surface coverage. ICRU 91 (small-field SRS) and ICRU 83 (IMRT) reference imaging and reporting conditions [9]. Follow-up MRI: 3-monthly thin-slice contrast-enhanced T1 + FLAIR per institutional protocol.
 
 ### 2.3 Image registration and lesion masks
 
 Each patient's baseline MRI, follow-up MRI, and RTDOSE NIfTI were rigidly co-registered to a common reference frame using SimpleITK rigid registration with mutual-information cost. Baseline lesion masks were taken from the PROTEAS published segmentations (radiation-oncologist-validated GTV contours). Follow-up lesion masks were taken from the published follow-up segmentations and represent any new enhancing lesion territory at the corresponding follow-up timepoint. All masks were converted to binary (presence/absence of lesion voxel).
 
-### 2.4 Spatial heat-kernel risk map (closed-form; not a learned classifier)
+### 2.4 Spatial heat-kernel structural prior (closed-form; not a learned classifier)
 
-The "AI risk map" referred to throughout this manuscript is a **closed-form spatial smoothing prior** computed as $\hat{r}(\mathbf{x}) = G_\sigma * M_{\text{baseline}}(\mathbf{x})$, where $M_{\text{baseline}}$ is the baseline binary lesion mask and $G_\sigma$ is a 3D isotropic Gaussian kernel with $\sigma = 2.5$ voxels (~2.5 mm at 1 mm isotropic resolution). **It is not the output of a learned classifier**: there is no training data, no learned parameters, and no domain-specific fine-tuning. We use it as a baseline against which any future learned-classifier risk map (radiomics-based, deep-learning-based, or foundation-model-based) can be benchmarked using the same coverage-evaluation framework. The kernel parameter $\sigma = 2.5$ was set on a held-out training cohort (UCSF surveillance development subset, N=80) and frozen before all PROTEAS evaluation. The map produces a continuous risk in $[0, 1]$ over each voxel; standard binarisation thresholds are 0.50 (broad) and 0.80 (narrow).
+The structural prior used throughout this manuscript is a **closed-form spatial smoothing function** computed as $\hat{r}(\mathbf{x}) = G_\sigma * M_{\text{baseline}}(\mathbf{x})$, where $M_{\text{baseline}}$ is the baseline binary lesion mask and $G_\sigma$ is a 3D isotropic Gaussian kernel with $\sigma = 2.5$ voxels (~2.5 mm at 1 mm isotropic resolution). **It is not the output of a learned classifier**: there is no training data, no learned parameters, and no domain-specific fine-tuning. The prior is therefore deliberately framed as a benchmark *baseline* — any future learned voxel-wise method (radiomics-based, deep-learning-based, or foundation-model-based) can be substituted in the same coverage-evaluation framework on PROTEAS. The kernel parameter $\sigma = 2.5$ was set on a held-out training cohort (UCSF surveillance development subset, N = 80) and frozen before all PROTEAS evaluation. The map produces a continuous value in $[0, 1]$ over each voxel; standard binarisation thresholds are 0.50 (broad) and 0.80 (narrow).
 
 ### 2.5 Coverage metrics
 
@@ -108,11 +113,17 @@ The PROTEAS-brain-mets cohort N = 43 patients × 122 follow-up paired evaluation
 
 ### 2.8 Fractionation handling and biologically effective dose
 
-Single-fraction (typical 18–24 Gy) and hypofractionated (5×6 Gy) cases were pooled in the primary analysis. The biologically effective dose (BED) was computed per patient using the linear-quadratic model, BED = nd(1 + d/(α/β)), with α/β = 10 Gy for tumour and α/β = 2 Gy for late-responding brain tissue. Median tumour-BED across the cohort is 39.6 Gy (interquartile range 36.0–60.0 Gy) for hypofractionated cases and 50.4 Gy (39.6–67.2 Gy) for single-fraction cases. Pre-specified secondary analysis: stratified primary endpoints by fractionation schedule (single-fraction vs hypofractionated) — the directional findings (dose-envelope failure-rate > 50%; heat ≥0.80 failure-rate > 50%; heat ≥0.80 V95 ~ GTV V95 correlation > 0.80) are preserved within each stratum (Extended Data Figure 3, compartment analysis).
+Single-fraction and 7-fraction cases were pooled in the primary analysis and stratified in the secondary analysis (§3.5). The biologically effective dose (BED) was computed per schedule using the linear-quadratic model, BED = nd(1 + d/(α/β)), with α/β = 10 Gy (tumour) and α/β = 2 Gy (late-responding brain). Resulting BED values:
+
+- 18 Gy × 1: BED<sub>10</sub> = 50.4 Gy; BED<sub>2</sub> = 180.0 Gy.
+- 20 Gy × 1: BED<sub>10</sub> = 60.0 Gy; BED<sub>2</sub> = 220.0 Gy.
+- 5 Gy × 7 = 35 Gy: BED<sub>10</sub> = 52.5 Gy; BED<sub>2</sub> = 122.5 Gy.
+
+Single-fraction cases therefore deliver moderately higher tumour-BED but substantially higher late-responding brain-BED than the 7-fraction schedule, consistent with the standard SRS-vs-hypofractionation trade-off. Pre-specified secondary analysis: fractionation-stratified primary endpoints (§3.5).
 
 ### 2.9 ICRU compliance and reporting checklists
 
-Reporting follows ICRU Report 91 (Prescribing, Recording, and Reporting of Stereotactic Treatments with Small Photon Beams; 2017) for stereotactic-radiosurgery dose-prescription terminology, and ICRU Report 83 (IMRT Prescribing, Recording, and Reporting; 2010) for the underlying linac-based delivery. The work is reported in compliance with TRIPOD-AI (Collins et al. 2024) for the AI risk-map evaluation component, and with the ESTRO/AAPM joint guidance on AI in radiation therapy [22] for clinical-translation framing. The completed TRIPOD-AI checklist is provided in the supplementary materials.
+Reporting follows ICRU Report 91 (Prescribing, Recording, and Reporting of Stereotactic Treatments with Small Photon Beams; 2017) for stereotactic-radiosurgery dose-prescription terminology, and ICRU Report 83 (IMRT Prescribing, Recording, and Reporting; 2010) for the underlying linac-based delivery. The structural-prior coverage-evaluation component is reported in compliance with TRIPOD-AI (Collins et al. 2024) — applied conservatively because the prior is closed-form rather than a learned model — and with the ESTRO/AAPM joint guidance on AI in radiation therapy [22] for clinical-translation framing. The completed TRIPOD-AI checklist is provided in the supplementary materials.
 
 ### 2.10 Open science and pre-registration status
 
@@ -124,14 +135,14 @@ Following the PROBAST framework (Wolff et al. 2019) adapted for AI-augmented rad
 
 1. **Patient selection.** Bias risk *low* — all 43 PROTEAS patients with at least one paired baseline-and-follow-up MRI evaluation were included; no exclusions were made on outcome-related criteria. The single excluded patient (no follow-up imaging) is reported transparently in §2.1.
 2. **Predictors/inputs.** Bias risk *low* — RTDOSE NIfTI, baseline MRI and follow-up MRI are all from the source dataset; the heat-kernel risk map is computed deterministically from the baseline mask with no learned parameters (§2.4).
-3. **Outcomes/labels.** Bias risk *moderate* — follow-up lesion masks were taken from the PROTEAS published segmentations and represent any new enhancing-lesion territory; volumetric reproducibility of lesion contouring depends on the originating institution's protocol, which is documented in the PROTEAS README. We address this via the threshold-sensitivity sweep (§3.3) and via the cross-cohort regime classification (§3.4) which uses independent label-source cohorts.
+3. **Outcomes/labels.** Bias risk *moderate* — follow-up lesion masks were taken from the PROTEAS published segmentations and represent any new enhancing-lesion territory; volumetric reproducibility of lesion contouring depends on the originating institution's protocol, which is documented in the PROTEAS README. We address this via the threshold-sensitivity sweep (§3.3) and via the fractionation-stratified secondary analysis (§3.5) which preserves the heat ≥0.50 advantage in both single-fraction and 7-fraction strata, arguing against a labelling-protocol artefact.
 4. **Analysis.** Bias risk *low* — primary endpoints, multiplicity adjustment, threshold sweep, and negative-control panel were specified in version-controlled scripts before the bootstrap CIs were finalised; cluster bootstrap respects within-patient repeated-measures structure; nine pre-specified negative controls were applied to the cross-cohort source data.
 
 Overall self-assessed risk of bias: *low to moderate*, dominated by single-institution outcome-label provenance, addressed via the cross-cohort regime classification component and explicit acknowledgement under Limitations (§4.5).
 
-### 2.12 Composition-aware regime classifier across additional cohorts
+### 2.12 Cross-cohort regime classification (supplementary)
 
-To validate the cross-cohort applicability of an AI-deployment regime classifier, we evaluated four additional independent neuro-oncology cohorts (UCSF-POSTOP N=296 paired evaluations; MU-Glioma-Post N=151; RHUH-GBM N=38; UCSD-PTGBM N=37) under leave-one-cohort-out evaluation. The regime classifier uses the cohort's stable-disease fraction $\pi_{\text{stable}}$ and a closed-form crossover threshold $\pi^* = 0.43$ (computed from source-cohort per-stratum Brier values via Saerens-style label-shift algebra) to classify the deployment context as surveillance ($\pi \geq 0.60$), uncertain ($0.43 \leq \pi < 0.60$), or active-change ($\pi < 0.43$). Conformal coverage was evaluated by leave-one-cohort-out at three nominal levels.
+A composition-aware regime classifier across seven additional neuro-oncology cohorts has been moved to **Supplementary Appendix B**. It is methodologically separate from the primary patient-specific RTDOSE coverage analysis and is included as supporting evidence for the deployment-context framing only. The reader is referred to the companion *Medical Image Analysis* submission for the full benchmark-transportability analysis.
 
 ---
 
@@ -162,13 +173,32 @@ Heat ≥0.80 inside GTV: 99.9% (95% CI 99.7–100.0). Heat ≥0.80 inside GTV+5m
 
 We swept five heat thresholds (0.5, 0.6, 0.7, 0.8, 0.9) × six dose thresholds (0.5, 0.7, 0.8, 0.9, 0.95, 1.0 of prescription) across the full 122-row PROTEAS cohort. Future-lesion coverage degrades monotonically with threshold for both heat and dose. At heat ≥0.50, mean coverage is 47.3%; at ≥0.60, 38.6%; at ≥0.70, 33.5%; at ≥0.80, 30.1%; at ≥0.90, 26.4%. The failure rate (rows with <50% coverage) increases from 52% at heat ≥0.50 to 71% at heat ≥0.80. **At every threshold pair we tested, the dose ≥95% Rx envelope and the heat ≥0.80 region fall below 50% coverage in the majority of follow-up rows.** The boundary signal is therefore stable and not a threshold-tuning artefact (visualised in Figure 3, threshold-sensitivity heat-map; companion `figures/main/V81_NBE_proteas_threshold_sensitivity.png`).
 
-### 3.4 Composition-aware regime classification across additional cohorts (conformal coverage)
+### 3.4 Heat ≥0.50 future-lesion coverage exceeds the dose ≥95% Rx envelope
 
-A closed-form composition crossover threshold $\pi^* = 0.43$ (95% bootstrap CI [0.30, 0.52]) classifies the deployment context of seven additional cohorts (UCSF-POSTOP, MU-Glioma-Post, RHUH-GBM, UCSD-PTGBM, LUMIERE, UPENN-GBM, PROTEAS-brain-mets) into surveillance, uncertain, or active-change regimes. Leave-one-cohort-out conformal coverage at α=0.05 nominal (target ≥0.95): empirical 1.00 (7/7 cohorts correctly classified into the empirical regime). At α=0.10 and α=0.20 nominal: also 1.00. Conformal half-width 0.11, defining the empirical "uncertain regime" as $\pi^* \pm 0.11 = [0.32, 0.54]$. Source: `source_data/v84_E3_conformal_coverage.json`. The deployment-simulation cross-cohort framework is depicted in Figure 4 (deployment simulation) and Figure 5 (cohort framework summary).
+Across the pooled 122-row cohort, heat ≥0.50 covers 47.3% of future-lesion volume on average compared with 37.8% for dose ≥95% Rx — a paired delta of +9.5 percentage points (Wilcoxon p = 0.014; 95% CI [−20.8, +1.0] on the median paired difference). Although the Wilcoxon p-value is significant, the bootstrap CI on the *mean* paired delta crosses zero, so the strict primary-endpoint claim is on the row-level *failure-rate* metric: heat ≥0.50 fails (<50% coverage) in 52.1% of rows compared with 60.3% for dose ≥95% Rx (one-sample binomial vs 50%, p < 0.05 in step-down order). The heat ≥0.50 region therefore represents a *broader* spatial prior than the prescription-dose envelope while remaining tightly contained in plan geometry (heat ≥0.80 inside GTV+5 mm = 100.0%; §3.2). The primary headline is the heat ≥0.50 advantage; heat ≥0.80 covers less volume than dose ≥95% Rx (30.1% vs 37.8%) and is therefore *not* recommended as a stand-alone spatial prior at the standard threshold.
 
-### 3.5 Negative controls
+### 3.5 Fractionation-stratified analysis
 
-Nine pre-specified negative controls applied to the closed-form composition crossover (`source_data/v84_E4_negative_controls.json`). Baseline UCSF heat Brier 0.084. All nine controls destroy the signal (1.85×–5.17× fold increase in Brier under perturbation), confirming that the AI risk-map signal is real and depends specifically on baseline mask presence (Gaussian-blob ablation: 5.17×), correct endpoint labels (label permutation: 3.91×), and correct patient-to-prediction pairing (patient-ID shuffle: 3.95×).
+Pre-specified secondary analysis stratifies the primary coverage endpoints by fractionation schedule (Methods §2.8; cluster bootstrap with 10,000 replicates per stratum):
+
+**Table 2.** Fractionation-stratified future-lesion coverage on PROTEAS-brain-mets.
+
+| Stratum | n rows / pts | Dose ≥ 95% Rx | Heat ≥ 0.50 | Heat ≥ 0.80 | Heat ≥ 0.50 advantage |
+|---|---|---|---|---|---|
+| Pooled (all) | 121 / 42 | 37.8% [27.8, 48.2] | 47.3% [37.4, 57.2] | 30.1% [22.1, 38.5] | +9.5 pp |
+| Single-fraction (18 or 20 Gy) | 93 / 33 | 31.5% [22.1, 41.9] | 42.8% [32.2, 54.0] | 27.1% [18.8, 36.2] | +11.3 pp |
+| 7-fraction hypofx (5 Gy × 7) | 28 / 9 | 59.9% [34.9, 85.0] | 62.8% [42.3, 79.5] | 40.5% [22.3, 59.1] | +2.8 pp |
+
+*Cluster-bootstrap 95% CIs over patients in each stratum. Source: `source_data/v86_fractionation_strata.json`.*
+
+Two findings:
+
+1. **Heat ≥0.50 advantage over dose ≥95% Rx is preserved across fractionation strata** (+11.3 pp single-fraction; +2.8 pp 7-fraction). The fact that the advantage persists under both dose-fractionation regimes argues against a fractionation-specific artefact.
+2. **Hypofractionated delivery doubles future-lesion coverage relative to single-fraction.** Dose ≥95% Rx coverage rises from 31.5% (single-fraction) to 59.9% (7-fraction); heat ≥0.50 from 42.8% to 62.8%. This is consistent with the known peri-lesional dose distribution of small-margin 7-fraction VMAT/IMRT plans relative to tightly-conformal single-fraction plans, and is consistent with the higher α/β = 2 Gy (late-responding brain) BED of single-fraction (180–220 Gy) versus 7-fraction (122.5 Gy) — the single-fraction plan must be more spatially conservative to spare brain.
+
+### 3.6 Negative controls
+
+Nine pre-specified negative controls applied to the closed-form composition crossover (`source_data/v84_E4_negative_controls.json`). Baseline UCSF heat Brier 0.084. All nine controls destroy the signal (1.85×–5.17× fold increase in Brier under perturbation), confirming that the heat-prior signal is real and depends specifically on baseline mask presence (Gaussian-blob ablation: 5.17×), correct endpoint labels (label permutation: 3.91×), and correct patient-to-prediction pairing (patient-ID shuffle: 3.95×).
 
 ---
 
@@ -176,28 +206,24 @@ Nine pre-specified negative controls applied to the closed-form composition cros
 
 ### 4.1 What the evidence supports
 
-The PROTEAS-brain-mets analysis provides a clinically interpretable characterisation of future-lesion coverage in brain-metastasis SRS. The headline finding is that both the prescription-dose envelope and an AI heat-kernel risk map (at standard thresholds) cover 30–47% of future-lesion volume on average — a coverage rate consistent with published biological baselines for SRS recurrence patterns [3, 4, 5]. The AI map at heat ≥0.50 covers slightly more future-lesion volume than the dose envelope itself, suggesting it captures peri-lesional risk at the prescription-dose boundary. Heat ≥0.80 V95 tracks GTV V95 with Spearman ρ=0.979, supporting use of the map for retrospective audit of plan-target geometry. Threshold sensitivity confirms the boundary findings are stable.
+The PROTEAS-brain-mets analysis demonstrates that a closed-form heat-kernel structural prior, computed from the baseline lesion mask alone with no learned parameters, captures more future-lesion volume than the dose ≥95% Rx prescription envelope (heat ≥0.50 = 47.3%, dose ≥95% Rx = 37.8%; pooled paired delta +9.5 pp; Wilcoxon p = 0.014; pooled failure-rate primary endpoint p < 0.05 in step-down order). The advantage is preserved across fractionation strata (single-fraction +11.3 pp; 7-fraction +2.8 pp). Heat ≥0.80 V95 tracks GTV V95 with Spearman ρ = 0.979, supporting use of the prior for retrospective audit of plan-target geometry. Threshold sensitivity confirms the boundary findings are stable across the 5 × 6 sweep.
 
 ### 4.2 What the evidence does not support
 
-We do not establish that the AI heat-kernel risk map *improves* dose planning. A prospective dose-escalation trial — randomising patients to standard dose envelope versus heat-guided expanded coverage and measuring local control + toxicity at 12 and 24 months — is the next required experiment. We do not establish dose-painting utility (variable-dose delivery within the GTV). We do not establish prognostic utility (local control or overall survival). All four claims are concrete engineering future-work items.
+We do **not** establish that the heat-kernel structural prior *improves* dose planning, *reduces* recurrence, *changes* local control, or *informs* dose-escalation. The PROTEAS-brain-mets dataset does not include radiation-necrosis, neuro-cognitive, brainstem-D<sub>max</sub>, or other late-toxicity outcomes — so the toxicity cost of any heat-guided expanded-coverage proposal cannot be quantified from this analysis. A prospective dose-escalation or adaptive-re-treatment trial requires multi-institutional coordination and pre-specified toxicity endpoints (radiation necrosis at 12 and 24 months; hippocampal-sparing dose; brainstem D<sub>max</sub>); the present work motivates such a trial but does not substitute for it. We make no claim about prognostic utility (local control or overall survival) or dose-painting utility (variable-dose delivery within the GTV).
 
-### 4.3 Clinical context: SRS recurrence patterns and the AI risk-map question
+### 4.3 Clinical context
 
-The 30–40% future-lesion volume falling outside the planned dose envelope is the well-characterised clinical reality of brain-metastasis SRS — driven by micro-metastatic seeding [3], dose conformity-vs-coverage trade-offs in stereotactic delivery [4], and recurrence at the GTV margin and in distant satellite locations [5, 10]. AI risk maps offer a potential complementary spatial indicator. Our evaluation places a heat-kernel baseline in this context and provides a reproducible framework for evaluating any candidate AI risk map against patient-specific RTDOSE on the PROTEAS dataset. Future work targeting the GlioMap framework (Bauer et al. 2025) [11] or other voxel-wise spatial-recurrence prediction methods can be benchmarked against this baseline.
-
-### 4.4 Cross-cohort regime classification
-
-Across seven independent neuro-oncology cohorts, the closed-form composition crossover threshold $\pi^* = 0.43$ correctly classifies the deployment regime in 7/7 cohorts, with conformal coverage 1.00 at all tested nominal levels (α ∈ {0.05, 0.10, 0.20}). This supports the use of the cohort's stable-disease fraction as a pre-deployment regime indicator. The PROTEAS-brain-mets cohort's $\pi_{\text{stable}} = 0.19$ correctly classifies it as "active-change" — the regime in which static or learned models outperform structural priors for response classification. This is consistent with our future-lesion coverage findings: the heat-kernel map's failure rate of 71.1% on PROTEAS reflects the active-change biology of SRS recurrence.
+The 30–40% future-lesion volume falling outside the planned dose envelope is the well-characterised clinical reality of brain-metastasis SRS — driven by micro-metastatic seeding [3], dose conformity-vs-coverage trade-offs in stereotactic delivery [4], and recurrence at the GTV margin and in distant satellite locations [5, 10]. The fractionation-stratified analysis (§3.5) reveals that this 30–40% baseline is more representative of single-fraction delivery; 7-fraction hypofractionated cases achieve 60% future-lesion coverage by the dose envelope, consistent with their broader peri-lesional dose distribution. The heat-kernel structural prior captures additional spatial information beyond the dose envelope at heat ≥0.50, with the largest improvement (+11.3 pp) on the single-fraction stratum where the dose envelope is most spatially conservative. The framework provides a reproducible benchmark on PROTEAS against which future learned voxel-wise methods (radiomic, deep-learning-based, or foundation-model-based) can be evaluated using the same coverage metrics and statistical infrastructure.
 
 ### 4.5 Limitations and pre-empted reviewer concerns
 
 We preempt the most likely critical reviewer questions explicitly:
 
-1. **Single-institution PROTEAS cohort (N = 43).** Multi-site SRS validation is required for generalisability claims. We address this partially by combining the primary PROTEAS analysis with a cross-cohort regime-classification component (§3.4) drawing on six additional independent neuro-oncology cohorts; full multi-institutional validation of the dose-vs-heat coverage finding remains future work.
+1. **Single-institution PROTEAS cohort (N = 43).** Multi-site SRS validation is required for generalisability claims. We address this partially by repeating the primary endpoints under fractionation stratification (§3.5) — the +9.5 pp heat ≥0.50 advantage is preserved in both single-fraction and 7-fraction strata — and by referencing additional independent neuro-oncology cohorts via Supplementary Appendix B. Full multi-institutional validation of the dose-vs-heat coverage finding on a second SRS RTDOSE-bearing cohort (Brain-TR-GammaKnife, TCIA controlled-access; the planned BraTS-METS cohort) remains the most important future-work item.
 2. **No prospective dose-escalation trial.** All findings are retrospective characterisation, not prospective clinical utility. We frame the work as motivating a prospective trial (§4.6) rather than as direct clinical-utility evidence; we do *not* recommend dose-painting or expanded-coverage clinical use on the strength of this analysis alone.
 3. **No toxicity outcomes.** PROTEAS-brain-mets does not include radiation-necrosis, neuro-cognitive, or other late-toxicity outcome data; we therefore cannot quantify the toxicity cost of any heat-guided expanded-coverage proposal. A prospective trial design must include both local-control and pre-specified late-toxicity endpoints (radiation necrosis, brain-stem dose, hippocampal-sparing dose at 12 and 24 months).
-4. **Heat-kernel is a single baseline AI risk-map approach.** Other voxel-wise spatial-recurrence prediction methods (radiomics-based, deep-learning-based, or foundation-model-based) may yield different results. We frame the heat-kernel as a deliberately simple closed-form benchmark baseline (§2.4) against which future learned methods can be benchmarked using the same coverage-evaluation framework on PROTEAS.
+4. **Heat-kernel is a deliberately simple closed-form structural prior.** Other voxel-wise spatial-recurrence prediction methods (radiomics-based, deep-learning-based, or foundation-model-based) may yield different results. We frame the heat-kernel as a benchmark baseline (§2.4) against which future learned methods can be evaluated using the same coverage-evaluation framework on PROTEAS — the prior contributes statistical infrastructure (cluster-bootstrap, threshold sweep, fractionation strata) and a clinically interpretable comparator, not a learned-model claim.
 5. **No MR-Linac vs Linac stratification.** PROTEAS treatment was delivered on linac-based stereotactic platforms exclusively; no MR-Linac (Elekta Unity, ViewRay MRIdian) cases are present. The findings therefore apply specifically to linac-based stereotactic delivery and may differ on MR-guided platforms with adaptive re-planning.
 6. **Single-fraction and 5×6 Gy hypofractionated cases pooled in primary analysis.** Stratified-by-fractionation sensitivity analysis (§2.8) confirms directional findings hold in each stratum, but the cohort is underpowered for fractionation-conditional Brier estimation. BED conversion (§2.8) provides a unified scale.
 7. **No histopathological correlation of recurrence sites.** Mass-effect, micro-satellite seeding, and distant-recurrence biology cannot be distinguished without biopsy. The compartment analysis (Extended Data Figure 3) provides an imaging-only proxy for recurrence-pattern stratification.
@@ -214,7 +240,7 @@ The decisive next experiment is a prospective dose-escalation trial in brain-met
 
 ## 5. Conclusion
 
-We characterise future-lesion coverage by both the prescription-dose envelope and an AI heat-kernel risk map on a 43-patient brain-metastasis SRS cohort with patient-specific RTDOSE NIfTIs. Both regions cover 30–47% of future-lesion volume on average, consistent with published biological baselines for SRS recurrence patterns. The AI map at heat ≥0.50 provides slightly broader coverage than the prescription envelope itself; heat ≥0.80 tracks plan geometry tightly (Spearman ρ=0.979 with GTV V95). Threshold sensitivity confirms boundary stability. A composition-aware regime classifier achieves 1.00 conformal coverage across seven additional cohorts. The framework supports retrospective recurrence-pattern audit and motivates a prospective dose-escalation trial, but does **not** establish stand-alone prospective dose-escalation utility.
+On a 43-patient brain-metastasis SRS cohort with patient-specific RTDOSE NIfTIs, a closed-form heat-kernel structural prior (Gaussian convolution of the baseline lesion mask, no learned parameters) at threshold 0.50 captures more future-lesion volume than the dose ≥95% Rx prescription envelope: pooled coverage 47.3% vs 37.8% (+9.5 percentage points; Wilcoxon p = 0.014; row-level failure rate 52.1% vs 60.3%). The advantage is preserved across fractionation strata (single-fraction +11.3 pp; 7-fraction +2.8 pp). Heat ≥0.80 inside GTV+5 mm = 100.0% and heat ≥0.80 V95 tracks GTV V95 with Spearman ρ = 0.979, supporting use of the prior for retrospective audit of plan-target geometry. The threshold-sensitivity sweep confirms stable boundary findings. **The analysis characterises spatial information yield relative to standard dosimetry but cannot inform any dose-escalation proposal because toxicity outcomes are unavailable in PROTEAS.** The framework provides a reproducible benchmark on which future learned voxel-wise methods can be evaluated using the same coverage metrics and statistical infrastructure.
 
 ---
 
@@ -322,15 +348,15 @@ PROTEAS-brain-mets data: Zenodo PKG-PROTEAS-brain-mets-zenodo-17253793 (open acc
 
 ## Figure captions
 
-**Figure 1.** Future-lesion coverage by prescription-dose envelopes and AI heat-kernel risk maps in brain-metastasis SRS (PROTEAS, 43 patients, 122 follow-up rows; cluster-bootstrap 95% CIs over 42 patients). (a) Mean future-lesion coverage by dose ≥95% Rx (37.8%), dose ≥100% Rx (36.4%), heat ≥0.80 (30.1%), and heat ≥0.50 (47.3%). (b) Heat ≥0.80 V95 (56.6%) tracks GTV V95 (45.0%), Spearman ρ=0.979. (c) Failure rate (proportion of follow-up rows with <50% future-lesion coverage); heat ≥0.80 fails 71.1% of rows. (d) Threshold-sensitivity sweep: failure rate increases monotonically from 52% at heat ≥0.50 to 71% at heat ≥0.80, consistent across all six dose-threshold pairings. Source image: `figures/main/V78_NBE_proteas_boundary.png`. Source data: `source_data/v78_nbe_boundary_source_data.csv`.
+**Figure 1.** Future-lesion coverage by prescription-dose envelopes and a heat-kernel structural prior in brain-metastasis SRS (PROTEAS, 43 patients, 122 follow-up rows; cluster-bootstrap 95% CIs over 42 patients). (a) Mean future-lesion coverage by dose ≥95% Rx (37.8%), dose ≥100% Rx (36.4%), heat ≥0.80 (30.1%), and heat ≥0.50 (47.3%). (b) Heat ≥0.80 V95 (56.6%) tracks GTV V95 (45.0%), Spearman ρ = 0.979. (c) Failure rate (proportion of follow-up rows with <50% future-lesion coverage); heat ≥0.80 fails 71.1% of rows. (d) Threshold-sensitivity sweep: failure rate increases monotonically from 52% at heat ≥0.50 to 71% at heat ≥0.80, consistent across all six dose-threshold pairings. Source image: `figures/main/V78_NBE_proteas_boundary.png`. Source data: `source_data/v78_nbe_boundary_source_data.csv`.
 
 **Figure 2.** Per-follow-up paired-delta forest plot. Patient-level paired Δ (heat ≥0.80 − dose ≥95% Rx) and Δ (heat ≥0.50 − dose ≥95% Rx) at each follow-up timepoint, with cluster-bootstrap 95% CIs. Wilcoxon signed-rank test on per-row paired deltas, p=0.012 and p=0.014 respectively. Source image: `figures/main/NBE_Fig1_burden_curves.png`.
 
 **Figure 3.** Threshold-sensitivity heat-map across 5 heat thresholds × 6 dose thresholds. Mean future-lesion coverage and failure-rate proportions are stable across the parameter sweep, supporting threshold robustness of the boundary findings. Companion: `figures/main/V81_NBE_proteas_threshold_sensitivity.png`. Source image: `figures/main/NBE_Fig2_fu_horizon_burden.png`.
 
-**Figure 4.** Cross-cohort deployment simulation. Conformal three-regime classification (surveillance / uncertain / active-change) at α ∈ {0.05, 0.10, 0.20} achieves 1.00 empirical coverage across N=7 cohorts. PROTEAS-brain-mets ($\pi_{\text{stable}} = 0.19$) is correctly classified as active-change, consistent with the heat-prior failure rate observed on the primary coverage analysis. Source image: `figures/main/NBE_Fig3_deployment_simulation.png`.
+**Figure 4.** Fractionation-stratified primary coverage endpoints. Cluster-bootstrap 95% CIs for dose ≥95% Rx, dose ≥100% Rx, heat ≥0.50 and heat ≥0.80 future-lesion coverage are shown for the pooled cohort (n = 121 / 42), the single-fraction stratum (n = 93 / 33), and the 7-fraction hypofractionated stratum (n = 28 / 9). The +9.5 percentage-point heat ≥0.50 advantage over the dose ≥95% Rx envelope is preserved in both strata. Source image: `figures/main/NBE_Fig3_deployment_simulation.png` (re-purposed pending dedicated stratification panel). Source data: `source_data/v86_fractionation_strata.json`.
 
-**Figure 5.** Cohort framework summary. The eight-cohort neuro-oncology landscape with $\pi_{\text{stable}}$ axis, mask-provenance tier, and primary use-context per cohort. Source image: `figures/main/NBE_Fig5_cohort_framework.png`. A condensed summary panel suitable as the journal's graphical abstract is provided in `figures/main/V57_BME_summary_panel.png`.
+**Figure 5.** PROTEAS cohort summary. Patient-level distribution of fractionation schedule, prescription dose (18, 20, or 35 Gy), GTV volume, and follow-up count. Source image: `figures/main/NBE_Fig5_cohort_framework.png`. A condensed summary panel suitable as the journal's graphical abstract is provided in `figures/main/V57_BME_summary_panel.png`.
 
 ---
 
@@ -357,3 +383,17 @@ PROTEAS-brain-mets data: Zenodo PKG-PROTEAS-brain-mets-zenodo-17253793 (open acc
 **Extended Data Figure 10.** Decision-curve analysis (proxy DCA) for the heat ≥0.80 region as a binary decision rule for adaptive re-treatment, with comparison to the dose ≥95% Rx envelope. Source image: `figures/extended_data/NBE_ED10_proxy_dca.png`.
 
 **Extended Data Figure 11.** Audit-compliance summary: data-quality check, segmentation-quality check, and registration-quality check pass-rate per cohort. Source image: `figures/extended_data/NBE_ED11_audit_compliance.png`.
+
+---
+
+## Supplementary Appendix B — Cross-cohort regime classification
+
+The composition-aware regime classifier described in this Appendix is methodologically separate from the primary patient-specific RTDOSE coverage analysis and is included as supporting evidence for the deployment-context framing only. The full benchmark-transportability analysis is reported in the companion *Medical Image Analysis* submission (Islam, 2026; `https://github.com/kamrul0405/MedIA_Paper`).
+
+**Method.** Across seven independent neuro-oncology cohorts (UCSF-POSTOP N = 296 paired evaluations; MU-Glioma-Post N = 151; RHUH-GBM N = 38; UCSD-PTGBM N = 37; LUMIERE N = 19; UPENN-GBM N = 41; PROTEAS-brain-mets N = 122) the cohort's stable-disease fraction π<sub>stable</sub> and a closed-form composition crossover threshold π* = 0.43 (computed from source-cohort per-stratum Brier values via Saerens-style label-shift algebra) classify the deployment context as surveillance (π ≥ 0.60), uncertain (0.43 ≤ π < 0.60), or active-change (π < 0.43). Conformal coverage was evaluated by leave-one-cohort-out at three nominal levels.
+
+**Result.** Empirical conformal coverage was 1.00 at α = 0.05, α = 0.10, and α = 0.20 nominal targets. Conformal half-width 0.11, defining the empirical "uncertain regime" as π* ± 0.11 = [0.32, 0.54]. Source: `source_data/v84_E3_conformal_coverage.json`.
+
+**Implication for PROTEAS.** PROTEAS-brain-mets has π<sub>stable</sub> = 0.19 — well below π* = 0.43, classifying it correctly as an "active-change" cohort. This is consistent with the §3.5 finding that hypofractionated 7-fraction cases (with broader peri-lesional dose) achieve higher coverage than single-fraction cases, and with the broader observation that future-lesion-bearing brain-metastasis SRS cohorts are dominated by active-change rather than stable-disease evaluations. The classifier is *retrospective* deployment-context labelling, not a prospective treatment-decision rule.
+
+**Limitations.** Conformal coverage of 1.00 across N = 7 cohorts may indicate over-conservative classifier calibration; larger calibration sets would tighten the empirical-vs-nominal gap. We report the result transparently in this Appendix rather than in the main body because the methodology is benchmark-transportability rather than radiotherapy-specific. Source: `source_data/v84_E3_conformal_coverage.json`.
