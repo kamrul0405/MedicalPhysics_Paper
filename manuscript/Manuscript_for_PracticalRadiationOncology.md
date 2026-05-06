@@ -39,7 +39,7 @@
 
 ## Keywords
 
-brain metastases; stereotactic radiotherapy; SRS; future-lesion coverage; spatial structural prior; heat-kernel; prescription-dose envelope; RTDOSE; fractionation; recurrence patterns
+brain metastases; stereotactic radiotherapy; future-lesion coverage; spatial structural prior; RTDOSE; fractionation
 
 ---
 
