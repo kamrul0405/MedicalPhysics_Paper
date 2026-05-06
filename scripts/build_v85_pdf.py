@@ -1,6 +1,5 @@
 """
-Build the Radiotherapy & Oncology submission PDF from
-Manuscript_v85_for_RTandO.md.
+Build the Cancers (MDPI) submission PDF from Manuscript_for_Cancers.md.
 
 Renders the markdown to a Times-New-Roman, single-column letter-size PDF with
 auto-embedded figures wherever a caption block contains a "Source image:"
@@ -13,10 +12,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
 MS_DIR = ROOT / "manuscript"
-SRC_MD = MS_DIR / "Manuscript_v85_for_RTandO.md"
-OUT_PDF = MS_DIR / "Manuscript_v85_for_RTandO.pdf"
-HEADER = "Future-lesion coverage by AI heat-kernel maps vs Rx-dose envelopes in brain-met SRS"
-JOURNAL = "Radiotherapy and Oncology (Green Journal; Elsevier)"
+SRC_MD = MS_DIR / "Manuscript_for_Cancers.md"
+OUT_PDF = MS_DIR / "Manuscript_for_Cancers.pdf"
+HEADER = "Spatial structural priors and dose envelopes for future-lesion coverage in brain-met SRS"
+JOURNAL = "Cancers (MDPI)"
 
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import letter

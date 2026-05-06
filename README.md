@@ -1,45 +1,50 @@
 # RTO_paper
 
-**Manuscript:** *Future-lesion coverage by AI heat-kernel risk maps relative to prescription-dose envelopes in brain-metastasis stereotactic radiotherapy: a 43-patient multi-axis recurrence-pattern analysis*
+**Manuscript:** *Spatial heat-kernel structural priors and prescription-dose envelopes for future-lesion coverage in brain-metastasis stereotactic radiotherapy: a patient-specific RTDOSE analysis on 43 patients*
 
-**Target journal:** Radiotherapy and Oncology (the Green Journal; Elsevier; ISSN 0167-8140)
-**Submission version:** v85 (2026-05-06)
-**Status:** Submission-ready (formatted per Elsevier RT&O Guide for Authors)
+**Target journal:** *Cancers* (MDPI; ISSN 2072-6694) — Original Research Article
+**Status:** Submission-ready (formatted per Cancers Article template, with Simple Summary, Author Contributions, IRB Statement, Informed Consent, Data Availability, and Conflicts of Interest declarations)
+
+> **Note on repository name.** This repository was originally created targeting *Radiotherapy and Oncology* (the Green Journal; Elsevier) and retains the `RTO_paper` name for URL stability and commit-history continuity. The current submission target is *Cancers* (MDPI). The Radiotherapy and Oncology version of the manuscript is preserved at `manuscript/Manuscript_for_RTandO.md` for archival reference.
 
 ---
 
 ## What this repository contains
 
-Public companion to a clinical-radiotherapy submission to *Radiotherapy and Oncology* (the ESTRO official journal). Manuscript, figures, source-data files (JSON + CSV), and reproducibility scripts for every numerical claim in the paper.
+Public companion to a Cancers original-research-article submission. Manuscript, figures, source-data files (JSON + CSV), and reproducibility scripts for every numerical claim in the paper.
 
 ```
 RTO_paper/
 ├── manuscript/
-│   ├── Manuscript_v85_for_RTandO.md/.pdf     <- PRIMARY SUBMISSION
-│   ├── Manuscript_for_RTandO.md/.pdf         (v8.2 formatted; superseded by v85)
-│   ├── Manuscript_v83_for_NBE.md/.pdf        (OCUMS companion / NBE alt)
-│   ├── Final_Nature_BME.md/.pdf              (v8.2 master)
-│   └── CoverLetter_NBE.md                    (cover letter; rename to CoverLetter_RTandO at submission)
+│   ├── Manuscript_for_Cancers.md/.pdf          <- PRIMARY SUBMISSION
+│   ├── Manuscript_for_RTandO.md/.pdf           (archived RT&O version)
+│   ├── Manuscript_v83_for_NBE.md/.pdf          (archived NBE companion)
+│   ├── Final_Nature_BME.md/.pdf                (archived Nature BME version)
+│   └── CoverLetter_NBE.md                      (cover letter draft; rename to CoverLetter_Cancers)
 ├── figures/
-│   ├── main/                                 (Main Fig 1: PNG + 300 DPI TIFF)
-│   └── extended_data/                        (11 Extended Data figures at 300 DPI)
-├── source_data/                              (Versioned JSON/CSV underlying every numerical claim)
-└── scripts/                                  (Python scripts producing source_data files)
+│   ├── main/                                   (5 main figures: PNG + 300 DPI TIFF)
+│   └── extended_data/                          (11 Extended Data figures at 300 DPI)
+├── source_data/                                (Versioned JSON/CSV underlying every numerical claim)
+└── scripts/                                    (Python scripts producing source_data files)
 ```
 
 ## Headline empirical findings
 
 - **Patient-specific RTDOSE audit on 43 brain-metastasis SRS patients** (122 follow-up paired evaluations) from PROTEAS-brain-mets (Zenodo open-access).
-- **Future-lesion coverage by dose ≥95% Rx:** 37.8% (cluster-bootstrap 95% CI 27.8–48.2). Fails <50% in 60.3% of follow-up rows.
-- **Heat ≥0.50:** 47.3% (CI 37.4–57.2). **Heat ≥0.80:** 30.1% (CI 22.1–38.5). Fails <50% coverage in 71.1% of follow-up rows for heat ≥0.80.
-- **Both regions cover 30–47% of future-lesion volume on average**, consistent with the published 30–40% biological out-of-envelope recurrence baseline for brain-metastasis SRS (Lehrer 2022; Bohoudi 2020; Wiggenraad 2011).
-- **Heat ≥0.80 V95 (56.6%) tracks GTV V95 (45.0%)** with Spearman ρ=0.979.
-- **Threshold sensitivity sweep** (5 heat × 6 dose thresholds) confirms boundary stability.
-- **Conformal three-regime classifier** achieves 1.00 empirical coverage at α=0.05 nominal across N=7 cohort calibration set.
+- **Heat ≥ 0.50 future-lesion coverage 47.3% exceeds dose ≥ 95% Rx coverage 37.8%** (paired Δ = +9.5 pp; Wilcoxon p = 0.014; row-level failure rate 52.1% vs 60.3%, p < 0.05 step-down).
+- **Fractionation-stratified advantage preserved** — single-fraction +11.3 pp; 7-fraction +2.8 pp.
+- **Hypofractionated 7-fraction cases achieve twofold-higher coverage** than single-fraction (dose ≥ 95% Rx 59.9% vs 31.5%; heat ≥ 0.50 62.8% vs 42.8%) — consistent with broader peri-lesional dose distribution and lower late-responding-brain BED.
+- **Heat ≥ 0.80 V95 (56.6%) tracks GTV V95 (45.0%)** with Spearman ρ = 0.979 (an algebraic consistency check, not an independent finding).
+- **Threshold-sensitivity sweep** (5 heat × 6 dose thresholds) confirms boundary stability.
+- **No toxicity outcomes** are available in PROTEAS; the analysis cannot inform any prospective dose-escalation proposal.
 
 ## Clinical context
 
-Brain-metastasis stereotactic radiotherapy (SRS) is a well-established treatment with single-fraction (18–24 Gy) or hypofractionated (5×6 Gy = 30 Gy) delivery to GTV+0–2 mm margin. The 30–40% future-lesion volume falling outside the planned dose envelope is the well-characterised clinical reality of SRS recurrence patterns, driven by micro-metastatic seeding, dose conformity-vs-coverage trade-offs, and recurrence at the GTV margin and in distant satellite locations.
+Brain-metastasis stereotactic radiotherapy (SRS) is a well-established treatment with single-fraction (typically 18–24 Gy) or hypofractionated (5–7 fraction schedules) delivery to GTV+0–2 mm margin. The 30–40% future-lesion volume falling outside the planned dose envelope is the well-characterised clinical reality of SRS recurrence patterns, driven by micro-metastatic seeding, dose conformity-vs-coverage trade-offs, and recurrence at the GTV margin and in distant satellite locations.
+
+The PROTEAS-brain-mets cohort comprises:
+- **Single-fraction SRS:** 18 Gy × 1 (n = 7 follow-up rows; 3 patients) or 20 Gy × 1 (n = 86 rows; 30 patients) — total 33 patients / 93 rows.
+- **Seven-fraction hypofractionated SRT:** 5 Gy × 7 = 35 Gy (n = 28 rows; 9 patients).
 
 ## Reproducibility
 
@@ -49,23 +54,26 @@ Brain-metastasis stereotactic radiotherapy (SRS) is a well-established treatment
 | `v77_proteas_rtdose_patient_metrics.csv` | Per-patient RTDOSE coverage metrics | Methods |
 | `v78_proteas_boundary_stats.json` | Cluster-bootstrap CIs on coverage | §3.1 |
 | `v78_nbe_boundary_source_data.csv` | Figure 1 source data | Fig 1 |
-| `v81_proteas_threshold_sensitivity.json` | Threshold sensitivity sweep | §3.3 |
-| `v60_yale_expansion.json` | Yale label-free acquisition-shift audit | §3.4 |
-| `v84_E3_conformal_coverage.json` | Conformal coverage empirical validation | §3.4 |
-| `master_neurooncology_dataset_index.csv` | 8-cohort master index | Methods §2.1 |
+| `v81_proteas_threshold_sensitivity.json` | Threshold-sensitivity sweep | §3.3 |
+| `v86_fractionation_strata.json` | Fractionation-stratified primary endpoints | §3.5 / Table 2 |
+| `v60_yale_expansion.json` | Yale label-free acquisition-shift audit | Supplementary |
+| `v84_E3_conformal_coverage.json` | Conformal coverage empirical validation | Supplementary Appendix B |
+| `v84_E4_negative_controls.json` | 9 pre-specified negative controls | §3.6 |
+| `master_neurooncology_dataset_index.csv` | 8-cohort master index | Methods |
 
 ## Hardware / software
 
-Intel Core i7 CPU + NVIDIA RTX 5070 Laptop GPU (8.5 GB VRAM), CUDA 12.8. Python 3.11.9; nibabel 5.4.2; NumPy; SciPy; statsmodels.
+Intel Core i7 CPU + NVIDIA RTX 5070 Laptop GPU (8.5 GB VRAM), CUDA 12.8. Python 3.11.9; nibabel 5.4.2; NumPy; SciPy 1.17.1; statsmodels.
 
 ## Companion repository
 
-`MedIA_Paper` — companion methodology submission to *Medical Image Analysis*.
+`MedIA_Paper` — companion submission to *Scientific Data* (multi-cohort longitudinal post-treatment brain-tumour MRI benchmark with reproducible analysis infrastructure).
 
-## License
+## Licence
 
 Manuscript and figures: CC BY 4.0 (proposed at acceptance). Code: MIT.
 
 ## Contact
 
-[Authors blinded for review.]
+**Sheikh Kamrul Islam** — sheikh.islam@kcl.ac.uk (alternative: kamrul0405@outlook.com).
+Department of Biomedical and Imaging Sciences, School of Biomedical Engineering and Imaging Sciences, King's College London.
