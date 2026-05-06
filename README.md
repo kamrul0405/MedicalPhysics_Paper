@@ -2,30 +2,31 @@
 
 **Manuscript:** *Spatial heat-kernel structural priors and prescription-dose envelopes for future-lesion coverage in brain-metastasis stereotactic radiotherapy: a patient-specific RTDOSE analysis on 43 patients*
 
-**Target journal:** *Cancers* (MDPI; ISSN 2072-6694) — Original Research Article
-**Status:** Submission-ready (formatted per Cancers Article template, with Simple Summary, Author Contributions, IRB Statement, Informed Consent, Data Availability, and Conflicts of Interest declarations)
+**Target journal:** *Practical Radiation Oncology* (ASTRO / Elsevier; ISSN 1879-8500) — Original Research Article
+**Status:** Submission-ready (formatted per Elsevier *Practical Radiation Oncology* Guide for Authors)
+**Open-access fee:** **None required.** This is a hybrid Elsevier journal published on behalf of ASTRO; submission on the standard subscription path requires no article-processing charge.
 
-> **Note on repository name.** This repository was originally created targeting *Radiotherapy and Oncology* (the Green Journal; Elsevier) and retains the `RTO_paper` name for URL stability and commit-history continuity. The current submission target is *Cancers* (MDPI). The Radiotherapy and Oncology version of the manuscript is preserved at `manuscript/Manuscript_for_RTandO.md` for archival reference.
+> **Note on repository name.** This repository was originally created targeting *Radiotherapy and Oncology* (the Green Journal; Elsevier) and retains the `RTO_paper` name for URL stability and commit-history continuity. The current submission target is *Practical Radiation Oncology* (ASTRO / Elsevier). The Radiotherapy and Oncology version of the manuscript is preserved at `manuscript/Manuscript_for_RTandO.md` for archival reference.
 
 ---
 
 ## What this repository contains
 
-Public companion to a Cancers original-research-article submission. Manuscript, figures, source-data files (JSON + CSV), and reproducibility scripts for every numerical claim in the paper.
+Public companion to a *Practical Radiation Oncology* original-research-article submission. Manuscript, figures, source-data files (JSON + CSV), and reproducibility scripts for every numerical claim in the paper.
 
 ```
 RTO_paper/
 ├── manuscript/
-│   ├── Manuscript_for_Cancers.md/.pdf          <- PRIMARY SUBMISSION
-│   ├── Manuscript_for_RTandO.md/.pdf           (archived RT&O version)
-│   ├── Manuscript_v83_for_NBE.md/.pdf          (archived NBE companion)
-│   ├── Final_Nature_BME.md/.pdf                (archived Nature BME version)
-│   └── CoverLetter_NBE.md                      (cover letter draft; rename to CoverLetter_Cancers)
+│   ├── Manuscript_for_PracticalRadiationOncology.md/.pdf  <- PRIMARY SUBMISSION
+│   ├── Manuscript_for_RTandO.md/.pdf                      (archived RT&O version)
+│   ├── Manuscript_v83_for_NBE.md/.pdf                     (archived NBE companion)
+│   ├── Final_Nature_BME.md/.pdf                           (archived Nature BME version)
+│   └── CoverLetter_NBE.md                                 (cover letter draft; rename to CoverLetter_PRO at submission)
 ├── figures/
-│   ├── main/                                   (5 main figures: PNG + 300 DPI TIFF)
-│   └── extended_data/                          (11 Extended Data figures at 300 DPI)
-├── source_data/                                (Versioned JSON/CSV underlying every numerical claim)
-└── scripts/                                    (Python scripts producing source_data files)
+│   ├── main/                                              (5 main figures: PNG + 300 DPI TIFF)
+│   └── extended_data/                                     (11 Extended Data figures at 300 DPI)
+├── source_data/                                           (Versioned JSON/CSV underlying every numerical claim)
+└── scripts/                                               (Python scripts producing source_data files)
 ```
 
 ## Headline empirical findings
@@ -67,7 +68,7 @@ Intel Core i7 CPU + NVIDIA RTX 5070 Laptop GPU (8.5 GB VRAM), CUDA 12.8. Python 
 
 ## Companion repository
 
-`MedIA_Paper` — companion submission to *Scientific Data* (multi-cohort longitudinal post-treatment brain-tumour MRI benchmark with reproducible analysis infrastructure).
+`MedIA_Paper` — companion submission to *Computers in Biology and Medicine* (Elsevier; multi-cohort longitudinal post-treatment brain-tumour MRI benchmark).
 
 ## Licence
 

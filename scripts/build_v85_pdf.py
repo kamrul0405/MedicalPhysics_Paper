@@ -1,5 +1,6 @@
 """
-Build the Cancers (MDPI) submission PDF from Manuscript_for_Cancers.md.
+Build the Practical Radiation Oncology (ASTRO/Elsevier) submission PDF from
+Manuscript_for_PracticalRadiationOncology.md.
 
 Renders the markdown to a Times-New-Roman, single-column letter-size PDF with
 auto-embedded figures wherever a caption block contains a "Source image:"
@@ -12,10 +13,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
 MS_DIR = ROOT / "manuscript"
-SRC_MD = MS_DIR / "Manuscript_for_Cancers.md"
-OUT_PDF = MS_DIR / "Manuscript_for_Cancers.pdf"
+SRC_MD = MS_DIR / "Manuscript_for_PracticalRadiationOncology.md"
+OUT_PDF = MS_DIR / "Manuscript_for_PracticalRadiationOncology.pdf"
 HEADER = "Spatial structural priors and dose envelopes for future-lesion coverage in brain-met SRS"
-JOURNAL = "Cancers (MDPI)"
+JOURNAL = "Practical Radiation Oncology (ASTRO/Elsevier)"
 
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import letter
