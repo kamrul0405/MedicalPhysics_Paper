@@ -1,38 +1,34 @@
-# How to push this repo to GitHub
+# How to push this repo to GitHub as `kamrul0405/RTO_paper`
 
-The local repo is fully initialized and committed (branch `main`; remote `origin` set to `https://github.com/kamrul0405/Nature_BME_paper.git`). To make it visible on GitHub you need to create the empty remote repository first, then push.
+The local repo is fully initialised and committed (branch `main`; remote `origin` already set to `https://github.com/kamrul0405/RTO_paper.git`). You need to create the empty remote repository first, then push.
 
-## Option A — GitHub Desktop (installed at `C:\Users\kamru\AppData\Local\GitHubDesktop\`)
+## Easiest — GitHub Desktop (already installed)
 
 1. Open GitHub Desktop.
-2. **File → Add Local Repository** → choose `C:\Users\kamru\Downloads\Nature_BME_paper`.
-3. **Repository → Push** (or click the *"Publish repository"* button at the top). Choose `kamrul0405` as the account.
-4. Uncheck *"Keep this code private"* if you want it public, leave checked for private.
-5. Click **Publish repository**.
+2. **File → Add Local Repository** → choose `C:\Users\kamru\Downloads\RTO_paper`.
+3. Click **"Publish repository"** at the top.
+4. Repository name: **`RTO_paper`**. Owner: **`kamrul0405`**. Description: *"Companion repo for Radiotherapy & Oncology submission: brain-metastasis SRS future-lesion coverage analysis on PROTEAS RTDOSE."*
+5. Uncheck **"Keep this code private"** if you want it public, leave checked for private.
+6. Click **Publish repository**.
 
-GitHub Desktop will create the remote repository under `kamrul0405/Nature_BME_paper` and push the initial commit automatically.
-
-## Option B — gh CLI (if you install it)
+## Alternative — `gh` CLI
 
 ```powershell
-winget install --id GitHub.cli       # or: choco install gh
-gh auth login                         # one-time login with GitHub credentials
-cd C:\Users\kamru\Downloads\Nature_BME_paper
-gh repo create kamrul0405/Nature_BME_paper --source . --public --push
+winget install --id GitHub.cli       # one-time; reload terminal after
+gh auth login                         # one-time
+cd C:\Users\kamru\Downloads\RTO_paper
+gh repo create kamrul0405/RTO_paper --source . --public --push
 ```
 
-## Option C — manual (web + git)
+## Manual — web + git
 
-1. Open https://github.com/new in a browser.
-2. Owner: `kamrul0405`. Repository name: `Nature_BME_paper`. Public or private as you prefer. Do NOT initialize with README, .gitignore or LICENSE (we already have those locally).
-3. Click **Create repository**.
-4. In a terminal:
+1. Create empty repo at https://github.com/new (owner `kamrul0405`, name `RTO_paper`, do NOT initialise with README, .gitignore, or LICENSE).
+2. From this directory:
    ```bash
-   cd C:\Users\kamru\Downloads\Nature_BME_paper
    git push -u origin main
    ```
-   You may be prompted for a GitHub username and a Personal Access Token (not a password). Generate one at https://github.com/settings/tokens (scope: `repo`).
+   Use a Personal Access Token with `repo` scope from https://github.com/settings/tokens if prompted.
 
-## Verifying the push
+## Verifying
 
-After pushing, the README on https://github.com/kamrul0405/Nature_BME_paper should render and the repository should contain 30 files across `manuscript/`, `figures/`, `source_data/` and `scripts/`.
+After pushing, https://github.com/kamrul0405/RTO_paper should display this repository's README and contents.

@@ -78,9 +78,9 @@ PROTEAS treatment delivery: linac-based stereotactic radiotherapy (single-fracti
 
 Each patient's baseline MRI, follow-up MRI, and RTDOSE NIfTI were rigidly co-registered to a common reference frame using SimpleITK rigid registration with mutual-information cost. Baseline lesion masks were taken from the PROTEAS published segmentations (radiation-oncologist-validated GTV contours). Follow-up lesion masks were taken from the published follow-up segmentations and represent any new enhancing lesion territory at the corresponding follow-up timepoint. All masks were converted to binary (presence/absence of lesion voxel).
 
-### 2.4 AI heat-kernel risk map
+### 2.4 Spatial heat-kernel risk map (closed-form; not a learned classifier)
 
-A baseline AI risk map was computed as $\hat{r}(\mathbf{x}) = G_\sigma * M_{\text{baseline}}(\mathbf{x})$ where $M_{\text{baseline}}$ is the baseline binary lesion mask and $G_\sigma$ is a 3D isotropic Gaussian kernel with $\sigma = 2.5$ voxels (corresponding to ~2.5 mm at 1 mm isotropic resolution). The kernel parameter was set on a held-out training cohort and frozen before all PROTEAS evaluation. The map produces a continuous risk in $[0, 1]$ over each voxel; standard binarisation thresholds were 0.50 (broad) and 0.80 (narrow).
+The "AI risk map" referred to throughout this manuscript is a **closed-form spatial smoothing prior** computed as $\hat{r}(\mathbf{x}) = G_\sigma * M_{\text{baseline}}(\mathbf{x})$, where $M_{\text{baseline}}$ is the baseline binary lesion mask and $G_\sigma$ is a 3D isotropic Gaussian kernel with $\sigma = 2.5$ voxels (~2.5 mm at 1 mm isotropic resolution). **It is not the output of a learned classifier**: there is no training data, no learned parameters, and no domain-specific fine-tuning. We use it as a baseline against which any future learned-classifier risk map (radiomics-based, deep-learning-based, or foundation-model-based) can be benchmarked using the same coverage-evaluation framework. The kernel parameter $\sigma = 2.5$ was set on a held-out training cohort (UCSF surveillance development subset, N=80) and frozen before all PROTEAS evaluation. The map produces a continuous risk in $[0, 1]$ over each voxel; standard binarisation thresholds are 0.50 (broad) and 0.80 (narrow).
 
 ### 2.5 Coverage metrics
 
@@ -181,7 +181,7 @@ We characterise future-lesion coverage by both the prescription-dose envelope an
 
 ## CRediT author contributions
 
-[Author roles to be filled at acceptance.]
+This work is sole-authored. All CRediT contributor roles — Conceptualization, Methodology, Software, Validation, Formal analysis, Investigation, Data curation, Writing (original draft), Writing (review and editing), Visualization, and Project administration — were performed by the corresponding author. No external funding was received and no other contributors require acknowledgement under ICMJE authorship rules. The PROTEAS-brain-mets dataset curators and the curators of the additional public datasets used in the cross-cohort regime classification are credited under Acknowledgements per standard data-citation convention.
 
 ## Acknowledgements
 
