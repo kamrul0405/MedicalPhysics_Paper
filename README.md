@@ -1,4 +1,4 @@
-# RTO_paper
+# MedicalPhysics_Paper
 
 **Manuscript:** *Physics-grounded structural priors in brain-metastasis stereotactic radiotherapy: parabolic-PDE smoothing, BED-aware spatially-varying kernels, and multi-institutional dose-physics audit on patient-specific RTDOSE/RTPLAN*
 
@@ -6,7 +6,7 @@
 **Status:** Submission-ready (formatted per AAPM/Wiley *Medical Physics* Guide for Authors)
 **Open-access fee:** **None required.** Hybrid Wiley journal; submission on the standard subscription path requires no article-processing charge.
 
-> **Note on repository name.** This repository was originally created targeting *Radiotherapy and Oncology* (Green Journal) and retains the `RTO_paper` name for URL stability and commit-history continuity. The current submission target is *Medical Physics* (AAPM/Wiley). The earlier RT&O and PRO versions are preserved in `manuscript/` for archival reference.
+> **Note on repository name.** This repository was renamed from `RTO_paper` (its original name, when targeting *Radiotherapy and Oncology*) to `MedicalPhysics_Paper` to match the current submission target. GitHub keeps the old `kamrul0405/RTO_paper` URL alive as a redirect to this repository indefinitely. The earlier RT&O and PRO manuscript versions are preserved in `manuscript/` for archival reference.
 
 ---
 
