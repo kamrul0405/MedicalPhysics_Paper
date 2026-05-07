@@ -1,0 +1,13 @@
+stratum,category,count,n_rows,n_patients,proportion,ci95_lo,ci95_hi
+all,both_capture,37,121,42,0.305785,0.192,0.432432
+all,heat_only,21,121,42,0.173554,0.072,0.294129
+all,dose_only,11,121,42,0.090909,0.031746,0.168
+all,neither,52,121,42,0.429752,0.3,0.564103
+single_fraction,both_capture,26,93,33,0.27957,0.161905,0.417722
+single_fraction,heat_only,12,93,33,0.129032,0.042553,0.247312
+single_fraction,dose_only,5,93,33,0.053763,0.011364,0.102273
+single_fraction,neither,50,93,33,0.537634,0.387097,0.674157
+seven_fraction,both_capture,11,28,9,0.392857,0.147059,0.714286
+seven_fraction,heat_only,9,28,9,0.321429,0.0,0.666667
+seven_fraction,dose_only,6,28,9,0.214286,0.027778,0.454545
+seven_fraction,neither,2,28,9,0.071429,0.0,0.147059

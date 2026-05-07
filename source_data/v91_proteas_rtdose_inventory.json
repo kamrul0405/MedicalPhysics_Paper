@@ -1,0 +1,2729 @@
+{
+  "audit_version": "v91",
+  "created_at_local": "2026-05-07 12:49:34",
+  "source_zip": "C:\\Users\\kamru\\Downloads\\Datasets\\PKG - PROTEAS-brain-mets-zenodo-17253793.zip",
+  "scan_seconds": 71.63,
+  "summary": {
+    "patient_zip_count": 45,
+    "patients_with_rtdose": 44,
+    "patients_with_multiple_rtdose": 2,
+    "rtdose_file_count": 47,
+    "rtdose_parse_errors": 0,
+    "rtdose_pixel_errors": 0,
+    "patients_with_tumour_masks": 45,
+    "total_tumour_masks": 171,
+    "dicom_modality_file_counts": {
+      "RD": 47,
+      "RP": 48,
+      "RS": 47,
+      "RI": 541,
+      "CT": 17431,
+      "MR": 44010
+    },
+    "dose_units": {
+      "GY": 47
+    },
+    "dose_types": {
+      "PHYSICAL": 47
+    },
+    "dose_summation_types": {
+      "PLAN": 47
+    },
+    "max_dose_min": 22.389288,
+    "max_dose_median": 25.893911,
+    "max_dose_max": 40.076488
+  },
+  "excel_metadata": {
+    "PROTEAS-Clinical_and_demographic_data.xlsx": {
+      "sheet_names": [
+        "PROTEAS"
+      ],
+      "sheets": {
+        "PROTEAS": {
+          "rows": 47,
+          "columns": 21
+        }
+      }
+    },
+    "PROTEAS-MRI_radiomics_data.xlsx": {
+      "sheet_names": [
+        "P01",
+        "P02",
+        "P03",
+        "P04a",
+        "P04b",
+        "P05",
+        "P06",
+        "P07a",
+        "P07b",
+        "P08",
+        "P09",
+        "P10",
+        "P11",
+        "P12",
+        "P13",
+        "P14",
+        "P15",
+        "P16",
+        "P17a",
+        "P17b",
+        "P18",
+        "P19",
+        "P20a",
+        "P20b",
+        "P21",
+        "P22",
+        "P23a",
+        "P23b",
+        "P24",
+        "P25",
+        "P26",
+        "P27",
+        "P28",
+        "P29",
+        "P30",
+        "P31",
+        "P32",
+        "P33",
+        "P34",
+        "P35",
+        "P36",
+        "P37",
+        "P38",
+        "P39",
+        "P40"
+      ],
+      "sheets": {
+        "P01": {
+          "rows": 7980,
+          "columns": 2
+        },
+        "P02": {
+          "rows": 3780,
+          "columns": 2
+        },
+        "P03": {
+          "rows": 4620,
+          "columns": 2
+        },
+        "P04a": {
+          "rows": 5460,
+          "columns": 2
+        },
+        "P04b": {
+          "rows": 8820,
+          "columns": 2
+        },
+        "P05": {
+          "rows": 5040,
+          "columns": 2
+        },
+        "P06": {
+          "rows": 5040,
+          "columns": 2
+        },
+        "P07a": {
+          "rows": 3780,
+          "columns": 2
+        },
+        "P07b": {
+          "rows": 4620,
+          "columns": 2
+        },
+        "P08": {
+          "rows": 7980,
+          "columns": 2
+        },
+        "P09": {
+          "rows": 5040,
+          "columns": 2
+        },
+        "P10": {
+          "rows": 6300,
+          "columns": 2
+        },
+        "P11": {
+          "rows": 6300,
+          "columns": 2
+        },
+        "P12": {
+          "rows": 3360,
+          "columns": 2
+        },
+        "P13": {
+          "rows": 8820,
+          "columns": 2
+        },
+        "P14": {
+          "rows": 3360,
+          "columns": 2
+        },
+        "P15": {
+          "rows": 5040,
+          "columns": 2
+        },
+        "P16": {
+          "rows": 840,
+          "columns": 2
+        },
+        "P17a": {
+          "rows": 8400,
+          "columns": 2
+        },
+        "P17b": {
+          "rows": 10080,
+          "columns": 2
+        },
+        "P18": {
+          "rows": 8400,
+          "columns": 2
+        },
+        "P19": {
+          "rows": 5040,
+          "columns": 2
+        },
+        "P20a": {
+          "rows": 5040,
+          "columns": 2
+        },
+        "P20b": {
+          "rows": 5040,
+          "columns": 2
+        },
+        "P21": {
+          "rows": 4620,
+          "columns": 2
+        },
+        "P22": {
+          "rows": 7140,
+          "columns": 2
+        },
+        "P23a": {
+          "rows": 6720,
+          "columns": 2
+        },
+        "P23b": {
+          "rows": 8400,
+          "columns": 2
+        },
+        "P24": {
+          "rows": 2520,
+          "columns": 2
+        },
+        "P25": {
+          "rows": 5880,
+          "columns": 2
+        },
+        "P26": {
+          "rows": 3780,
+          "columns": 2
+        },
+        "P27": {
+          "rows": 5460,
+          "columns": 2
+        },
+        "P28": {
+          "rows": 10080,
+          "columns": 2
+        },
+        "P29": {
+          "rows": 3780,
+          "columns": 2
+        },
+        "P30": {
+          "rows": 4200,
+          "columns": 2
+        },
+        "P31": {
+          "rows": 4620,
+          "columns": 2
+        },
+        "P32": {
+          "rows": 2520,
+          "columns": 2
+        },
+        "P33": {
+          "rows": 5040,
+          "columns": 2
+        },
+        "P34": {
+          "rows": 7980,
+          "columns": 2
+        },
+        "P35": {
+          "rows": 5040,
+          "columns": 2
+        },
+        "P36": {
+          "rows": 5040,
+          "columns": 2
+        },
+        "P37": {
+          "rows": 5040,
+          "columns": 2
+        },
+        "P38": {
+          "rows": 3360,
+          "columns": 2
+        },
+        "P39": {
+          "rows": 2520,
+          "columns": 2
+        },
+        "P40": {
+          "rows": 2940,
+          "columns": 2
+        }
+      }
+    }
+  },
+  "patient_rows": [
+    {
+      "patient_id": "P01",
+      "patient_zip": "P01.zip",
+      "file_count": 1026,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 341,
+      "mr_dicom_count": 642,
+      "nifti_count": 28,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 5,
+      "brats_modality_count": 20,
+      "rd_examples": [
+        "P01/DICOM/RTP_2020-01-10/RD.1.2.246.352.221.52638049580166263566033546583737691800.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P01/tumor segmentation/P01_tumor_mask_fu3.nii.gz",
+        "P01/tumor segmentation/P01_tumor_mask_fu1.nii.gz",
+        "P01/tumor segmentation/P01_tumor_mask_fu4.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P02",
+      "patient_zip": "P02.zip",
+      "file_count": 502,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 0,
+      "ri_count": 4,
+      "ct_dicom_count": 152,
+      "mr_dicom_count": 326,
+      "nifti_count": 18,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 3,
+      "brats_modality_count": 12,
+      "rd_examples": [
+        "P02/DICOM/RTP_2021-06-15/RD.1.2.246.352.221.497706138338387547515590505641100461465.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P02/tumor_segmentation/P02_tumor_mask_baseline.nii.gz",
+        "P02/tumor_segmentation/P02_tumor_mask_fu2.nii.gz",
+        "P02/tumor_segmentation/P02_tumor_mask_fu1.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P03",
+      "patient_zip": "P03.zip",
+      "file_count": 848,
+      "rd_count": 0,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 11,
+      "ct_dicom_count": 337,
+      "mr_dicom_count": 480,
+      "nifti_count": 18,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 3,
+      "brats_modality_count": 12,
+      "rd_examples": [],
+      "tumour_mask_examples": [
+        "P03/tumor_segmentation/P03_tumor_mask_baseline.nii.gz",
+        "P03/tumor_segmentation/P03_tumor_mask_fu1.nii.gz",
+        "P03/tumor_segmentation/P03_tumor_mask_fu2.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P04a",
+      "patient_zip": "P04a.zip",
+      "file_count": 797,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 339,
+      "mr_dicom_count": 420,
+      "nifti_count": 23,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 4,
+      "brats_modality_count": 16,
+      "rd_examples": [
+        "P04a/DICOM/RTP_2020-03-20/RD.1.2.246.352.221.491493098326933640611130304873528591784.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P04a/tumor_segmentation/P04a_tumor_mask_fu2.nii.gz",
+        "P04a/tumor_segmentation/P04a_tumor_mask_baseline.nii.gz",
+        "P04a/tumor_segmentation/P04a_tumor_mask_fu3.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P04b",
+      "patient_zip": "P04b.zip",
+      "file_count": 1082,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 11,
+      "ct_dicom_count": 418,
+      "mr_dicom_count": 569,
+      "nifti_count": 33,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 6,
+      "brats_modality_count": 24,
+      "rd_examples": [
+        "P04b/DICOM/RTP_2020-11-13/RD.1.2.246.352.221.49502791889128414899894118281140554380.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P04b/tumor_segmentation/P04b_tumor_mask_fu1.nii.gz",
+        "P04b/tumor_segmentation/P04b_tumor_mask_fu3.nii.gz",
+        "P04b/tumor_segmentation/P04b_tumor_mask_fu5.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P05",
+      "patient_zip": "P05.zip",
+      "file_count": 1072,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 367,
+      "mr_dicom_count": 266,
+      "nifti_count": 18,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 3,
+      "brats_modality_count": 12,
+      "rd_examples": [
+        "P05/DICOM/RTP_2021-12-10/RD.1.2.246.352.221.47952245028058114923777573139847642280.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P05/tumor_segmentation/P05_tumor_mask_fu1.nii.gz",
+        "P05/tumor_segmentation/P05_tumor_mask_baseline.nii.gz",
+        "P05/tumor_segmentation/P05_tumor_mask_fu2.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P06",
+      "patient_zip": "P06.zip",
+      "file_count": 1220,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 447,
+      "mr_dicom_count": 488,
+      "nifti_count": 18,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 3,
+      "brats_modality_count": 12,
+      "rd_examples": [
+        "P06/DICOM/RTP_2019-12-06/RD.1.2.246.352.221.54007533444556091748861323413769599395.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P06/tumor_segmentation/P06_tumor_mask_fu2.nii.gz",
+        "P06/tumor_segmentation/P06_tumor_mask_fu1.nii.gz",
+        "P06/tumor_segmentation/P06_tumor_mask_baseline.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P07a",
+      "patient_zip": "P07a.zip",
+      "file_count": 1039,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 382,
+      "mr_dicom_count": 372,
+      "nifti_count": 18,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 3,
+      "brats_modality_count": 12,
+      "rd_examples": [
+        "P07a/DICOM/RTP_2021-10-13/RD.1.2.246.352.221.50775953472424076598271601054234690229.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P07a/tumor_segmentation/P07a_tumor_mask_fu2.nii.gz",
+        "P07a/tumor_segmentation/P07a_tumor_mask_fu1.nii.gz",
+        "P07a/tumor_segmentation/P07a_tumor_mask_baseline.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P07b",
+      "patient_zip": "P07b.zip",
+      "file_count": 1039,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 382,
+      "mr_dicom_count": 372,
+      "nifti_count": 18,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 3,
+      "brats_modality_count": 12,
+      "rd_examples": [
+        "P07b/DICOM/RTP_2021-10-14/RD.1.2.246.352.221.55648942947888522252143911824374318780.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P07b/tumor_segmentation/P07b_tumor_mask_fu1.nii.gz",
+        "P07b/tumor_segmentation/P07b_tumor_mask_baseline.nii.gz",
+        "P07b/tumor_segmentation/P07b_tumor_mask_fu2.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P08",
+      "patient_zip": "P08.zip",
+      "file_count": 1232,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 357,
+      "mr_dicom_count": 832,
+      "nifti_count": 28,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 5,
+      "brats_modality_count": 20,
+      "rd_examples": [
+        "P08/DICOM/RTP_2021-12-20/RD.1.2.246.352.221.489658308310693232317049876500774327701.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P08/tumor_segmentation/P08_tumor_mask_fu4.nii.gz",
+        "P08/tumor_segmentation/P08_tumor_mask_baseline.nii.gz",
+        "P08/tumor_segmentation/P08_tumor_mask_fu2.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P09",
+      "patient_zip": "P09.zip",
+      "file_count": 1665,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 348,
+      "mr_dicom_count": 952,
+      "nifti_count": 32,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 5,
+      "brats_modality_count": 24,
+      "rd_examples": [
+        "P09/DICOM/RTP_2022-01-13/RD.1.2.246.352.221.479426025805017596113671436485834913461.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P09/tumor_segmentation/P09_tumor_mask_fu5.nii.gz",
+        "P09/tumor_segmentation/P09_tumor_mask_fu3.nii.gz",
+        "P09/tumor_segmentation/P09_tumor_mask_baseline.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P10",
+      "patient_zip": "P10.zip",
+      "file_count": 1198,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 405,
+      "mr_dicom_count": 503,
+      "nifti_count": 23,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 4,
+      "brats_modality_count": 16,
+      "rd_examples": [
+        "P10/DICOM/RTP_2021-12-02/RD.1.2.246.352.221.54170706175749567102508347752557149607.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P10/tumor_segmentation/P10_tumor_mask_fu2.nii.gz",
+        "P10/tumor_segmentation/P10_tumor_mask_fu1.nii.gz",
+        "P10/tumor_segmentation/P10_tumor_mask_fu3.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P11",
+      "patient_zip": "P11.zip",
+      "file_count": 1326,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 362,
+      "mr_dicom_count": 921,
+      "nifti_count": 28,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 5,
+      "brats_modality_count": 20,
+      "rd_examples": [
+        "P11/DICOM/RTP_2021-11-17/RD.1.2.246.352.221.56184327160070466625935149919162986421.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P11/tumor_segmentation/P11_tumor_mask_fu1.nii.gz",
+        "P11/tumor_segmentation/P11_tumor_mask_fu3.nii.gz",
+        "P11/tumor_segmentation/P11_tumor_mask_baseline.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P12",
+      "patient_zip": "P12.zip",
+      "file_count": 731,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 334,
+      "mr_dicom_count": 364,
+      "nifti_count": 18,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 3,
+      "brats_modality_count": 12,
+      "rd_examples": [
+        "P12/DICOM/RTP_2021-03-26/RD.1.2.246.352.221.563369049980202091714799076180173767302.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P12/tumor_segmentation/P12_tumor_mask_fu2.nii.gz",
+        "P12/tumor_segmentation/P12_tumor_mask_baseline.nii.gz",
+        "P12/tumor_segmentation/P12_tumor_mask_fu1.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P13",
+      "patient_zip": "P13.zip",
+      "file_count": 1033,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 371,
+      "mr_dicom_count": 614,
+      "nifti_count": 33,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 6,
+      "brats_modality_count": 24,
+      "rd_examples": [
+        "P13/DICOM/RTP_2020-09-14/RD.1.2.246.352.221.48732144124459050793768127061913429380.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P13/tumor_segmentation/P13_tumor_mask_fu3.nii.gz",
+        "P13/tumor_segmentation/P13_tumor_mask_fu1.nii.gz",
+        "P13/tumor_segmentation/P13_tumor_mask_baseline.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P14",
+      "patient_zip": "P14.zip",
+      "file_count": 535,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 276,
+      "mr_dicom_count": 231,
+      "nifti_count": 13,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 2,
+      "brats_modality_count": 8,
+      "rd_examples": [
+        "P14/DICOM/RTP_2019-11-15/RD.1.2.246.352.221.49405898121609302343399238820096487329.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P14/tumor_segmentation/P14_tumor_mask_baseline.nii.gz",
+        "P14/tumor_segmentation/P14_tumor_mask_fu1.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P15",
+      "patient_zip": "P15.zip",
+      "file_count": 1171,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 382,
+      "mr_dicom_count": 743,
+      "nifti_count": 31,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 4,
+      "brats_modality_count": 24,
+      "rd_examples": [
+        "P15/DICOM/RTP_2021-06-03/RD.1.2.246.352.221.51955044267907892442340473155951440830.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P15/tumor_segmentation/P15_tumor_mask_baseline.nii.gz",
+        "P15/tumor_segmentation/P15_tumor_mask_fu5.nii.gz",
+        "P15/tumor_segmentation/P15_tumor_mask_fu3.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P16",
+      "patient_zip": "P16.zip",
+      "file_count": 925,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 430,
+      "mr_dicom_count": 460,
+      "nifti_count": 20,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 1,
+      "brats_modality_count": 16,
+      "rd_examples": [
+        "P16/DICOM/RTP_2020-11-20/RD.1.2.246.352.221.480515728336252635714453912234062998692.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P16/tumor_segmentation/P16_tumor_mask_baseline.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P17a",
+      "patient_zip": "P17a.zip",
+      "file_count": 866,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 10,
+      "ct_dicom_count": 271,
+      "mr_dicom_count": 554,
+      "nifti_count": 28,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 5,
+      "brats_modality_count": 20,
+      "rd_examples": [
+        "P17a/DICOM/RTP_2019-12-02/RD.1.2.246.352.221.53735667475162679736792650853947028361.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P17a/tumor_segmentation/P17a_tumor_mask_fu3.nii.gz",
+        "P17a/tumor_segmentation/P17a_tumor_mask_fu1.nii.gz",
+        "P17a/tumor_segmentation/P17a_tumor_mask_baseline.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P17b",
+      "patient_zip": "P17b.zip",
+      "file_count": 1101,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 353,
+      "mr_dicom_count": 700,
+      "nifti_count": 33,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 6,
+      "brats_modality_count": 24,
+      "rd_examples": [
+        "P17b/DICOM/RTP_2020-11-06/RD.1.2.246.352.221.463027481548312508493173440653352341.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P17b/tumor_segmentation/P17b_tumor_mask_fu2.nii.gz",
+        "P17b/tumor_segmentation/P17b_tumor_mask_fu4.nii.gz",
+        "P17b/tumor_segmentation/P17b_tumor_mask_fu1.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P18",
+      "patient_zip": "P18.zip",
+      "file_count": 1227,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 361,
+      "mr_dicom_count": 823,
+      "nifti_count": 28,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 5,
+      "brats_modality_count": 20,
+      "rd_examples": [
+        "P18/DICOM/RTP_2021-09-22/RD.1.2.246.352.221.561733088360245608716395718506824326793.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P18/tumor_segmentation/P18_tumor_mask_fu2.nii.gz",
+        "P18/tumor_segmentation/P18_tumor_mask_baseline.nii.gz",
+        "P18/tumor_segmentation/P18_tumor_mask_fu4.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P19",
+      "patient_zip": "P19.zip",
+      "file_count": 1265,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 361,
+      "mr_dicom_count": 858,
+      "nifti_count": 31,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 4,
+      "brats_modality_count": 24,
+      "rd_examples": [
+        "P19/DICOM/RTP_2021-09-22/RD.1.2.246.352.221.561733088360245608716395718506824326793.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P19/tumor_segmentation/P19_tumor_mask_baseline.nii.gz",
+        "P19/tumor_segmentation/P19_tumor_mask_fu1.nii.gz",
+        "P19/tumor_segmentation/P19_tumor_mask_fu3.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P20a",
+      "patient_zip": "P20a.zip",
+      "file_count": 1260,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 341,
+      "mr_dicom_count": 881,
+      "nifti_count": 23,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 4,
+      "brats_modality_count": 16,
+      "rd_examples": [
+        "P20a/DICOM/RTP_2022-01-20/RD.1.2.246.352.221.53469054118526950261913859498791064217.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P20a/tumor_segmentation/P20a_tumor_mask_fu1.nii.gz",
+        "P20a/tumor_segmentation/P20a_tumor_mask_fu3.nii.gz",
+        "P20a/tumor_segmentation/P20a_tumor_mask_fu2.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P20b",
+      "patient_zip": "P20b.zip",
+      "file_count": 1481,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 400,
+      "mr_dicom_count": 1035,
+      "nifti_count": 31,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 4,
+      "brats_modality_count": 24,
+      "rd_examples": [
+        "P20b/DICOM/RTP_2020-10-07/RD.1.2.246.352.221.50290710625469006966096111359191838366.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P20b/tumor_segmentation/P20b_tumor_mask_fu4.nii.gz",
+        "P20b/tumor_segmentation/P20b_tumor_mask_baseline.nii.gz",
+        "P20b/tumor_segmentation/P20b_tumor_mask_fu5.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P21",
+      "patient_zip": "P21.zip",
+      "file_count": 716,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 355,
+      "mr_dicom_count": 328,
+      "nifti_count": 18,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 3,
+      "brats_modality_count": 12,
+      "rd_examples": [
+        "P21/DICOM/RTP_2020-08-21/RD.1.2.246.352.221.518683513185685015615465169739001382843.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P21/tumor_segmentation/P21_tumor_mask_fu1.nii.gz",
+        "P21/tumor_segmentation/P21_tumor_mask_baseline.nii.gz",
+        "P21/tumor_segmentation/P21_tumor_mask_fu2.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P22",
+      "patient_zip": "P22.zip",
+      "file_count": 1203,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 11,
+      "ct_dicom_count": 352,
+      "mr_dicom_count": 809,
+      "nifti_count": 28,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 5,
+      "brats_modality_count": 20,
+      "rd_examples": [
+        "P22/DICOM/RTP_2021-11-05/RD.1.2.246.352.221.473353495974157326011775575137678034878.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P22/tumor_segmentation/P22_tumor_mask_fu2.nii.gz",
+        "P22/tumor_segmentation/P22_tumor_mask_fu4.nii.gz",
+        "P22/tumor_segmentation/P22_tumor_mask_fu1.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P23a",
+      "patient_zip": "P23a.zip",
+      "file_count": 959,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 294,
+      "mr_dicom_count": 593,
+      "nifti_count": 23,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 4,
+      "brats_modality_count": 16,
+      "rd_examples": [
+        "P23a/DICOM/RTP_2020-04-29/RD.1.2.246.352.221.51364519008124704601421867112432249513.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P23a/tumor_segmentation/P23a_tumor_mask_baseline.nii.gz",
+        "P23a/tumor_segmentation/P23a_tumor_mask_fu3.nii.gz",
+        "P23a/tumor_segmentation/P23a_tumor_mask_fu1.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P23b",
+      "patient_zip": "P23b.zip",
+      "file_count": 1214,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 447,
+      "mr_dicom_count": 724,
+      "nifti_count": 28,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 5,
+      "brats_modality_count": 20,
+      "rd_examples": [
+        "P23b/DICOM/RTP_2020-11-20/RD.1.2.246.352.221.49890122291076994799746586952150339722.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P23b/tumor_segmentation/P23b_tumor_mask_fu2.nii.gz",
+        "P23b/tumor_segmentation/P23b_tumor_mask_fu5.nii.gz",
+        "P23b/tumor_segmentation/P23b_tumor_mask_baseline.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P24",
+      "patient_zip": "P24.zip",
+      "file_count": 656,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 326,
+      "mr_dicom_count": 302,
+      "nifti_count": 13,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 2,
+      "brats_modality_count": 8,
+      "rd_examples": [
+        "P24/DICOM/RTP_2021-09-29/RD.1.2.246.352.221.5540656864149365716387753176823719311.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P24/tumor_segmentation/P24_tumor_mask_baseline.nii.gz",
+        "P24/tumor_segmentation/P24_tumor_mask_fu1.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P25",
+      "patient_zip": "P25.zip",
+      "file_count": 1074,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 361,
+      "mr_dicom_count": 670,
+      "nifti_count": 28,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 5,
+      "brats_modality_count": 20,
+      "rd_examples": [
+        "P25/DICOM/RTP_2021-06-22/RD.1.2.246.352.221.468237348294577489913048103211787833492.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P25/tumor_segmentation/P25_tumor_mask_fu5.nii.gz",
+        "P25/tumor_segmentation/P25_tumor_mask_fu3.nii.gz",
+        "P25/tumor_segmentation/P25_tumor_mask_fu1.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P26",
+      "patient_zip": "P26.zip",
+      "file_count": 753,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 391,
+      "mr_dicom_count": 329,
+      "nifti_count": 18,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 3,
+      "brats_modality_count": 12,
+      "rd_examples": [
+        "P26/DICOM/RTP_2021-06-17/RD.1.2.246.352.221.505612082963254433813645341097779778975.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P26/tumor_segmentation/P26_tumor_mask_baseline.nii.gz",
+        "P26/tumor_segmentation/P26_tumor_mask_fu2.nii.gz",
+        "P26/tumor_segmentation/P26_tumor_mask_fu1.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P27",
+      "patient_zip": "P27.zip",
+      "file_count": 885,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 381,
+      "mr_dicom_count": 466,
+      "nifti_count": 23,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 4,
+      "brats_modality_count": 16,
+      "rd_examples": [
+        "P27/DICOM/RTP_2021-07-02/RD.1.2.246.352.221.502156853434726564016970633414108456077.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P27/tumor_segmentation/P27_tumor_mask_baseline.nii.gz",
+        "P27/tumor_segmentation/P27_tumor_mask_fu1.nii.gz",
+        "P27/tumor_segmentation/P27_tumor_mask_fu3.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P28",
+      "patient_zip": "P28.zip",
+      "file_count": 3591,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 10,
+      "ct_dicom_count": 372,
+      "mr_dicom_count": 3173,
+      "nifti_count": 33,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 6,
+      "brats_modality_count": 24,
+      "rd_examples": [
+        "P28/DICOM/RTP_2022-06-30/RD.1.2.246.352.221.465599317170855701514388981713346520461.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P28/tumor_segmentation/P28_tumor_mask_fu2.nii.gz",
+        "P28/tumor_segmentation/P28_tumor_mask_fu4.nii.gz",
+        "P28/tumor_segmentation/P28_tumor_mask_fu3.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P29",
+      "patient_zip": "P29.zip",
+      "file_count": 3447,
+      "rd_count": 2,
+      "rp_count": 2,
+      "rs_count": 2,
+      "ri_count": 20,
+      "ct_dicom_count": 716,
+      "mr_dicom_count": 2678,
+      "nifti_count": 27,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 4,
+      "brats_modality_count": 20,
+      "rd_examples": [
+        "P29/DICOM/RTP_2022-08-06_SUPERIOR/RD.1.2.246.352.221.486588316310815460815204721559056950180.dcm",
+        "P29/DICOM/RTP_2022-08-06_INFERIOR/RD.1.2.246.352.221.467305525508055702815783908314196098206.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P29/tumor_segmentation/P29_tumor_mask_fu1.nii.gz",
+        "P29/tumor_segmentation/P29_tumor_mask_fu2.nii.gz",
+        "P29/tumor_segmentation/P29_tumor_mask_fu4.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P30",
+      "patient_zip": "P30.zip",
+      "file_count": 1684,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 410,
+      "mr_dicom_count": 1241,
+      "nifti_count": 18,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 3,
+      "brats_modality_count": 12,
+      "rd_examples": [
+        "P30/DICOM/RTP_2022-08-11/RD.1.2.246.352.221.539775757495154275318108881795793636005.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P30/tumor segmentation/P30_tumor_mask_baseline.nii.gz",
+        "P30/tumor segmentation/P30_tumor_mask_fu2.nii.gz",
+        "P30/tumor segmentation/P30_tumor_mask_fu1.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P31",
+      "patient_zip": "P31.zip",
+      "file_count": 1520,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 372,
+      "mr_dicom_count": 1110,
+      "nifti_count": 23,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 4,
+      "brats_modality_count": 16,
+      "rd_examples": [
+        "P31/DICOM/RTP_2022-10-05/RD.1.2.246.352.221.50449270080955721326101454126143554474.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P31/tumor_segmentation/P31_tumor_mask_baseline.nii.gz",
+        "P31/tumor_segmentation/P31_tumor_mask_fu1.nii.gz",
+        "P31/tumor_segmentation/P31_tumor_mask_fu3.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P32",
+      "patient_zip": "P32.zip",
+      "file_count": 4332,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 365,
+      "mr_dicom_count": 3923,
+      "nifti_count": 29,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 2,
+      "brats_modality_count": 24,
+      "rd_examples": [
+        "P32/DICOM/RTP_2022-04-18/RD.1.2.246.352.221.57258037702977785387285480661827719044.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P32/tumor_segmentation/P32_tumor_mask_baseline.nii.gz",
+        "P32/tumor_segmentation/P32_tumor_mask_fu1.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P33",
+      "patient_zip": "P33.zip",
+      "file_count": 2736,
+      "rd_count": 3,
+      "rp_count": 3,
+      "rs_count": 3,
+      "ri_count": 34,
+      "ct_dicom_count": 1077,
+      "mr_dicom_count": 1598,
+      "nifti_count": 18,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 3,
+      "brats_modality_count": 12,
+      "rd_examples": [
+        "P33/DICOM/RTP_2023-02-07/RD.1.2.246.352.221.521171935789917840015620825616991939231.dcm",
+        "P33/DICOM/RTP_2023-02-08_TEMPORAL/RD.1.2.246.352.221.53828279462453879547808347983005390236.dcm",
+        "P33/DICOM/RTP_2023-02-08_PARIETAL/RD.1.2.246.352.221.4661406995403492395323565162702066611.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P33/tumor_segmentation/P33_tumor_mask_fu1.nii.gz",
+        "P33/tumor_segmentation/P33_tumor_mask_fu2.nii.gz",
+        "P33/tumor_segmentation/P33_tumor_mask_baseline.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P34",
+      "patient_zip": "P34.zip",
+      "file_count": 2944,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 412,
+      "mr_dicom_count": 2489,
+      "nifti_count": 28,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 5,
+      "brats_modality_count": 20,
+      "rd_examples": [
+        "P34/DICOM/RTP_2023-02-22/RD.1.2.246.352.221.57198972292409505357288784022348465571.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P34/tumor_segmentation/P34_tumor_mask_fu2.nii.gz",
+        "P34/tumor_segmentation/P34_tumor_mask_fu4.nii.gz",
+        "P34/tumor_segmentation/P34_tumor_mask_fu1.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P35",
+      "patient_zip": "P35.zip",
+      "file_count": 2065,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 414,
+      "mr_dicom_count": 1618,
+      "nifti_count": 18,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 3,
+      "brats_modality_count": 12,
+      "rd_examples": [
+        "P35/DICOM/RTP_2023-02-24/RD.1.2.246.352.221.486115513781086849516817268880735999409.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P35/tumor_segmentation/P35_tumor_mask_fu1.nii.gz",
+        "P35/tumor_segmentation/P35_tumor_mask_fu3.nii.gz",
+        "P35/tumor_segmentation/P35_tumor_mask_baseline.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P36",
+      "patient_zip": "P36.zip",
+      "file_count": 3308,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 6,
+      "ct_dicom_count": 363,
+      "mr_dicom_count": 2913,
+      "nifti_count": 23,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 4,
+      "brats_modality_count": 16,
+      "rd_examples": [
+        "P36/DICOM/RTP_2023-04-25/RD.1.2.246.352.221.53549505139569720573913631908264577200.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P36/tumor_segmentation/P36_tumor_mask_baseline.nii.gz",
+        "P36/tumor_segmentation/P36_tumor_mask_fu2.nii.gz",
+        "P36/tumor_segmentation/P36_tumor_mask_fu3.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P37",
+      "patient_zip": "P37.zip",
+      "file_count": 2076,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 8,
+      "ct_dicom_count": 404,
+      "mr_dicom_count": 1643,
+      "nifti_count": 18,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 3,
+      "brats_modality_count": 12,
+      "rd_examples": [
+        "P37/DICOM/RTP_2023-04-27/RD.1.2.246.352.221.542019135932488223716707321291740764838.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P37/tumor_segmentation/P37_tumor_mask_fu1.nii.gz",
+        "P37/tumor_segmentation/P37_tumor_mask_baseline.nii.gz",
+        "P37/tumor_segmentation/P37_tumor_mask_fu2.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P38",
+      "patient_zip": "P38.zip",
+      "file_count": 1985,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 8,
+      "ct_dicom_count": 368,
+      "mr_dicom_count": 1588,
+      "nifti_count": 18,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 3,
+      "brats_modality_count": 12,
+      "rd_examples": [
+        "P38/DICOM/RTP_2023-06-26/RD.1.2.246.352.221.5261433421934489587.9193249834275021207.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P38/tumor_segmentation/P38_tumor_mask_fu2.nii.gz",
+        "P38/tumor_segmentation/P38_tumor_mask_baseline.nii.gz",
+        "P38/tumor_segmentation/P38_tumor_mask_fu1.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P39",
+      "patient_zip": "P39.zip",
+      "file_count": 1562,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 397,
+      "mr_dicom_count": 1137,
+      "nifti_count": 13,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 2,
+      "brats_modality_count": 8,
+      "rd_examples": [
+        "P39/DICOM/RTP_2023-09-26/RD.1.2.246.352.221.5163221115657269792.9612384385520593580.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P39/tumor_segmentation/P39_tumor_mask_fu1.nii.gz",
+        "P39/tumor_segmentation/P39_tumor_mask_baseline.nii.gz"
+      ]
+    },
+    {
+      "patient_id": "P40",
+      "patient_zip": "P40.zip",
+      "file_count": 637,
+      "rd_count": 1,
+      "rp_count": 1,
+      "rs_count": 1,
+      "ri_count": 12,
+      "ct_dicom_count": 337,
+      "mr_dicom_count": 272,
+      "nifti_count": 13,
+      "rtp_nifti_count": 1,
+      "tumour_mask_count": 2,
+      "brats_modality_count": 8,
+      "rd_examples": [
+        "P40/DICOM/RTP_2021-02-01/RD.1.2.246.352.221.56997868716974330548866700801756943761.dcm"
+      ],
+      "tumour_mask_examples": [
+        "P40/tumor_segmentation/P40_tumor_mask_fu1.nii.gz",
+        "P40/tumor_segmentation/P40_tumor_mask_baseline.nii.gz"
+      ]
+    }
+  ],
+  "rtdose_rows": [
+    {
+      "patient_zip": "P01.zip",
+      "rd_path": "P01/DICOM/RTP_2020-01-10/RD.1.2.246.352.221.52638049580166263566033546583737691800.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 199,
+      "columns": 327,
+      "number_of_frames": 259,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 259,
+      "dose_grid_scaling": 2.5310727976e-05,
+      "sop_instance_uid": "1.2.246.352.221.52638049580166263566033546583737691800",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        259,
+        199,
+        327
+      ],
+      "max_dose": 25.377953,
+      "mean_nonzero_dose": 0.269328,
+      "nonzero_voxel_count": 3806133,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P02.zip",
+      "rd_path": "P02/DICOM/RTP_2021-06-15/RD.1.2.246.352.221.497706138338387547515590505641100461465.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 209,
+      "columns": 373,
+      "number_of_frames": 353,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 353,
+      "dose_grid_scaling": 2.2895046487e-05,
+      "sop_instance_uid": "1.2.246.352.221.497706138338387547515590505641100461465",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        353,
+        209,
+        373
+      ],
+      "max_dose": 23.194765,
+      "mean_nonzero_dose": 0.424902,
+      "nonzero_voxel_count": 8970088,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P04a.zip",
+      "rd_path": "P04a/DICOM/RTP_2020-03-20/RD.1.2.246.352.221.491493098326933640611130304873528591784.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 201,
+      "columns": 325,
+      "number_of_frames": 319,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 319,
+      "dose_grid_scaling": 2.0369486327e-05,
+      "sop_instance_uid": "1.2.246.352.221.491493098326933640611130304873528591784",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        319,
+        201,
+        325
+      ],
+      "max_dose": 25.759701,
+      "mean_nonzero_dose": 0.456985,
+      "nonzero_voxel_count": 3672700,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P04b.zip",
+      "rd_path": "P04b/DICOM/RTP_2020-11-13/RD.1.2.246.352.221.49502791889128414899894118281140554380.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 209,
+      "columns": 391,
+      "number_of_frames": 311,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 311,
+      "dose_grid_scaling": 2.4841688599e-05,
+      "sop_instance_uid": "1.2.246.352.221.49502791889128414899894118281140554380",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        311,
+        209,
+        391
+      ],
+      "max_dose": 25.036249,
+      "mean_nonzero_dose": 0.39222,
+      "nonzero_voxel_count": 6748107,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P05.zip",
+      "rd_path": "P05/DICOM/RTP_2021-12-10/RD.1.2.246.352.221.47952245028058114923777573139847642280.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 223,
+      "columns": 369,
+      "number_of_frames": 318,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 318,
+      "dose_grid_scaling": 2.496324075e-05,
+      "sop_instance_uid": "1.2.246.352.221.47952245028058114923777573139847642280",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        318,
+        223,
+        369
+      ],
+      "max_dose": 25.224855,
+      "mean_nonzero_dose": 0.588923,
+      "nonzero_voxel_count": 5872932,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P06.zip",
+      "rd_path": "P06/DICOM/RTP_2019-12-06/RD.1.2.246.352.221.54007533444556091748861323413769599395.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 195,
+      "columns": 387,
+      "number_of_frames": 378,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 378,
+      "dose_grid_scaling": 1.9876309831e-05,
+      "sop_instance_uid": "1.2.246.352.221.54007533444556091748861323413769599395",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        378,
+        195,
+        387
+      ],
+      "max_dose": 25.563221,
+      "mean_nonzero_dose": 0.356289,
+      "nonzero_voxel_count": 7587617,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P07a.zip",
+      "rd_path": "P07a/DICOM/RTP_2021-10-13/RD.1.2.246.352.221.50775953472424076598271601054234690229.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 215,
+      "columns": 371,
+      "number_of_frames": 313,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 313,
+      "dose_grid_scaling": 2.5090926436e-05,
+      "sop_instance_uid": "1.2.246.352.221.50775953472424076598271601054234690229",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        313,
+        215,
+        371
+      ],
+      "max_dose": 25.39114,
+      "mean_nonzero_dose": 0.145911,
+      "nonzero_voxel_count": 5240592,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P07b.zip",
+      "rd_path": "P07b/DICOM/RTP_2021-10-14/RD.1.2.246.352.221.55648942947888522252143911824374318780.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 215,
+      "columns": 371,
+      "number_of_frames": 313,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 313,
+      "dose_grid_scaling": 3.6798533981e-05,
+      "sop_instance_uid": "1.2.246.352.221.55648942947888522252143911824374318780",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        313,
+        215,
+        371
+      ],
+      "max_dose": 38.563171,
+      "mean_nonzero_dose": 0.725258,
+      "nonzero_voxel_count": 5254340,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P08.zip",
+      "rd_path": "P08/DICOM/RTP_2021-12-20/RD.1.2.246.352.221.489658308310693232317049876500774327701.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 201,
+      "columns": 365,
+      "number_of_frames": 268,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 268,
+      "dose_grid_scaling": 2.5172048862e-05,
+      "sop_instance_uid": "1.2.246.352.221.489658308310693232317049876500774327701",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        268,
+        201,
+        365
+      ],
+      "max_dose": 25.55645,
+      "mean_nonzero_dose": 0.253049,
+      "nonzero_voxel_count": 4784726,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P09.zip",
+      "rd_path": "P09/DICOM/RTP_2022-01-13/RD.1.2.246.352.221.479426025805017596113671436485834913461.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 193,
+      "columns": 305,
+      "number_of_frames": 240,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 240,
+      "dose_grid_scaling": 2.5869021658e-05,
+      "sop_instance_uid": "1.2.246.352.221.479426025805017596113671436485834913461",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        240,
+        193,
+        305
+      ],
+      "max_dose": 25.881645,
+      "mean_nonzero_dose": 0.239913,
+      "nonzero_voxel_count": 3208475,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P10.zip",
+      "rd_path": "P10/DICOM/RTP_2021-12-02/RD.1.2.246.352.221.54170706175749567102508347752557149607.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 213,
+      "columns": 385,
+      "number_of_frames": 329,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 329,
+      "dose_grid_scaling": 2.4680317434e-05,
+      "sop_instance_uid": "1.2.246.352.221.54170706175749567102508347752557149607",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        329,
+        213,
+        385
+      ],
+      "max_dose": 25.648699,
+      "mean_nonzero_dose": 0.55203,
+      "nonzero_voxel_count": 6622037,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P11.zip",
+      "rd_path": "P11/DICOM/RTP_2021-11-17/RD.1.2.246.352.221.56184327160070466625935149919162986421.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 209,
+      "columns": 365,
+      "number_of_frames": 283,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 283,
+      "dose_grid_scaling": 3.7784879024e-05,
+      "sop_instance_uid": "1.2.246.352.221.56184327160070466625935149919162986421",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        283,
+        209,
+        365
+      ],
+      "max_dose": 39.220364,
+      "mean_nonzero_dose": 0.939562,
+      "nonzero_voxel_count": 5096511,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P12.zip",
+      "rd_path": "P12/DICOM/RTP_2021-03-26/RD.1.2.246.352.221.563369049980202091714799076180173767302.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 175,
+      "columns": 273,
+      "number_of_frames": 266,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 266,
+      "dose_grid_scaling": 2.5870236098e-05,
+      "sop_instance_uid": "1.2.246.352.221.563369049980202091714799076180173767302",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        266,
+        175,
+        273
+      ],
+      "max_dose": 25.988697,
+      "mean_nonzero_dose": 0.247663,
+      "nonzero_voxel_count": 3018839,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P13.zip",
+      "rd_path": "P13/DICOM/RTP_2020-09-14/RD.1.2.246.352.221.48732144124459050793768127061913429380.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 185,
+      "columns": 295,
+      "number_of_frames": 263,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 263,
+      "dose_grid_scaling": 3.7461930515e-05,
+      "sop_instance_uid": "1.2.246.352.221.48732144124459050793768127061913429380",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        263,
+        185,
+        295
+      ],
+      "max_dose": 39.991661,
+      "mean_nonzero_dose": 2.092169,
+      "nonzero_voxel_count": 2980624,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P14.zip",
+      "rd_path": "P14/DICOM/RTP_2019-11-15/RD.1.2.246.352.221.49405898121609302343399238820096487329.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 207,
+      "columns": 167,
+      "number_of_frames": 221,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 221,
+      "dose_grid_scaling": 2.2776310105e-05,
+      "sop_instance_uid": "1.2.246.352.221.49405898121609302343399238820096487329",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        221,
+        207,
+        167
+      ],
+      "max_dose": 22.50017,
+      "mean_nonzero_dose": 0.74926,
+      "nonzero_voxel_count": 3589630,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P15.zip",
+      "rd_path": "P15/DICOM/RTP_2021-06-03/RD.1.2.246.352.221.51955044267907892442340473155951440830.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 195,
+      "columns": 347,
+      "number_of_frames": 308,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 308,
+      "dose_grid_scaling": 2.4804209242e-05,
+      "sop_instance_uid": "1.2.246.352.221.51955044267907892442340473155951440830",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        308,
+        195,
+        347
+      ],
+      "max_dose": 26.149887,
+      "mean_nonzero_dose": 0.573449,
+      "nonzero_voxel_count": 4692470,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P16.zip",
+      "rd_path": "P16/DICOM/RTP_2020-11-20/RD.1.2.246.352.221.480515728336252635714453912234062998692.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 191,
+      "columns": 319,
+      "number_of_frames": 331,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 331,
+      "dose_grid_scaling": 2.502555872e-05,
+      "sop_instance_uid": "1.2.246.352.221.480515728336252635714453912234062998692",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        331,
+        191,
+        319
+      ],
+      "max_dose": 25.259422,
+      "mean_nonzero_dose": 0.618734,
+      "nonzero_voxel_count": 3793875,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P17a.zip",
+      "rd_path": "P17a/DICOM/RTP_2019-12-02/RD.1.2.246.352.221.53735667475162679736792650853947028361.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 185,
+      "columns": 263,
+      "number_of_frames": 248,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 248,
+      "dose_grid_scaling": 3.7451898182e-05,
+      "sop_instance_uid": "1.2.246.352.221.53735667475162679736792650853947028361",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        248,
+        185,
+        263
+      ],
+      "max_dose": 40.076488,
+      "mean_nonzero_dose": 1.589753,
+      "nonzero_voxel_count": 2918256,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P17b.zip",
+      "rd_path": "P17b/DICOM/RTP_2020-11-06/RD.1.2.246.352.221.463027481548312508493173440653352341.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 193,
+      "columns": 279,
+      "number_of_frames": 255,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 255,
+      "dose_grid_scaling": 2.4609857135e-05,
+      "sop_instance_uid": "1.2.246.352.221.463027481548312508493173440653352341",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        255,
+        193,
+        279
+      ],
+      "max_dose": 24.582933,
+      "mean_nonzero_dose": 0.301422,
+      "nonzero_voxel_count": 3053674,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P18.zip",
+      "rd_path": "P18/DICOM/RTP_2021-09-22/RD.1.2.246.352.221.561733088360245608716395718506824326793.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 201,
+      "columns": 309,
+      "number_of_frames": 293,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 293,
+      "dose_grid_scaling": 3.7288372287e-05,
+      "sop_instance_uid": "1.2.246.352.221.561733088360245608716395718506824326793",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        293,
+        201,
+        309
+      ],
+      "max_dose": 39.183258,
+      "mean_nonzero_dose": 1.402726,
+      "nonzero_voxel_count": 4176401,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P19.zip",
+      "rd_path": "P19/DICOM/RTP_2021-09-22/RD.1.2.246.352.221.561733088360245608716395718506824326793.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 201,
+      "columns": 309,
+      "number_of_frames": 293,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 293,
+      "dose_grid_scaling": 3.7288372287e-05,
+      "sop_instance_uid": "1.2.246.352.221.561733088360245608716395718506824326793",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        293,
+        201,
+        309
+      ],
+      "max_dose": 39.183258,
+      "mean_nonzero_dose": 1.402726,
+      "nonzero_voxel_count": 4176401,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P20a.zip",
+      "rd_path": "P20a/DICOM/RTP_2022-01-20/RD.1.2.246.352.221.53469054118526950261913859498791064217.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 191,
+      "columns": 281,
+      "number_of_frames": 266,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 266,
+      "dose_grid_scaling": 2.4253121822e-05,
+      "sop_instance_uid": "1.2.246.352.221.53469054118526950261913859498791064217",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        266,
+        191,
+        281
+      ],
+      "max_dose": 24.748978,
+      "mean_nonzero_dose": 0.14932,
+      "nonzero_voxel_count": 3095486,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P20b.zip",
+      "rd_path": "P20b/DICOM/RTP_2020-10-07/RD.1.2.246.352.221.50290710625469006966096111359191838366.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 195,
+      "columns": 291,
+      "number_of_frames": 286,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 286,
+      "dose_grid_scaling": 2.5839672964e-05,
+      "sop_instance_uid": "1.2.246.352.221.50290710625469006966096111359191838366",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        286,
+        195,
+        291
+      ],
+      "max_dose": 25.661715,
+      "mean_nonzero_dose": 0.233335,
+      "nonzero_voxel_count": 3482085,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P21.zip",
+      "rd_path": "P21/DICOM/RTP_2020-08-21/RD.1.2.246.352.221.518683513185685015615465169739001382843.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 189,
+      "columns": 309,
+      "number_of_frames": 279,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 279,
+      "dose_grid_scaling": 2.4933868508e-05,
+      "sop_instance_uid": "1.2.246.352.221.518683513185685015615465169739001382843",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        279,
+        189,
+        309
+      ],
+      "max_dose": 24.540436,
+      "mean_nonzero_dose": 0.63023,
+      "nonzero_voxel_count": 3375796,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P22.zip",
+      "rd_path": "P22/DICOM/RTP_2021-11-05/RD.1.2.246.352.221.473353495974157326011775575137678034878.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 189,
+      "columns": 339,
+      "number_of_frames": 276,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 276,
+      "dose_grid_scaling": 2.5332397016e-05,
+      "sop_instance_uid": "1.2.246.352.221.473353495974157326011775575137678034878",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        276,
+        189,
+        339
+      ],
+      "max_dose": 26.152761,
+      "mean_nonzero_dose": 0.178541,
+      "nonzero_voxel_count": 3716425,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P23a.zip",
+      "rd_path": "P23a/DICOM/RTP_2020-04-29/RD.1.2.246.352.221.51364519008124704601421867112432249513.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 181,
+      "columns": 321,
+      "number_of_frames": 243,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 243,
+      "dose_grid_scaling": 2.0555757381e-05,
+      "sop_instance_uid": "1.2.246.352.221.51364519008124704601421867112432249513",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        243,
+        181,
+        321
+      ],
+      "max_dose": 25.896349,
+      "mean_nonzero_dose": 0.583737,
+      "nonzero_voxel_count": 3789134,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P23b.zip",
+      "rd_path": "P23b/DICOM/RTP_2020-11-20/RD.1.2.246.352.221.49890122291076994799746586952150339722.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 201,
+      "columns": 399,
+      "number_of_frames": 296,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 296,
+      "dose_grid_scaling": 2.2298510635e-05,
+      "sop_instance_uid": "1.2.246.352.221.49890122291076994799746586952150339722",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        296,
+        201,
+        399
+      ],
+      "max_dose": 22.389288,
+      "mean_nonzero_dose": 0.388011,
+      "nonzero_voxel_count": 6326791,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P24.zip",
+      "rd_path": "P24/DICOM/RTP_2021-09-29/RD.1.2.246.352.221.5540656864149365716387753176823719311.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 201,
+      "columns": 271,
+      "number_of_frames": 248,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 248,
+      "dose_grid_scaling": 2.5212385801e-05,
+      "sop_instance_uid": "1.2.246.352.221.5540656864149365716387753176823719311",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        248,
+        201,
+        271
+      ],
+      "max_dose": 25.410128,
+      "mean_nonzero_dose": 0.33114,
+      "nonzero_voxel_count": 2925735,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P25.zip",
+      "rd_path": "P25/DICOM/RTP_2021-06-22/RD.1.2.246.352.221.468237348294577489913048103211787833492.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 235,
+      "columns": 359,
+      "number_of_frames": 363,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 363,
+      "dose_grid_scaling": 3.7176579286e-05,
+      "sop_instance_uid": "1.2.246.352.221.468237348294577489913048103211787833492",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        363,
+        235,
+        359
+      ],
+      "max_dose": 38.69643,
+      "mean_nonzero_dose": 1.455405,
+      "nonzero_voxel_count": 5072474,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P26.zip",
+      "rd_path": "P26/DICOM/RTP_2021-06-17/RD.1.2.246.352.221.505612082963254433813645341097779778975.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 213,
+      "columns": 363,
+      "number_of_frames": 321,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 321,
+      "dose_grid_scaling": 2.6596612543e-05,
+      "sop_instance_uid": "1.2.246.352.221.505612082963254433813645341097779778975",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        321,
+        213,
+        363
+      ],
+      "max_dose": 25.645411,
+      "mean_nonzero_dose": 0.356809,
+      "nonzero_voxel_count": 5662526,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P27.zip",
+      "rd_path": "P27/DICOM/RTP_2021-07-02/RD.1.2.246.352.221.502156853434726564016970633414108456077.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 201,
+      "columns": 373,
+      "number_of_frames": 306,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 306,
+      "dose_grid_scaling": 2.5626897394e-05,
+      "sop_instance_uid": "1.2.246.352.221.502156853434726564016970633414108456077",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        306,
+        201,
+        373
+      ],
+      "max_dose": 26.102865,
+      "mean_nonzero_dose": 0.764233,
+      "nonzero_voxel_count": 5584907,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P28.zip",
+      "rd_path": "P28/DICOM/RTP_2022-06-30/RD.1.2.246.352.221.465599317170855701514388981713346520461.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 213,
+      "columns": 371,
+      "number_of_frames": 311,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 311,
+      "dose_grid_scaling": 2.5103284514e-05,
+      "sop_instance_uid": "1.2.246.352.221.465599317170855701514388981713346520461",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        311,
+        213,
+        371
+      ],
+      "max_dose": 25.88834,
+      "mean_nonzero_dose": 0.130281,
+      "nonzero_voxel_count": 5839832,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P29.zip",
+      "rd_path": "P29/DICOM/RTP_2022-08-06_SUPERIOR/RD.1.2.246.352.221.486588316310815460815204721559056950180.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 192,
+      "columns": 326,
+      "number_of_frames": 281,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 281,
+      "dose_grid_scaling": 2.5701931255e-05,
+      "sop_instance_uid": "1.2.246.352.221.486588316310815460815204721559056950180",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        281,
+        192,
+        326
+      ],
+      "max_dose": 26.746046,
+      "mean_nonzero_dose": 0.209104,
+      "nonzero_voxel_count": 4146544,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P29.zip",
+      "rd_path": "P29/DICOM/RTP_2022-08-06_INFERIOR/RD.1.2.246.352.221.467305525508055702815783908314196098206.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 193,
+      "columns": 327,
+      "number_of_frames": 281,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 281,
+      "dose_grid_scaling": 2.444814074e-05,
+      "sop_instance_uid": "1.2.246.352.221.467305525508055702815783908314196098206",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        281,
+        193,
+        327
+      ],
+      "max_dose": 26.268061,
+      "mean_nonzero_dose": 0.431889,
+      "nonzero_voxel_count": 4158915,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P30.zip",
+      "rd_path": "P30/DICOM/RTP_2022-08-11/RD.1.2.246.352.221.539775757495154275318108881795793636005.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 209,
+      "columns": 335,
+      "number_of_frames": 333,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 333,
+      "dose_grid_scaling": 2.6395207026e-05,
+      "sop_instance_uid": "1.2.246.352.221.539775757495154275318108881795793636005",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        333,
+        209,
+        335
+      ],
+      "max_dose": 26.074875,
+      "mean_nonzero_dose": 0.098692,
+      "nonzero_voxel_count": 6412752,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P31.zip",
+      "rd_path": "P31/DICOM/RTP_2022-10-05/RD.1.2.246.352.221.50449270080955721326101454126143554474.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 191,
+      "columns": 317,
+      "number_of_frames": 265,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 265,
+      "dose_grid_scaling": 2.4677901342e-05,
+      "sop_instance_uid": "1.2.246.352.221.50449270080955721326101454126143554474",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        265,
+        191,
+        317
+      ],
+      "max_dose": 24.839592,
+      "mean_nonzero_dose": 0.445985,
+      "nonzero_voxel_count": 3373128,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P32.zip",
+      "rd_path": "P32/DICOM/RTP_2022-04-18/RD.1.2.246.352.221.57258037702977785387285480661827719044.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 185,
+      "columns": 337,
+      "number_of_frames": 277,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 277,
+      "dose_grid_scaling": 3.8043510759e-05,
+      "sop_instance_uid": "1.2.246.352.221.57258037702977785387285480661827719044",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        277,
+        185,
+        337
+      ],
+      "max_dose": 38.663963,
+      "mean_nonzero_dose": 1.200146,
+      "nonzero_voxel_count": 3691985,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P33.zip",
+      "rd_path": "P33/DICOM/RTP_2023-02-07/RD.1.2.246.352.221.521171935789917840015620825616991939231.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 211,
+      "columns": 401,
+      "number_of_frames": 263,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 263,
+      "dose_grid_scaling": 2.5193740226e-05,
+      "sop_instance_uid": "1.2.246.352.221.521171935789917840015620825616991939231",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        263,
+        211,
+        401
+      ],
+      "max_dose": 25.734272,
+      "mean_nonzero_dose": 0.313865,
+      "nonzero_voxel_count": 4912349,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P33.zip",
+      "rd_path": "P33/DICOM/RTP_2023-02-08_TEMPORAL/RD.1.2.246.352.221.53828279462453879547808347983005390236.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 211,
+      "columns": 401,
+      "number_of_frames": 263,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 263,
+      "dose_grid_scaling": 3.6964373118e-05,
+      "sop_instance_uid": "1.2.246.352.221.53828279462453879547808347983005390236",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        263,
+        211,
+        401
+      ],
+      "max_dose": 38.743916,
+      "mean_nonzero_dose": 0.518416,
+      "nonzero_voxel_count": 4923486,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P33.zip",
+      "rd_path": "P33/DICOM/RTP_2023-02-08_PARIETAL/RD.1.2.246.352.221.4661406995403492395323565162702066611.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 211,
+      "columns": 401,
+      "number_of_frames": 263,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 263,
+      "dose_grid_scaling": 3.6896213199e-05,
+      "sop_instance_uid": "1.2.246.352.221.4661406995403492395323565162702066611",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        263,
+        211,
+        401
+      ],
+      "max_dose": 38.342064,
+      "mean_nonzero_dose": 1.099237,
+      "nonzero_voxel_count": 4937378,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P34.zip",
+      "rd_path": "P34/DICOM/RTP_2023-02-22/RD.1.2.246.352.221.57198972292409505357288784022348465571.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 221,
+      "columns": 379,
+      "number_of_frames": 348,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 348,
+      "dose_grid_scaling": 2.4184629793e-05,
+      "sop_instance_uid": "1.2.246.352.221.57198972292409505357288784022348465571",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        348,
+        221,
+        379
+      ],
+      "max_dose": 25.140818,
+      "mean_nonzero_dose": 0.219169,
+      "nonzero_voxel_count": 7175159,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P35.zip",
+      "rd_path": "P35/DICOM/RTP_2023-02-24/RD.1.2.246.352.221.486115513781086849516817268880735999409.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 217,
+      "columns": 397,
+      "number_of_frames": 356,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 356,
+      "dose_grid_scaling": 2.5738596629e-05,
+      "sop_instance_uid": "1.2.246.352.221.486115513781086849516817268880735999409",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        356,
+        217,
+        397
+      ],
+      "max_dose": 26.202124,
+      "mean_nonzero_dose": 0.140731,
+      "nonzero_voxel_count": 7513365,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P36.zip",
+      "rd_path": "P36/DICOM/RTP_2023-04-25/RD.1.2.246.352.221.53549505139569720573913631908264577200.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 199,
+      "columns": 333,
+      "number_of_frames": 279,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 279,
+      "dose_grid_scaling": 3.7967209101e-05,
+      "sop_instance_uid": "1.2.246.352.221.53549505139569720573913631908264577200",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        279,
+        199,
+        333
+      ],
+      "max_dose": 39.383007,
+      "mean_nonzero_dose": 1.379778,
+      "nonzero_voxel_count": 4108824,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P37.zip",
+      "rd_path": "P37/DICOM/RTP_2023-04-27/RD.1.2.246.352.221.542019135932488223716707321291740764838.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 199,
+      "columns": 395,
+      "number_of_frames": 320,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 320,
+      "dose_grid_scaling": 3.8804387342e-05,
+      "sop_instance_uid": "1.2.246.352.221.542019135932488223716707321291740764838",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        320,
+        199,
+        395
+      ],
+      "max_dose": 38.783783,
+      "mean_nonzero_dose": 0.585328,
+      "nonzero_voxel_count": 6601036,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P38.zip",
+      "rd_path": "P38/DICOM/RTP_2023-06-26/RD.1.2.246.352.221.5261433421934489587.9193249834275021207.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 213,
+      "columns": 387,
+      "number_of_frames": 286,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 286,
+      "dose_grid_scaling": 2.5386377862e-05,
+      "sop_instance_uid": "1.2.246.352.221.5261433421934489587.9193249834275021207",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        286,
+        213,
+        387
+      ],
+      "max_dose": 25.928581,
+      "mean_nonzero_dose": 0.08907,
+      "nonzero_voxel_count": 5111510,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P39.zip",
+      "rd_path": "P39/DICOM/RTP_2023-09-26/RD.1.2.246.352.221.5163221115657269792.9612384385520593580.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 211,
+      "columns": 341,
+      "number_of_frames": 298,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 298,
+      "dose_grid_scaling": 2.5759729353e-05,
+      "sop_instance_uid": "1.2.246.352.221.5163221115657269792.9612384385520593580",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        298,
+        211,
+        341
+      ],
+      "max_dose": 25.893911,
+      "mean_nonzero_dose": 0.177147,
+      "nonzero_voxel_count": 4629227,
+      "pixel_dtype": "float32"
+    },
+    {
+      "patient_zip": "P40.zip",
+      "rd_path": "P40/DICOM/RTP_2021-02-01/RD.1.2.246.352.221.56997868716974330548866700801756943761.dcm",
+      "parse_error": null,
+      "pixel_error": null,
+      "modality": "RTDOSE",
+      "dose_units": "GY",
+      "dose_type": "PHYSICAL",
+      "dose_summation_type": "PLAN",
+      "rows": 175,
+      "columns": 307,
+      "number_of_frames": 246,
+      "pixel_spacing": [
+        1.25,
+        1.25
+      ],
+      "grid_frame_count": 246,
+      "dose_grid_scaling": 3.6869592466e-05,
+      "sop_instance_uid": "1.2.246.352.221.56997868716974330548866700801756943761",
+      "referenced_rt_plan_sequence_present": true,
+      "pixel_array_shape": [
+        246,
+        175,
+        307
+      ],
+      "max_dose": 38.832676,
+      "mean_nonzero_dose": 1.52692,
+      "nonzero_voxel_count": 3152274,
+      "pixel_dtype": "float32"
+    }
+  ],
+  "interpretation": {
+    "PRO_NBE_value": "strong independent RTDOSE-backed stress-test candidate",
+    "safe_claim": "PROTEAS contains nested patient archives with RTDOSE DICOM objects, RT plan/structure/image context, planning CT, MRI, NIfTI RTP images, and tumour masks.",
+    "unsafe_claim_until_next_step": "Do not claim dose-volume clinical validation until structure-to-dose and prescription/fractionation parsing are completed.",
+    "next_experiment": "Extract RD/RP/RS plus tumour masks for dose-grid registration, target coverage, BED/EQD2 sensitivity, and fractionation-stratified robustness."
+  }
+}

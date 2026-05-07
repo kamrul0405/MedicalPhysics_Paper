@@ -3,7 +3,7 @@
 **Manuscript:** *Spatial heat-kernel structural priors and prescription-dose envelopes for future-lesion coverage in brain-metastasis stereotactic radiotherapy: a patient-specific RTDOSE analysis on 43 patients*
 
 **Target journal:** *Practical Radiation Oncology* (ASTRO / Elsevier; ISSN 1879-8500) — Original Research Article
-**Status:** Submission-ready (formatted per Elsevier *Practical Radiation Oncology* Guide for Authors)
+**Status:** v87 Q1 submission candidate after claim-audit cleanup
 **Open-access fee:** **None required.** This is a hybrid Elsevier journal published on behalf of ASTRO; submission on the standard subscription path requires no article-processing charge.
 
 > **Note on repository name.** This repository was originally created targeting *Radiotherapy and Oncology* (the Green Journal; Elsevier) and retains the `RTO_paper` name for URL stability and commit-history continuity. The current submission target is *Practical Radiation Oncology* (ASTRO / Elsevier). The Radiotherapy and Oncology version of the manuscript is preserved at `manuscript/Manuscript_for_RTandO.md` for archival reference.

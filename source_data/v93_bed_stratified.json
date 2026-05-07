@@ -1,0 +1,91 @@
+{
+  "version": "v93",
+  "timestamp": "2026-05-07T14:05:34",
+  "n_total_rows": 121,
+  "alpha_beta_tumour": 10.0,
+  "strata": {
+    "low_BED10_le_50": {
+      "n_rows": 0,
+      "n_patients": 0
+    },
+    "mid_BED10_50_60": {
+      "n_rows": 35,
+      "n_patients": 12,
+      "dose_ge_95pct_rx": {
+        "mean_pct": 56.04,
+        "ci95": [
+          35.5,
+          77.49
+        ],
+        "failure_rate": 0.429
+      },
+      "dose_ge_100pct_rx": {
+        "mean_pct": 54.19,
+        "ci95": [
+          34.03,
+          74.63
+        ],
+        "failure_rate": 0.429
+      },
+      "heat_ge_0p50": {
+        "mean_pct": 60.67,
+        "ci95": [
+          43.45,
+          76.85
+        ],
+        "failure_rate": 0.314
+      },
+      "heat_ge_0p80": {
+        "mean_pct": 39.17,
+        "ci95": [
+          24.48,
+          54.95
+        ],
+        "failure_rate": 0.657
+      },
+      "heat50_minus_dose95_pp": 4.63
+    },
+    "high_BED10_ge_60": {
+      "n_rows": 86,
+      "n_patients": 30,
+      "dose_ge_95pct_rx": {
+        "mean_pct": 30.68,
+        "ci95": [
+          20.75,
+          42.06
+        ],
+        "failure_rate": 0.674
+      },
+      "dose_ge_100pct_rx": {
+        "mean_pct": 29.47,
+        "ci95": [
+          19.78,
+          40.34
+        ],
+        "failure_rate": 0.686
+      },
+      "heat_ge_0p50": {
+        "mean_pct": 42.1,
+        "ci95": [
+          31.05,
+          54.0
+        ],
+        "failure_rate": 0.605
+      },
+      "heat_ge_0p80": {
+        "mean_pct": 26.49,
+        "ci95": [
+          17.67,
+          36.5
+        ],
+        "failure_rate": 0.733
+      },
+      "heat50_minus_dose95_pp": 11.42
+    }
+  },
+  "bed_advantage_spearman": {
+    "rho": 0.1267,
+    "p_value": 0.166141,
+    "n": 121
+  }
+}

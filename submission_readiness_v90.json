@@ -1,0 +1,233 @@
+{
+  "md": "C:\\Users\\kamru\\Downloads\\RTO_paper\\manuscript\\Manuscript_v90_for_PracticalRadiationOncology.md",
+  "pdf": "C:\\Users\\kamru\\Downloads\\RTO_paper\\manuscript\\Manuscript_v90_for_PracticalRadiationOncology.pdf",
+  "pdf_exists": true,
+  "pdf_size_mb": 6.02,
+  "pdf_pages": 21,
+  "word_counts": {
+    "abstract": 275,
+    "body_to_references": 3450,
+    "figure_captions": 125,
+    "submission_count": 3850,
+    "limit": 4000,
+    "within_limit": true
+  },
+  "highlights": [
+    {
+      "text": "Patient-specific RTDOSE audit in 42 analysable SRS patients",
+      "chars": 59
+    },
+    {
+      "text": "Dose and heat regions leave substantial future-lesion volume uncovered",
+      "chars": 70
+    },
+    {
+      "text": "Heat-only rows define an audit signal, not dose-escalation evidence",
+      "chars": 67
+    },
+    {
+      "text": "Fractionation-stratified results are exploratory and underpowered",
+      "chars": 65
+    },
+    {
+      "text": "Closed-form structural prior; no learned parameters or fine-tuning",
+      "chars": 66
+    }
+  ],
+  "highlight_count_ok": true,
+  "highlight_chars_ok": true,
+  "source_image_refs": 17,
+  "missing_source_images": [],
+  "source_data_refs": 3,
+  "missing_source_data": [],
+  "dpi_audit": [
+    {
+      "path": "figures/extended_data/NBE_ED10_proxy_dca.png",
+      "size": [
+        3570,
+        1485
+      ],
+      "dpi": [
+        300.0,
+        300.0
+      ]
+    },
+    {
+      "path": "figures/extended_data/NBE_ED11_audit_compliance.png",
+      "size": [
+        4126,
+        1772
+      ],
+      "dpi": [
+        300.0,
+        300.0
+      ]
+    },
+    {
+      "path": "figures/extended_data/NBE_ED1_cohort_hierarchy_3model.png",
+      "size": [
+        2970,
+        1763
+      ],
+      "dpi": [
+        300.0,
+        300.0
+      ]
+    },
+    {
+      "path": "figures/extended_data/NBE_ED2_ece_calibration.png",
+      "size": [
+        4470,
+        1487
+      ],
+      "dpi": [
+        300.0,
+        300.0
+      ]
+    },
+    {
+      "path": "figures/extended_data/NBE_ED3_compartment_analysis.png",
+      "size": [
+        3570,
+        1475
+      ],
+      "dpi": [
+        300.0,
+        300.0
+      ]
+    },
+    {
+      "path": "figures/extended_data/NBE_ED4_rt_zone_threshold.png",
+      "size": [
+        3570,
+        2661
+      ],
+      "dpi": [
+        300.0,
+        300.0
+      ]
+    },
+    {
+      "path": "figures/extended_data/NBE_ED5_rano_confusion_matrices.png",
+      "size": [
+        4467,
+        1516
+      ],
+      "dpi": [
+        300.0,
+        300.0
+      ]
+    },
+    {
+      "path": "figures/extended_data/NBE_ED6_v80_curves_inference.png",
+      "size": [
+        3570,
+        1485
+      ],
+      "dpi": [
+        300.0,
+        300.0
+      ]
+    },
+    {
+      "path": "figures/extended_data/NBE_ED7_survival_concordance.png",
+      "size": [
+        3570,
+        1485
+      ],
+      "dpi": [
+        300.0,
+        300.0
+      ]
+    },
+    {
+      "path": "figures/extended_data/NBE_ED8_fairness_9subgroups.png",
+      "size": [
+        2969,
+        2068
+      ],
+      "dpi": [
+        300.0,
+        300.0
+      ]
+    },
+    {
+      "path": "figures/extended_data/NBE_ED9_reader_study_design.png",
+      "size": [
+        3570,
+        1485
+      ],
+      "dpi": [
+        300.0,
+        300.0
+      ]
+    },
+    {
+      "path": "figures/main/NBE_Fig1_burden_curves_300dpi.tif",
+      "size": [
+        3090,
+        2190
+      ],
+      "dpi": [
+        300.0,
+        300.0
+      ]
+    },
+    {
+      "path": "figures/main/NBE_Fig2_fu_horizon_burden_300dpi.tif",
+      "size": [
+        2356,
+        1160
+      ],
+      "dpi": [
+        300.0,
+        300.0
+      ]
+    },
+    {
+      "path": "figures/main/NBE_Fig5_cohort_framework_300dpi.tif",
+      "size": [
+        2960,
+        1160
+      ],
+      "dpi": [
+        300.0,
+        300.0
+      ]
+    },
+    {
+      "path": "figures/main/V78_NBE_proteas_boundary.png",
+      "size": [
+        3526,
+        1823
+      ],
+      "dpi": [
+        300.0,
+        300.0
+      ]
+    },
+    {
+      "path": "figures/main/V87_RTO_fractionation_strata.png",
+      "size": [
+        3150,
+        1530
+      ],
+      "dpi": [
+        300.0,
+        300.0
+      ]
+    },
+    {
+      "path": "figures/main/V89_RTO_dose_heat_discordance.png",
+      "size": [
+        2310,
+        1125
+      ],
+      "dpi": [
+        300.0,
+        300.0
+      ]
+    }
+  ],
+  "duplicate_main_figure6_count": 1
+}

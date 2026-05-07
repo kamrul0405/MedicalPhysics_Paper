@@ -1,0 +1,23 @@
+{
+  "version": "v87",
+  "purpose": "Q1 reviewer-proof claim audit for Practical Radiation Oncology target.",
+  "primary_supported_claims": [
+    "Real patient-specific PROTEAS RTDOSE audit was completed.",
+    "Future-lesion coverage is incomplete for dose >=95% Rx, dose >=100% Rx, heat >=0.50 and heat >=0.80.",
+    "Heat >=0.50 has numerically broader coverage than dose >=95% Rx, but the cluster-bootstrap mean-delta CI crosses zero.",
+    "Fractionation-stratified patterns are exploratory because the 7-fraction stratum has only 9 patients."
+  ],
+  "blocked_claims": [
+    "Heat-guided dose escalation is supported.",
+    "Toxicity benefit or local-control benefit is established.",
+    "Heat >=0.50 is statistically superior to dose >=95% Rx by cluster-bootstrap mean-delta inference.",
+    "The fractionation analysis proves causal superiority of hypofractionation."
+  ],
+  "headline_numbers": {
+    "heat50_mean_pct": 47.39,
+    "dose95_mean_pct": 37.91,
+    "nominal_heat50_minus_dose95_pp": 9.480000000000004,
+    "n_rows": 121,
+    "n_patients": 42
+  }
+}

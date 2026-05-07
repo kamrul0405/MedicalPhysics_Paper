@@ -1,0 +1,1620 @@
+{
+  "audit_version": "v92",
+  "created_at_local": "2026-05-07 13:41:57",
+  "source_zip": "C:\\Users\\kamru\\Downloads\\Datasets\\PKG - PROTEAS-brain-mets-zenodo-17253793.zip",
+  "scan_seconds": 25.82,
+  "summary": {
+    "rtplan_file_count": 48,
+    "rtplan_parse_errors": 0,
+    "plans_with_prescription": 45,
+    "fraction_count_distribution": {
+      "1": 35,
+      "7": 13
+    },
+    "schedule_distribution": {
+      "20.0 Gy x 1": 30,
+      "18.0 Gy x 1": 2,
+      "5.0 Gy x 7": 12,
+      "20.093 Gy x 1": 1
+    },
+    "prescription_min_median_max_gy": [
+      18.0,
+      20.0,
+      35.0
+    ],
+    "bed10_min_median_max_gy": [
+      50.4,
+      60.0,
+      60.467346
+    ],
+    "bed2_min_median_max_gy": [
+      122.5,
+      220.0,
+      221.963551
+    ],
+    "median_beam_count": 15.0
+  },
+  "plan_rows": [
+    {
+      "patient_zip": "P01.zip",
+      "patient_id": "P01",
+      "rp_path": "P01/DICOM/RTP_2020-01-10/RP.1.2.246.352.221.485777970701698303513505723192451031184.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP3MTFINAL",
+      "rt_plan_name": "SRSBRAIN",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P02.zip",
+      "patient_id": "P02",
+      "rp_path": "P02/DICOM/RTP_2021-06-15/RP.1.2.246.352.221.528375763258095619916033828448489810869.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP26FFFMTf",
+      "rt_plan_name": "",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        18.0
+      ],
+      "target_maximum_dose_values": [
+        18.9
+      ],
+      "delivery_maximum_dose_values": [
+        18.9
+      ],
+      "prescription_dose_gy": 18.0,
+      "dose_reference_descriptions": [
+        "PTV Total"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 18.0,
+      "schedule": "18.0 Gy x 1",
+      "bed10_gy": 50.4,
+      "bed2_gy": 180.0,
+      "eqd2_10_gy": 42.0,
+      "eqd2_2_gy": 90.0
+    },
+    {
+      "patient_zip": "P03.zip",
+      "patient_id": "P03",
+      "rp_path": "P03/DICOM/RTP_2021-12-17/RP.1.2.246.352.221.54077683468430060343904907430304228028.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "LI3MTFINAL",
+      "rt_plan_name": "",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV total"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P04a.zip",
+      "patient_id": "P04a",
+      "rp_path": "P04a/DICOM/RTP_2020-03-20/RP.1.2.246.352.221.569226424646386938313490310858718459563.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "APMTFIN",
+      "rt_plan_name": "SRS BRAIN",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV   20 Gy 80%"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P04b.zip",
+      "patient_id": "P04b",
+      "rp_path": "P04b/DICOM/RTP_2020-11-13/RP.1.2.246.352.221.569541771920836094918001696439398897075.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP4MTFIN",
+      "rt_plan_name": "",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV CT2 TOTAL"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P05.zip",
+      "patient_id": "P05",
+      "rp_path": "P05/DICOM/RTP_2021-12-10/RP.1.2.246.352.221.5022435697211538856701771876464294581.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "APMTf",
+      "rt_plan_name": "SRS BRAIN",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV Total"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P06.zip",
+      "patient_id": "P06",
+      "rp_path": "P06/DICOM/RTP_2019-12-06/RP.1.2.246.352.221.553224218951491721515753101573245889160.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "APMTFIN",
+      "rt_plan_name": "SRS BRAIN",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [],
+      "target_maximum_dose_values": [],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": null,
+      "dose_reference_descriptions": [
+        "PTV  20 Gy  auf"
+      ],
+      "dose_reference_types": [
+        "ORGAN_AT_RISK"
+      ],
+      "dose_per_fraction_gy": null,
+      "schedule": null,
+      "bed10_gy": null,
+      "bed2_gy": null,
+      "eqd2_10_gy": null,
+      "eqd2_2_gy": null
+    },
+    {
+      "patient_zip": "P07a.zip",
+      "patient_id": "P07a",
+      "rp_path": "P07a/DICOM/RTP_2021-10-13/RP.1.2.246.352.221.496546653830443181415512325851536536511.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP3MTf",
+      "rt_plan_name": "SRS BRAIN",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV 20Gy 80%"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P07b.zip",
+      "patient_id": "P07b",
+      "rp_path": "P07b/DICOM/RTP_2021-10-14/RP.1.2.246.352.221.571387400435816939016495527633141567922.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "APSRT2MTf",
+      "rt_plan_name": "SRT BRAIN",
+      "fractions_planned": 7,
+      "beam_count": 14,
+      "target_prescription_dose_values": [
+        35.0
+      ],
+      "target_maximum_dose_values": [
+        36.75
+      ],
+      "delivery_maximum_dose_values": [
+        36.75
+      ],
+      "prescription_dose_gy": 35.0,
+      "dose_reference_descriptions": [
+        "PTV 35Gy/5 95%"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 5.0,
+      "schedule": "5.0 Gy x 7",
+      "bed10_gy": 52.5,
+      "bed2_gy": 122.5,
+      "eqd2_10_gy": 43.75,
+      "eqd2_2_gy": 61.25
+    },
+    {
+      "patient_zip": "P08.zip",
+      "patient_id": "P08",
+      "rp_path": "P08/DICOM/RTP_2021-12-20/RP.1.2.246.352.221.57249489646616033229974935426373718157.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "APMTfin",
+      "rt_plan_name": "SRS BRAIN",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV 20 Gy 80%"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P09.zip",
+      "patient_id": "P09",
+      "rp_path": "P09/DICOM/RTP_2022-01-13/RP.1.2.246.352.221.48455637321835092915511379745651744944.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "LI4MTFIN",
+      "rt_plan_name": "",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV20Gy"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P10.zip",
+      "patient_id": "P10",
+      "rp_path": "P10/DICOM/RTP_2021-12-02/RP.1.2.246.352.221.535676566301884434813519630313179556538.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP4MTf",
+      "rt_plan_name": "SRS BRAIN",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV TOTAL"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P11.zip",
+      "patient_id": "P11",
+      "rp_path": "P11/DICOM/RTP_2021-11-17/RP.1.2.246.352.221.535967071600879202616306124743436529566.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "LI7MTFINAL",
+      "rt_plan_name": "",
+      "fractions_planned": 7,
+      "beam_count": 14,
+      "target_prescription_dose_values": [
+        35.0
+      ],
+      "target_maximum_dose_values": [
+        36.75
+      ],
+      "delivery_maximum_dose_values": [
+        36.75
+      ],
+      "prescription_dose_gy": 35.0,
+      "dose_reference_descriptions": [
+        "PTV  35 Gy/5 95%"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 5.0,
+      "schedule": "5.0 Gy x 7",
+      "bed10_gy": 52.5,
+      "bed2_gy": 122.5,
+      "eqd2_10_gy": 43.75,
+      "eqd2_2_gy": 61.25
+    },
+    {
+      "patient_zip": "P12.zip",
+      "patient_id": "P12",
+      "rp_path": "P12/DICOM/RTP_2021-03-26/RP.1.2.246.352.221.53002753307180867969108830968736315534.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP1MTf",
+      "rt_plan_name": "",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV 20 Gy 80%"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P13.zip",
+      "patient_id": "P13",
+      "rp_path": "P13/DICOM/RTP_2020-09-14/RP.1.2.246.352.221.482418886331951368310100295519869557131.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP5MTFIN",
+      "rt_plan_name": "SRS BRAIN",
+      "fractions_planned": 7,
+      "beam_count": 14,
+      "target_prescription_dose_values": [
+        35.0
+      ],
+      "target_maximum_dose_values": [
+        36.75
+      ],
+      "delivery_maximum_dose_values": [
+        36.75
+      ],
+      "prescription_dose_gy": 35.0,
+      "dose_reference_descriptions": [
+        "PTV Total"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 5.0,
+      "schedule": "5.0 Gy x 7",
+      "bed10_gy": 52.5,
+      "bed2_gy": 122.5,
+      "eqd2_10_gy": 43.75,
+      "eqd2_2_gy": 61.25
+    },
+    {
+      "patient_zip": "P14.zip",
+      "patient_id": "P14",
+      "rp_path": "P14/DICOM/RTP_2019-11-15/RP.1.2.246.352.221.5633806397440584355472519759300278714.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP4BESTMTFIN",
+      "rt_plan_name": "",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [],
+      "target_maximum_dose_values": [],
+      "delivery_maximum_dose_values": [
+        18.9
+      ],
+      "prescription_dose_gy": null,
+      "dose_reference_descriptions": [
+        "PTV =GTV+1mm   2"
+      ],
+      "dose_reference_types": [
+        "ORGAN_AT_RISK"
+      ],
+      "dose_per_fraction_gy": null,
+      "schedule": null,
+      "bed10_gy": null,
+      "bed2_gy": null,
+      "eqd2_10_gy": null,
+      "eqd2_2_gy": null
+    },
+    {
+      "patient_zip": "P15.zip",
+      "patient_id": "P15",
+      "rp_path": "P15/DICOM/RTP_2021-06-03/RP.1.2.246.352.221.497854380466248769111933171397705542052.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP4MTf",
+      "rt_plan_name": "",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV_Total New"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P16.zip",
+      "patient_id": "P16",
+      "rp_path": "P16/DICOM/RTP_2020-11-20/RP.1.2.246.352.221.51851199310045848251152474735748720287.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP3MTFIN",
+      "rt_plan_name": "",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV_Iso"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P17a.zip",
+      "patient_id": "P17a",
+      "rp_path": "P17a/DICOM/RTP_2019-12-02/RP.1.2.246.352.221.567777830391396032613765029726844142228.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP5MTFINAL",
+      "rt_plan_name": "",
+      "fractions_planned": 7,
+      "beam_count": 12,
+      "target_prescription_dose_values": [],
+      "target_maximum_dose_values": [],
+      "delivery_maximum_dose_values": [
+        36.75
+      ],
+      "prescription_dose_gy": null,
+      "dose_reference_descriptions": [
+        "PTV  35 Gy/5 Gy"
+      ],
+      "dose_reference_types": [
+        "ORGAN_AT_RISK"
+      ],
+      "dose_per_fraction_gy": null,
+      "schedule": null,
+      "bed10_gy": null,
+      "bed2_gy": null,
+      "eqd2_10_gy": null,
+      "eqd2_2_gy": null
+    },
+    {
+      "patient_zip": "P17b.zip",
+      "patient_id": "P17b",
+      "rp_path": "P17b/DICOM/RTP_2020-11-06/RP.1.2.246.352.221.483791919889052955618332945393915671990.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP4 CT2MTFIN",
+      "rt_plan_name": "",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV 20 Gy"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P18.zip",
+      "patient_id": "P18",
+      "rp_path": "P18/DICOM/RTP_2021-09-22/RP.1.2.246.352.221.48389145811030150433405653073232656565.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP2MTf",
+      "rt_plan_name": "SRT BRAIN",
+      "fractions_planned": 7,
+      "beam_count": 14,
+      "target_prescription_dose_values": [
+        35.0
+      ],
+      "target_maximum_dose_values": [
+        36.75
+      ],
+      "delivery_maximum_dose_values": [
+        36.75
+      ],
+      "prescription_dose_gy": 35.0,
+      "dose_reference_descriptions": [
+        "PTV 35 Gy/5Gy"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 5.0,
+      "schedule": "5.0 Gy x 7",
+      "bed10_gy": 52.5,
+      "bed2_gy": 122.5,
+      "eqd2_10_gy": 43.75,
+      "eqd2_2_gy": 61.25
+    },
+    {
+      "patient_zip": "P19.zip",
+      "patient_id": "P19",
+      "rp_path": "P19/DICOM/RTP_2021-09-22/RP.1.2.246.352.221.48389145811030150433405653073232656565.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP2MTf",
+      "rt_plan_name": "SRT BRAIN",
+      "fractions_planned": 7,
+      "beam_count": 14,
+      "target_prescription_dose_values": [
+        35.0
+      ],
+      "target_maximum_dose_values": [
+        36.75
+      ],
+      "delivery_maximum_dose_values": [
+        36.75
+      ],
+      "prescription_dose_gy": 35.0,
+      "dose_reference_descriptions": [
+        "PTV 35 Gy/5Gy"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 5.0,
+      "schedule": "5.0 Gy x 7",
+      "bed10_gy": 52.5,
+      "bed2_gy": 122.5,
+      "eqd2_10_gy": 43.75,
+      "eqd2_2_gy": 61.25
+    },
+    {
+      "patient_zip": "P20a.zip",
+      "patient_id": "P20a",
+      "rp_path": "P20a/DICOM/RTP_2022-01-20/RP.1.2.246.352.221.48807085045980618198487751819322294709.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP5MTfin",
+      "rt_plan_name": "SRS BRAIN",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV NEW"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P20b.zip",
+      "patient_id": "P20b",
+      "rp_path": "P20b/DICOM/RTP_2020-10-07/RP.1.2.246.352.221.475769027106645570612573162574883894700.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "APMTFIN",
+      "rt_plan_name": "",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV 20 Gy 80% Is"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P21.zip",
+      "patient_id": "P21",
+      "rp_path": "P21/DICOM/RTP_2020-08-21/RP.1.2.246.352.221.48189643031899356983195215266247295922.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP1MTFINAL",
+      "rt_plan_name": "",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV 20 Gy 80%"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P22.zip",
+      "patient_id": "P22",
+      "rp_path": "P22/DICOM/RTP_2021-11-05/RP.1.2.246.352.221.57504331575255172067013124702104946619.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "LIAVA5MTFINAL",
+      "rt_plan_name": "SRS BRAIN",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV 20 Gy 80%"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P23a.zip",
+      "patient_id": "P23a",
+      "rp_path": "P23a/DICOM/RTP_2020-04-29/RP.1.2.246.352.221.480382869873165901313951145022443070860.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "APMTFIN",
+      "rt_plan_name": "SRS BRAIN",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV 20 Gy 80%"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P23b.zip",
+      "patient_id": "P23b",
+      "rp_path": "P23b/DICOM/RTP_2020-11-20/RP.1.2.246.352.221.476528977680435138614510815896948025009.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP18GyMTFIN",
+      "rt_plan_name": "",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        18.0
+      ],
+      "target_maximum_dose_values": [
+        18.9
+      ],
+      "delivery_maximum_dose_values": [
+        18.9
+      ],
+      "prescription_dose_gy": 18.0,
+      "dose_reference_descriptions": [
+        "PTV 20Gy CT2"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 18.0,
+      "schedule": "18.0 Gy x 1",
+      "bed10_gy": 50.4,
+      "bed2_gy": 180.0,
+      "eqd2_10_gy": 42.0,
+      "eqd2_2_gy": 90.0
+    },
+    {
+      "patient_zip": "P24.zip",
+      "patient_id": "P24",
+      "rp_path": "P24/DICOM/RTP_2021-09-29/RP.1.2.246.352.221.48600988328714805295641712386070238650.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "APMT",
+      "rt_plan_name": "SRS BRAIN",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV 20 Gy  80%"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P25.zip",
+      "patient_id": "P25",
+      "rp_path": "P25/DICOM/RTP_2021-06-22/RP.1.2.246.352.221.49461257812844559387308630808894506112.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP2MTf",
+      "rt_plan_name": "FSRT BRAIN",
+      "fractions_planned": 7,
+      "beam_count": 14,
+      "target_prescription_dose_values": [
+        35.0
+      ],
+      "target_maximum_dose_values": [
+        36.75
+      ],
+      "delivery_maximum_dose_values": [
+        36.75
+      ],
+      "prescription_dose_gy": 35.0,
+      "dose_reference_descriptions": [
+        "PTV 35 Gy/5"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 5.0,
+      "schedule": "5.0 Gy x 7",
+      "bed10_gy": 52.5,
+      "bed2_gy": 122.5,
+      "eqd2_10_gy": 43.75,
+      "eqd2_2_gy": 61.25
+    },
+    {
+      "patient_zip": "P26.zip",
+      "patient_id": "P26",
+      "rp_path": "P26/DICOM/RTP_2021-06-17/RP.1.2.246.352.221.55579604608728716707095840168252665729.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "LI4MTFINAL",
+      "rt_plan_name": "SRS BRAIN",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV 1"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P27.zip",
+      "patient_id": "P27",
+      "rp_path": "P27/DICOM/RTP_2021-07-02/RP.1.2.246.352.221.4964770514580142636812929630172351133.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP2MTFIN",
+      "rt_plan_name": "",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV Total"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P28.zip",
+      "patient_id": "P28",
+      "rp_path": "P28/DICOM/RTP_2022-06-30/RP.1.2.246.352.221.46385036236317590424621190000021564575.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "APSRSCT2MTFIN",
+      "rt_plan_name": "SRS BRAIN",
+      "fractions_planned": 1,
+      "beam_count": 13,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV 20 Gy"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P29.zip",
+      "patient_id": "P29",
+      "rp_path": "P29/DICOM/RTP_2022-08-06_SUPERIOR/RP.1.2.246.352.221.487437669973335467515854007325843254444.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP2ISO1MTf",
+      "rt_plan_name": "SRS BRAIN SUP",
+      "fractions_planned": 1,
+      "beam_count": 13,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV 3"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P29.zip",
+      "patient_id": "P29",
+      "rp_path": "P29/DICOM/RTP_2022-08-06_INFERIOR/RP.1.2.246.352.221.543142798697074217013952042196226000809.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP4ISO2MTf",
+      "rt_plan_name": "SRS CEREBELLUM METS",
+      "fractions_planned": 1,
+      "beam_count": 13,
+      "target_prescription_dose_values": [
+        20.0,
+        20.093295209729
+      ],
+      "target_maximum_dose_values": [
+        21.0,
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0,
+        21.0
+      ],
+      "prescription_dose_gy": 20.093295209729,
+      "dose_reference_descriptions": [
+        "PTV 1",
+        "PTV 2"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.093295,
+      "schedule": "20.093 Gy x 1",
+      "bed10_gy": 60.467346,
+      "bed2_gy": 221.963551,
+      "eqd2_10_gy": 50.389455,
+      "eqd2_2_gy": 110.981776
+    },
+    {
+      "patient_zip": "P30.zip",
+      "patient_id": "P30",
+      "rp_path": "P30/DICOM/RTP_2022-08-11/RP.1.2.246.352.221.52898544040762512849527986945233750712.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "LI2MTFINAL",
+      "rt_plan_name": "",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P31.zip",
+      "patient_id": "P31",
+      "rp_path": "P31/DICOM/RTP_2022-10-05/RP.1.2.246.352.221.52721455586702191619774988416176754581.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP2 SRSMTf",
+      "rt_plan_name": "SRS BRAIN",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV 1  20 Gy"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P32.zip",
+      "patient_id": "P32",
+      "rp_path": "P32/DICOM/RTP_2022-04-18/RP.1.2.246.352.221.539376061625422910815848801330520310169.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "LI3mMTFINAL",
+      "rt_plan_name": "SRT BRAIN",
+      "fractions_planned": 7,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        35.0
+      ],
+      "target_maximum_dose_values": [
+        36.75
+      ],
+      "delivery_maximum_dose_values": [
+        36.75
+      ],
+      "prescription_dose_gy": 35.0,
+      "dose_reference_descriptions": [
+        "PTV 35 Gy/5 Gy"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 5.0,
+      "schedule": "5.0 Gy x 7",
+      "bed10_gy": 52.5,
+      "bed2_gy": 122.5,
+      "eqd2_10_gy": 43.75,
+      "eqd2_2_gy": 61.25
+    },
+    {
+      "patient_zip": "P33.zip",
+      "patient_id": "P33",
+      "rp_path": "P33/DICOM/RTP_2023-02-07/RP.1.2.246.352.221.4933843059438910828959820590335303824.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "APMTf",
+      "rt_plan_name": "SRS BRAIN",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV 1 20 Gy"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P33.zip",
+      "patient_id": "P33",
+      "rp_path": "P33/DICOM/RTP_2023-02-08_TEMPORAL/RP.1.2.246.352.221.485231114139128055211407557296123838343.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "APSRT1PTV2mMT",
+      "rt_plan_name": "SRT BRAIN",
+      "fractions_planned": 7,
+      "beam_count": 12,
+      "target_prescription_dose_values": [
+        35.0
+      ],
+      "target_maximum_dose_values": [
+        36.25
+      ],
+      "delivery_maximum_dose_values": [
+        36.25
+      ],
+      "prescription_dose_gy": 35.0,
+      "dose_reference_descriptions": [
+        "PTV 2 35 Gy/5 Gy"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 5.0,
+      "schedule": "5.0 Gy x 7",
+      "bed10_gy": 52.5,
+      "bed2_gy": 122.5,
+      "eqd2_10_gy": 43.75,
+      "eqd2_2_gy": 61.25
+    },
+    {
+      "patient_zip": "P33.zip",
+      "patient_id": "P33",
+      "rp_path": "P33/DICOM/RTP_2023-02-08_PARIETAL/RP.1.2.246.352.221.5730022122891541030160992507130466183.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "APSRT1PTV3MTf",
+      "rt_plan_name": "SRT BRAIN",
+      "fractions_planned": 7,
+      "beam_count": 14,
+      "target_prescription_dose_values": [
+        35.0
+      ],
+      "target_maximum_dose_values": [
+        36.75
+      ],
+      "delivery_maximum_dose_values": [
+        36.75
+      ],
+      "prescription_dose_gy": 35.0,
+      "dose_reference_descriptions": [
+        "PTV 3 35 Gy/5"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 5.0,
+      "schedule": "5.0 Gy x 7",
+      "bed10_gy": 52.5,
+      "bed2_gy": 122.5,
+      "eqd2_10_gy": 43.75,
+      "eqd2_2_gy": 61.25
+    },
+    {
+      "patient_zip": "P34.zip",
+      "patient_id": "P34",
+      "rp_path": "P34/DICOM/RTP_2023-02-22/RP.1.2.246.352.221.470045014007758399513441582056131015554.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP2MTf",
+      "rt_plan_name": "SRS BRAIN",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P35.zip",
+      "patient_id": "P35",
+      "rp_path": "P35/DICOM/RTP_2023-02-24/RP.1.2.246.352.221.53948991920542319704667759206014255755.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "LI4MTFINAL",
+      "rt_plan_name": "SRS BRAIN",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P36.zip",
+      "patient_id": "P36",
+      "rp_path": "P36/DICOM/RTP_2023-04-25/RP.1.2.246.352.221.520456023479144203415917601017976864180.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "YK11 MTf",
+      "rt_plan_name": "Brain SRT",
+      "fractions_planned": 7,
+      "beam_count": 9,
+      "target_prescription_dose_values": [
+        35.0
+      ],
+      "target_maximum_dose_values": [
+        36.75
+      ],
+      "delivery_maximum_dose_values": [
+        36.75
+      ],
+      "prescription_dose_gy": 35.0,
+      "dose_reference_descriptions": [
+        "PTV 35 Gy/5Gy"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 5.0,
+      "schedule": "5.0 Gy x 7",
+      "bed10_gy": 52.5,
+      "bed2_gy": 122.5,
+      "eqd2_10_gy": 43.75,
+      "eqd2_2_gy": 61.25
+    },
+    {
+      "patient_zip": "P37.zip",
+      "patient_id": "P37",
+      "rp_path": "P37/DICOM/RTP_2023-04-27/RP.1.2.246.352.221.4942012203535262125562447631482979712.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "YK2bMTf",
+      "rt_plan_name": "",
+      "fractions_planned": 7,
+      "beam_count": 11,
+      "target_prescription_dose_values": [
+        35.0
+      ],
+      "target_maximum_dose_values": [
+        36.75
+      ],
+      "delivery_maximum_dose_values": [
+        36.75
+      ],
+      "prescription_dose_gy": 35.0,
+      "dose_reference_descriptions": [
+        "PTV 35 Gy/5"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 5.0,
+      "schedule": "5.0 Gy x 7",
+      "bed10_gy": 52.5,
+      "bed2_gy": 122.5,
+      "eqd2_10_gy": 43.75,
+      "eqd2_2_gy": 61.25
+    },
+    {
+      "patient_zip": "P38.zip",
+      "patient_id": "P38",
+      "rp_path": "P38/DICOM/RTP_2023-06-26/RP.1.2.246.352.221.5493334719312976813.6185781437832291211.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "LI4MG",
+      "rt_plan_name": "SRS BRAIN",
+      "fractions_planned": 1,
+      "beam_count": 11,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV_High"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P39.zip",
+      "patient_id": "P39",
+      "rp_path": "P39/DICOM/RTP_2023-09-26/RP.1.2.246.352.221.4997351842102458357.12155372880552393899.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "LI2DD",
+      "rt_plan_name": "",
+      "fractions_planned": 1,
+      "beam_count": 15,
+      "target_prescription_dose_values": [
+        20.0
+      ],
+      "target_maximum_dose_values": [
+        21.0
+      ],
+      "delivery_maximum_dose_values": [
+        21.0
+      ],
+      "prescription_dose_gy": 20.0,
+      "dose_reference_descriptions": [
+        "PTV"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 20.0,
+      "schedule": "20.0 Gy x 1",
+      "bed10_gy": 60.0,
+      "bed2_gy": 220.0,
+      "eqd2_10_gy": 50.0,
+      "eqd2_2_gy": 110.0
+    },
+    {
+      "patient_zip": "P40.zip",
+      "patient_id": "P40",
+      "rp_path": "P40/DICOM/RTP_2021-02-01/RP.1.2.246.352.221.50394622898101110533756086783517350811.dcm",
+      "parse_error": null,
+      "modality": "RTPLAN",
+      "rt_plan_label": "AP4MTFIN",
+      "rt_plan_name": "",
+      "fractions_planned": 7,
+      "beam_count": 14,
+      "target_prescription_dose_values": [
+        35.0
+      ],
+      "target_maximum_dose_values": [
+        36.75
+      ],
+      "delivery_maximum_dose_values": [
+        36.75
+      ],
+      "prescription_dose_gy": 35.0,
+      "dose_reference_descriptions": [
+        "PTV35 Gy/5Gy 95%"
+      ],
+      "dose_reference_types": [
+        "TARGET"
+      ],
+      "dose_per_fraction_gy": 5.0,
+      "schedule": "5.0 Gy x 7",
+      "bed10_gy": 52.5,
+      "bed2_gy": 122.5,
+      "eqd2_10_gy": 43.75,
+      "eqd2_2_gy": 61.25
+    }
+  ],
+  "interpretation": {
+    "safe_claim": "PROTEAS contains RTPLAN objects with parseable prescription/fractionation metadata suitable for BED/EQD2-normalised stress testing.",
+    "boundary": "These parsed plan quantities support a dose-physics audit, not treatment-effect or toxicity claims.",
+    "next_step": "Join RTPLAN, RTSTRUCT, RTDOSE and masks spatially for target-level DVH and future-lesion coverage analysis."
+  }
+}
