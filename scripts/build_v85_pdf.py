@@ -1,6 +1,6 @@
 """
-Build the Radiotherapy and Oncology (Green Journal; Elsevier) submission PDF
-from Manuscript_for_RTandO.md.
+Build the Medical Physics (AAPM/Wiley) submission PDF from
+Manuscript_for_MedicalPhysics.md.
 
 Renders the markdown to a Times-New-Roman, single-column letter-size PDF with
 auto-embedded figures wherever a caption block contains a "Source image:"
@@ -13,10 +13,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
 MS_DIR = ROOT / "manuscript"
-SRC_MD = MS_DIR / "Manuscript_for_RTandO.md"
-OUT_PDF = MS_DIR / "Manuscript_for_RTandO.pdf"
-HEADER = "Dose-prior boundary physics in brain-metastasis SRS — RTDOSE, RTPLAN and heat-kernel stress testing"
-JOURNAL = "Radiotherapy and Oncology (Green Journal; Elsevier)"
+SRC_MD = MS_DIR / "Manuscript_for_MedicalPhysics.md"
+OUT_PDF = MS_DIR / "Manuscript_for_MedicalPhysics.pdf"
+HEADER = "Physics-grounded structural priors in brain-metastasis SRS — parabolic-PDE smoothing, BED-aware kernels, RTDOSE audit"
+JOURNAL = "Medical Physics (AAPM / Wiley)"
 
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import letter
