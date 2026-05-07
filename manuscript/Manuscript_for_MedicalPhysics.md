@@ -303,9 +303,9 @@ The BED-aware spatially-varying kernel of §3.9 uses tumour α/β = 10 Gy in the
 |---|---|---|---|---|---|---|
 | 8 | 47.30% | 49.37% | +2.07 | 30.09% | 37.09% | +6.99 |
 | 10 (primary) | 47.30% | 49.37% | +2.06 | 30.09% | 37.08% | +6.99 |
-| 12 | 47.30% | 49.37% | +2.07 | 30.09% | 37.09% | +6.99 |
+| 12 | 47.30% | 49.34% | +2.04 | 30.09% | 37.08% | +6.99 |
 
-The BED-aware advantage is **invariant to α/β within the clinically plausible range** (literature values 8–12 Gy for tumour). The +6.99 pp coverage gain at heat ≥ 0.80 and +2.07 pp at heat ≥ 0.50 are reproducible to 0.01 pp across the three α/β settings. This robustness confirms that the BED-aware kernel's improvement reflects the local-dose spatial gradient (BED's spatial variation across the lesion-neighbourhood) rather than a particular α/β choice. The mathematical reason: under our normalisation BED_norm(x) = BED(x)/BED_max, the per-voxel α/β-dependence cancels in the ratio, leaving only the spatial dose-gradient as the driver of the σ(x) modulation.
+The BED-aware advantage is **invariant to α/β within the clinically plausible range** (literature values 8–12 Gy for tumour). The +6.99 pp coverage gain at heat ≥ 0.80 is reproducible to 0.01 pp across all three α/β settings; the heat ≥ 0.50 gain varies by 0.03 pp (range +2.04 to +2.07 pp). This robustness confirms that the BED-aware kernel's improvement reflects the local-dose spatial gradient (BED's spatial variation across the lesion-neighbourhood) rather than a particular α/β choice. The mathematical reason: under our normalisation BED_norm(x) = BED(x)/BED_max, the per-voxel α/β-dependence cancels in the ratio, leaving only the spatial dose-gradient as the driver of the σ(x) modulation.
 
 ### 3.11 Negative controls
 
