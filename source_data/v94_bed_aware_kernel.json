@@ -1,0 +1,25 @@
+{
+  "version": "v94",
+  "timestamp": "2026-05-07T14:28:59",
+  "n_rows_total": 242,
+  "thresholds": {
+    "heat_ge_0.5": {
+      "n_rows": 121,
+      "constant_sigma_2_5_mean_pct": 47.3,
+      "bed_aware_mean_pct": 49.37,
+      "dose_95pct_rx_mean_pct": 37.82,
+      "delta_bed_minus_const_pp": 2.06,
+      "delta_bed_minus_dose_pp": 11.55,
+      "n_patients": 42
+    },
+    "heat_ge_0.8": {
+      "n_rows": 121,
+      "constant_sigma_2_5_mean_pct": 30.09,
+      "bed_aware_mean_pct": 37.08,
+      "dose_95pct_rx_mean_pct": 37.82,
+      "delta_bed_minus_const_pp": 6.99,
+      "delta_bed_minus_dose_pp": -0.73,
+      "n_patients": 42
+    }
+  }
+}
