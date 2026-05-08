@@ -1,0 +1,110 @@
+{
+  "version": "v109",
+  "timestamp": "2026-05-08T14:27:07",
+  "sigma_grid": [
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "evolution_times": [
+    0.5,
+    1.125,
+    2.0,
+    3.125,
+    4.5,
+    6.125,
+    8.0
+  ],
+  "results": [
+    {
+      "sigma_voxels": 1.0,
+      "evolution_time_t": 0.5,
+      "heat_ge_0.5": {
+        "n_rows": 121,
+        "mean_pct": 51.23
+      },
+      "heat_ge_0.8": {
+        "n_rows": 121,
+        "mean_pct": 43.41
+      }
+    },
+    {
+      "sigma_voxels": 1.5,
+      "evolution_time_t": 1.125,
+      "heat_ge_0.5": {
+        "n_rows": 121,
+        "mean_pct": 49.99
+      },
+      "heat_ge_0.8": {
+        "n_rows": 121,
+        "mean_pct": 38.72
+      }
+    },
+    {
+      "sigma_voxels": 2.0,
+      "evolution_time_t": 2.0,
+      "heat_ge_0.5": {
+        "n_rows": 121,
+        "mean_pct": 48.52
+      },
+      "heat_ge_0.8": {
+        "n_rows": 121,
+        "mean_pct": 33.98
+      }
+    },
+    {
+      "sigma_voxels": 2.5,
+      "evolution_time_t": 3.125,
+      "heat_ge_0.5": {
+        "n_rows": 121,
+        "mean_pct": 47.3
+      },
+      "heat_ge_0.8": {
+        "n_rows": 121,
+        "mean_pct": 30.09
+      }
+    },
+    {
+      "sigma_voxels": 3.0,
+      "evolution_time_t": 4.5,
+      "heat_ge_0.5": {
+        "n_rows": 121,
+        "mean_pct": 46.41
+      },
+      "heat_ge_0.8": {
+        "n_rows": 121,
+        "mean_pct": 26.92
+      }
+    },
+    {
+      "sigma_voxels": 3.5,
+      "evolution_time_t": 6.125,
+      "heat_ge_0.5": {
+        "n_rows": 121,
+        "mean_pct": 45.81
+      },
+      "heat_ge_0.8": {
+        "n_rows": 121,
+        "mean_pct": 24.33
+      }
+    },
+    {
+      "sigma_voxels": 4.0,
+      "evolution_time_t": 8.0,
+      "heat_ge_0.5": {
+        "n_rows": 121,
+        "mean_pct": 45.48
+      },
+      "heat_ge_0.8": {
+        "n_rows": 121,
+        "mean_pct": 22.25
+      }
+    }
+  ],
+  "optimal_sigma_at_heat_05": 1.0,
+  "optimal_sigma_at_heat_08": 1.0
+}

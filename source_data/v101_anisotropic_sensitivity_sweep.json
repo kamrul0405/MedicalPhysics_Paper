@@ -1,0 +1,88 @@
+{
+  "version": "v101",
+  "timestamp": "2026-05-08T14:28:16",
+  "sigma_pairs": [
+    {
+      "sigma_par": 1.0,
+      "sigma_perp": 3.5
+    },
+    {
+      "sigma_par": 1.0,
+      "sigma_perp": 4.0
+    },
+    {
+      "sigma_par": 1.5,
+      "sigma_perp": 4.0
+    },
+    {
+      "sigma_par": 2.0,
+      "sigma_perp": 4.0
+    },
+    {
+      "sigma_par": 2.0,
+      "sigma_perp": 4.5
+    }
+  ],
+  "results": [
+    {
+      "sigma_par": 1.0,
+      "sigma_perp": 3.5,
+      "heat_ge_0.5": {
+        "n_rows": 121,
+        "mean_pct": 52.55
+      },
+      "heat_ge_0.8": {
+        "n_rows": 121,
+        "mean_pct": 50.31
+      }
+    },
+    {
+      "sigma_par": 1.0,
+      "sigma_perp": 4.0,
+      "heat_ge_0.5": {
+        "n_rows": 121,
+        "mean_pct": 52.51
+      },
+      "heat_ge_0.8": {
+        "n_rows": 121,
+        "mean_pct": 50.01
+      }
+    },
+    {
+      "sigma_par": 1.5,
+      "sigma_perp": 4.0,
+      "heat_ge_0.5": {
+        "n_rows": 121,
+        "mean_pct": 52.74
+      },
+      "heat_ge_0.8": {
+        "n_rows": 121,
+        "mean_pct": 49.39
+      }
+    },
+    {
+      "sigma_par": 2.0,
+      "sigma_perp": 4.0,
+      "heat_ge_0.5": {
+        "n_rows": 121,
+        "mean_pct": 52.82
+      },
+      "heat_ge_0.8": {
+        "n_rows": 121,
+        "mean_pct": 48.81
+      }
+    },
+    {
+      "sigma_par": 2.0,
+      "sigma_perp": 4.5,
+      "heat_ge_0.5": {
+        "n_rows": 121,
+        "mean_pct": 52.76
+      },
+      "heat_ge_0.8": {
+        "n_rows": 121,
+        "mean_pct": 48.37
+      }
+    }
+  ]
+}
