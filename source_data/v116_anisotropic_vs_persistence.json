@@ -1,0 +1,186 @@
+{
+  "version": "v116",
+  "timestamp": "2026-05-08T16:45:54",
+  "n_rows": 121,
+  "n_patients": 42,
+  "n_bootstrap_replicates": 10000,
+  "alpha": 0.05,
+  "thresholds": {
+    "heat_ge_0.5": {
+      "methods": {
+        "sigma_0.25": {
+          "mean_pct": 51.95,
+          "ci95_pct": [
+            42.18,
+            61.69
+          ]
+        },
+        "sigma_0.5": {
+          "mean_pct": 51.92,
+          "ci95_pct": [
+            42.32,
+            61.71
+          ]
+        },
+        "sigma_1.0": {
+          "mean_pct": 51.31,
+          "ci95_pct": [
+            41.72,
+            61.1
+          ]
+        },
+        "sigma_2.5": {
+          "mean_pct": 47.41,
+          "ci95_pct": [
+            37.58,
+            57.3
+          ]
+        },
+        "persistence": {
+          "mean_pct": 51.91,
+          "ci95_pct": [
+            42.28,
+            61.71
+          ]
+        },
+        "anisotropic_bed": {
+          "mean_pct": 45.75,
+          "ci95_pct": [
+            35.82,
+            55.86
+          ]
+        }
+      },
+      "paired_deltas": {
+        "aniso_minus_sigma_0.25": {
+          "mean_pp": -6.15,
+          "ci95_pp": [
+            -8.41,
+            -4.14
+          ],
+          "excludes_zero": true
+        },
+        "aniso_minus_sigma_0.5": {
+          "mean_pp": -6.15,
+          "ci95_pp": [
+            -8.44,
+            -4.12
+          ],
+          "excludes_zero": true
+        },
+        "aniso_minus_sigma_1.0": {
+          "mean_pp": -5.55,
+          "ci95_pp": [
+            -7.53,
+            -3.74
+          ],
+          "excludes_zero": true
+        },
+        "aniso_minus_sigma_2.5": {
+          "mean_pp": -1.61,
+          "ci95_pp": [
+            -3.17,
+            -0.32
+          ],
+          "excludes_zero": true
+        },
+        "aniso_minus_persistence": {
+          "mean_pp": -6.16,
+          "ci95_pp": [
+            -8.42,
+            -4.13
+          ],
+          "excludes_zero": true
+        }
+      }
+    },
+    "heat_ge_0.8": {
+      "methods": {
+        "sigma_0.25": {
+          "mean_pct": 51.91,
+          "ci95_pct": [
+            42.25,
+            61.92
+          ]
+        },
+        "sigma_0.5": {
+          "mean_pct": 49.95,
+          "ci95_pct": [
+            40.43,
+            59.63
+          ]
+        },
+        "sigma_1.0": {
+          "mean_pct": 43.4,
+          "ci95_pct": [
+            34.1,
+            52.85
+          ]
+        },
+        "sigma_2.5": {
+          "mean_pct": 30.23,
+          "ci95_pct": [
+            22.36,
+            38.54
+          ]
+        },
+        "persistence": {
+          "mean_pct": 51.95,
+          "ci95_pct": [
+            42.29,
+            61.77
+          ]
+        },
+        "anisotropic_bed": {
+          "mean_pct": 28.07,
+          "ci95_pct": [
+            19.79,
+            36.95
+          ]
+        }
+      },
+      "paired_deltas": {
+        "aniso_minus_sigma_0.25": {
+          "mean_pp": -23.77,
+          "ci95_pp": [
+            -29.78,
+            -18.52
+          ],
+          "excludes_zero": true
+        },
+        "aniso_minus_sigma_0.5": {
+          "mean_pp": -21.71,
+          "ci95_pp": [
+            -27.47,
+            -16.75
+          ],
+          "excludes_zero": true
+        },
+        "aniso_minus_sigma_1.0": {
+          "mean_pp": -15.35,
+          "ci95_pp": [
+            -20.17,
+            -11.38
+          ],
+          "excludes_zero": true
+        },
+        "aniso_minus_sigma_2.5": {
+          "mean_pp": -2.0,
+          "ci95_pp": [
+            -4.89,
+            0.12
+          ],
+          "excludes_zero": false
+        },
+        "aniso_minus_persistence": {
+          "mean_pp": -23.8,
+          "ci95_pp": [
+            -29.87,
+            -18.57
+          ],
+          "excludes_zero": true
+        }
+      }
+    }
+  }
+}
