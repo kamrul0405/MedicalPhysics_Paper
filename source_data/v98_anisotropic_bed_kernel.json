@@ -1,0 +1,25 @@
+{
+  "version": "v98",
+  "timestamp": "2026-05-08T14:11:07",
+  "n_rows_total": 242,
+  "thresholds": {
+    "heat_ge_0.5": {
+      "n_rows": 121,
+      "constant_sigma_mean_pct": 47.3,
+      "isotropic_bed_mean_pct": 49.37,
+      "anisotropic_bed_mean_pct": 52.74,
+      "delta_aniso_minus_iso_pp": 3.38,
+      "delta_aniso_minus_const_pp": 5.44,
+      "n_patients": 42
+    },
+    "heat_ge_0.8": {
+      "n_rows": 121,
+      "constant_sigma_mean_pct": 30.09,
+      "isotropic_bed_mean_pct": 37.08,
+      "anisotropic_bed_mean_pct": 49.39,
+      "delta_aniso_minus_iso_pp": 12.31,
+      "delta_aniso_minus_const_pp": 19.3,
+      "n_patients": 42
+    }
+  }
+}
