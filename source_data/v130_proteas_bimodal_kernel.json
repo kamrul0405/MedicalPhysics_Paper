@@ -1,0 +1,319 @@
+{
+  "version": "v130",
+  "timestamp": "2026-05-08T18:18:39",
+  "n_followups": 126,
+  "n_patients": 44,
+  "n_bootstrap_replicates": 10000,
+  "thresholds": {
+    "heat_ge_0.5": {
+      "overall": {
+        "pers": {
+          "mean_pct": 52.48,
+          "ci95_pct": [
+            42.96,
+            62.05
+          ]
+        },
+        "s05": {
+          "mean_pct": 52.44,
+          "ci95_pct": [
+            43.29,
+            62.07
+          ]
+        },
+        "s40": {
+          "mean_pct": 46.12,
+          "ci95_pct": [
+            37.15,
+            55.35
+          ]
+        },
+        "v124": {
+          "mean_pct": 51.62,
+          "ci95_pct": [
+            42.38,
+            61.15
+          ]
+        },
+        "bimodal": {
+          "mean_pct": 54.23,
+          "ci95_pct": [
+            44.82,
+            64.08
+          ]
+        }
+      },
+      "outgrowth": {
+        "pers": {
+          "mean_pct": 0.0,
+          "ci95_pct": [
+            0.0,
+            0.0
+          ],
+          "n_valid": 122
+        },
+        "s05": {
+          "mean_pct": 0.01,
+          "ci95_pct": [
+            0.0,
+            0.03
+          ],
+          "n_valid": 122
+        },
+        "s40": {
+          "mean_pct": 9.54,
+          "ci95_pct": [
+            6.26,
+            13.24
+          ],
+          "n_valid": 122
+        },
+        "v124": {
+          "mean_pct": 6.94,
+          "ci95_pct": [
+            3.84,
+            10.86
+          ],
+          "n_valid": 122
+        },
+        "bimodal": {
+          "mean_pct": 9.53,
+          "ci95_pct": [
+            6.29,
+            13.21
+          ],
+          "n_valid": 122
+        }
+      },
+      "paired_deltas_bimodal_minus": {
+        "pers": {
+          "overall": {
+            "mean_pp": 1.72,
+            "ci95_pp": [
+              1.09,
+              2.46
+            ],
+            "excludes_zero": true
+          },
+          "outgrowth": {
+            "mean_pp": 9.5,
+            "ci95_pp": [
+              6.33,
+              13.15
+            ],
+            "excludes_zero": true
+          }
+        },
+        "s05": {
+          "overall": {
+            "mean_pp": 1.72,
+            "ci95_pp": [
+              1.08,
+              2.44
+            ],
+            "excludes_zero": true
+          },
+          "outgrowth": {
+            "mean_pp": 9.48,
+            "ci95_pp": [
+              6.31,
+              13.04
+            ],
+            "excludes_zero": true
+          }
+        },
+        "s40": {
+          "overall": {
+            "mean_pp": 8.01,
+            "ci95_pp": [
+              5.97,
+              10.26
+            ],
+            "excludes_zero": true
+          },
+          "outgrowth": {
+            "mean_pp": 0.0,
+            "ci95_pp": [
+              0.0,
+              0.0
+            ],
+            "excludes_zero": false
+          }
+        },
+        "v124": {
+          "overall": {
+            "mean_pp": 2.62,
+            "ci95_pp": [
+              1.96,
+              3.36
+            ],
+            "excludes_zero": true
+          },
+          "outgrowth": {
+            "mean_pp": 2.58,
+            "ci95_pp": [
+              -0.11,
+              5.69
+            ],
+            "excludes_zero": false
+          }
+        }
+      }
+    },
+    "heat_ge_0.8": {
+      "overall": {
+        "pers": {
+          "mean_pct": 52.49,
+          "ci95_pct": [
+            43.09,
+            62.01
+          ]
+        },
+        "s05": {
+          "mean_pct": 50.5,
+          "ci95_pct": [
+            41.29,
+            59.93
+          ]
+        },
+        "s40": {
+          "mean_pct": 23.03,
+          "ci95_pct": [
+            17.03,
+            29.22
+          ]
+        },
+        "v124": {
+          "mean_pct": 41.93,
+          "ci95_pct": [
+            33.9,
+            50.34
+          ]
+        },
+        "bimodal": {
+          "mean_pct": 52.48,
+          "ci95_pct": [
+            42.97,
+            62.04
+          ]
+        }
+      },
+      "outgrowth": {
+        "pers": {
+          "mean_pct": 0.0,
+          "ci95_pct": [
+            0.0,
+            0.0
+          ],
+          "n_valid": 122
+        },
+        "s05": {
+          "mean_pct": 0.0,
+          "ci95_pct": [
+            0.0,
+            0.0
+          ],
+          "n_valid": 122
+        },
+        "s40": {
+          "mean_pct": 0.11,
+          "ci95_pct": [
+            0.04,
+            0.2
+          ],
+          "n_valid": 122
+        },
+        "v124": {
+          "mean_pct": 0.12,
+          "ci95_pct": [
+            0.04,
+            0.24
+          ],
+          "n_valid": 122
+        },
+        "bimodal": {
+          "mean_pct": 0.11,
+          "ci95_pct": [
+            0.04,
+            0.19
+          ],
+          "n_valid": 122
+        }
+      },
+      "paired_deltas_bimodal_minus": {
+        "pers": {
+          "overall": {
+            "mean_pp": 0.02,
+            "ci95_pp": [
+              0.01,
+              0.03
+            ],
+            "excludes_zero": true
+          },
+          "outgrowth": {
+            "mean_pp": 0.11,
+            "ci95_pp": [
+              0.04,
+              0.2
+            ],
+            "excludes_zero": true
+          }
+        },
+        "s05": {
+          "overall": {
+            "mean_pp": 2.02,
+            "ci95_pp": [
+              1.64,
+              2.42
+            ],
+            "excludes_zero": true
+          },
+          "outgrowth": {
+            "mean_pp": 0.11,
+            "ci95_pp": [
+              0.04,
+              0.2
+            ],
+            "excludes_zero": true
+          }
+        },
+        "s40": {
+          "overall": {
+            "mean_pp": 29.47,
+            "ci95_pp": [
+              24.56,
+              34.5
+            ],
+            "excludes_zero": true
+          },
+          "outgrowth": {
+            "mean_pp": 0.0,
+            "ci95_pp": [
+              0.0,
+              0.0
+            ],
+            "excludes_zero": false
+          }
+        },
+        "v124": {
+          "overall": {
+            "mean_pp": 10.62,
+            "ci95_pp": [
+              8.23,
+              13.17
+            ],
+            "excludes_zero": true
+          },
+          "outgrowth": {
+            "mean_pp": -0.02,
+            "ci95_pp": [
+              -0.06,
+              0.03
+            ],
+            "excludes_zero": false
+          }
+        }
+      }
+    }
+  }
+}

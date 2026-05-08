@@ -1,0 +1,77 @@
+{
+  "version": "v127",
+  "timestamp": "2026-05-08T18:13:17",
+  "v124_formula": {
+    "intercept": -3.0944,
+    "slope": 1.2733,
+    "slope_95ci": [
+      1.158,
+      1.389
+    ]
+  },
+  "n_followups": 126,
+  "thresholds": {
+    "heat_ge_0.5": {
+      "n_followups": 126,
+      "rmse_log_sigma": 1.1095113056335717,
+      "mae_log_sigma": 0.9297033048793262,
+      "r_squared": -1.5584359667694931,
+      "pearson_r_log_actual_vs_log_r_eq": -0.25780744348526813,
+      "pearson_p_log_actual_vs_log_r_eq": 0.00356287885165186,
+      "pearson_r_pred_vs_actual": -0.2578074434852681,
+      "proteas_within_cohort_slope": -0.3830483951760282,
+      "proteas_within_cohort_slope_se": 0.12891775374483375,
+      "proteas_within_cohort_slope_ci": [
+        -0.6357271925159023,
+        -0.13036959783615404
+      ],
+      "proteas_within_cohort_intercept": 0.7358893773319308,
+      "v124_slope_in_proteas_ci": false,
+      "sigma_opt_distribution": {
+        "0.5": 75,
+        "0.75": 15,
+        "1.0": 12,
+        "1.25": 4,
+        "1.5": 2,
+        "2.0": 1,
+        "2.5": 1,
+        "3.0": 2,
+        "3.5": 0,
+        "4.0": 14
+      },
+      "n_unique_sigma_opt": 9,
+      "median_r_eq": 14.274703414487528
+    },
+    "heat_ge_0.8": {
+      "n_followups": 126,
+      "rmse_log_sigma": 1.056072369932132,
+      "mae_log_sigma": 0.9113690983792024,
+      "r_squared": -140526395166.2928,
+      "pearson_r_log_actual_vs_log_r_eq": NaN,
+      "pearson_p_log_actual_vs_log_r_eq": NaN,
+      "pearson_r_pred_vs_actual": NaN,
+      "proteas_within_cohort_slope": -2.692952186682619e-32,
+      "proteas_within_cohort_slope_se": 2.1355666302611776e-17,
+      "proteas_within_cohort_slope_ci": [
+        -4.18571059531191e-17,
+        4.185710595311905e-17
+      ],
+      "proteas_within_cohort_intercept": -0.6931471805599454,
+      "v124_slope_in_proteas_ci": false,
+      "sigma_opt_distribution": {
+        "0.5": 126,
+        "0.75": 0,
+        "1.0": 0,
+        "1.25": 0,
+        "1.5": 0,
+        "2.0": 0,
+        "2.5": 0,
+        "3.0": 0,
+        "3.5": 0,
+        "4.0": 0
+      },
+      "n_unique_sigma_opt": 1,
+      "median_r_eq": 14.274703414487528
+    }
+  }
+}
